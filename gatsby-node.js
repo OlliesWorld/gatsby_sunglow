@@ -1,7 +1,25 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/node-apis/
- */
 
-// You can delete this file if you're not using it
+exports.createPages = async ({ graphql, actions }) => {
+    const {
+      data: { allWpPage }
+    } = await graphql(`
+      query {
+        allWpPage {
+          nodes {
+            id
+            uri
+          }
+        }
+      }
+    `);
+    allWpPage.nodes.map((page) => {
+      const { id, uri } = page;
+      return actions.createPage({
+        path: uri,
+        component: require.resolve('./src/templates/WpPage.js'),
+        context: {
+          id: id
+        }
+      });
+    });
+  };

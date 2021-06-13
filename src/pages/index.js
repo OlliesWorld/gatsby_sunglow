@@ -1,29 +1,54 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import { StaticImage } from "gatsby-plugin-image";
+import {useStaticQuery, graphql, Link } from 'gatsby'
+import Header from '../components/header'
+import * as React from "react";
 
-const IndexPage = () => (
-  <Layout>
-    <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
-  </Layout>
-)
 
-export default IndexPage
+const HomePage = () => {
+  const data = useStaticQuery(graphql `
+    query MyQuery {
+          allWpPost {
+            nodes {
+              id
+              title
+              uri
+              excerpt
+            }
+          }
+        }
+
+  `)
+  console.log(data)
+  const {allWpPost} = data
+  return (
+    <main >
+      <title>Home Page</title>
+      <Header />
+      <StaticImage src="../assets/images/eclipse-logo.png" alt="logo" placeholder="blurred" width={100} />
+      <div className="container">
+        <h1>SunGlow Films Durango</h1>
+        
+          {allWpPost.nodes.map( ({id, title, excerpt,uri}) => (
+            <div className="box">
+            <h2>{title}</h2>
+           
+              <span dangerouslySetInnerHTML={{__html:excerpt}} />
+            
+            <Link to={uri}>Read More</Link>
+          </div>
+          )) }
+          
+          <div className="box">
+            <h2 >Goodby Mars</h2>
+            
+            <span dangerouslySetInnerHTML={{__html:'<p>This is a 2nd excerpt..</p>'}} />
+           
+            <Link to='#'>Read More</Link>
+       </div>
+      </div>
+    </main>
+  );
+};
+
+export default HomePage;
