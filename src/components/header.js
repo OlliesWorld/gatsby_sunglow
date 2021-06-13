@@ -1,42 +1,32 @@
-import * as React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import React from 'react'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+import { StaticImage } from "gatsby-plugin-image";
+import Nav from './Nav';
+import styled from 'styled-components';
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+
+
+const HeaderStyles = styled.header`
+  .bar {
+    border-bottom: 10px solid var(--black, black);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  img {
+    max-height: 3rem;
+  }
+`;
+
+export default function Header() {
+  return (
+    <HeaderStyles>
+      <div className="bar">
+      <StaticImage src="../images/eclipse-logo.png" alt="logo" width={200} />
+        <Nav />
+      </div>
+      
+    </HeaderStyles>
+  );
 }
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header

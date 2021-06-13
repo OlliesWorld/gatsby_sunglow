@@ -1,9 +1,9 @@
 
+import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import {useStaticQuery, graphql, Link } from 'gatsby'
+// import Header from '../components/Header'
 import Nav from '../components/Nav'
-import * as React from "react";
-
 
 const HomePage = () => {
   const data = useStaticQuery(graphql `
