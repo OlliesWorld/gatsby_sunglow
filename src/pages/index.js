@@ -2,8 +2,8 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import {useStaticQuery, graphql, Link } from 'gatsby'
-// import Header from '../components/Header'
-import Nav from '../components/Nav'
+ import Header from '../components/Header'
+// import Nav from '../components/Nav'
 
 const HomePage = () => {
   const data = useStaticQuery(graphql `
@@ -24,7 +24,7 @@ const HomePage = () => {
   return (
     <main >
       <title>Home Page</title>
-      <Nav />
+      <Header />
       <StaticImage src="../images/eclipse-logo.png" alt="logo" placeholder="blurred" width={100} />
       <div className="container">
         <h1>SunGlow Films Durango</h1>

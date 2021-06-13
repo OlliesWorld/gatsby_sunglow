@@ -7,16 +7,17 @@ import styled from 'styled-components';
 
 
 const HeaderStyles = styled.header`
+
   .bar {
-    border-bottom: 10px solid var(--black, black);
+    border-bottom: 3px solid black;
     display: grid;
     grid-template-columns: auto 1fr;
     justify-content: space-between;
     align-items: stretch;
   }
-  img {
-    max-height: 3rem;
-  }
+ img {
+  margin-left: 2rem;
+ }
 `;
 
 export default function Header() {
