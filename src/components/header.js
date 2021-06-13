@@ -17,6 +17,7 @@ const HeaderStyles = styled.header`
   }
  img {
   margin-left: 2rem;
+  width: 50%;
  }
 `;
 
@@ -24,7 +25,7 @@ export default function Header() {
   return (
     <HeaderStyles>
       <div className="bar">
-      <StaticImage src="../images/eclipse-logo.png" alt="logo" width={200} />
+      <StaticImage src="../images/eclipse-logo.png" alt="logo"  />
         <Nav />
       </div>
       
