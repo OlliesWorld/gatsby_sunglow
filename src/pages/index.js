@@ -1,9 +1,10 @@
 
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+// import { StaticImage } from "gatsby-plugin-image";
 import {useStaticQuery, graphql, Link } from 'gatsby'
  import Header from '../components/Header'
 // import Nav from '../components/Nav'
+import Hero from '../components/Hero'
 
 const HomePage = () => {
   const data = useStaticQuery(graphql `
@@ -19,18 +20,17 @@ const HomePage = () => {
         }
 
   `)
-  console.log(data)
+  // console.log(data)
   const {allWpPost} = data
   return (
     <main >
       <title>Home Page</title>
       <Header />
-      <StaticImage src="../images/eclipse-logo.png" alt="logo" placeholder="blurred" width={100} />
-      <div className="container">
+      <Hero />
         <h1>SunGlow Films Durango</h1>
         
           {allWpPost.nodes.map( ({id, title, excerpt,uri}) => (
-            <div className="box">
+            <div className="box" key={id}>
             <h2>{title}</h2>
            
               <span dangerouslySetInnerHTML={{__html:excerpt}} />
@@ -46,7 +46,7 @@ const HomePage = () => {
            
             <Link to='#'>Read More</Link>
        </div>
-      </div>
+    
     </main>
   );
 };

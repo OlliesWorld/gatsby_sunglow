@@ -36,16 +36,19 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        url: process.env.WPGRAPHQL_URL,
-        verbose: true,
+        url:
+        // allows a fallback url if WPGRAPHQL_URL is not set in the env, this may be a local or remote WP instance.
+          `https://gatsbysunglow-89f60b.ingress-erytho.easywp.com/graphql` ||
+          `https://localhost/graphql`,
+        schema: {
+          //Prefixes all WP Types with "Wp" so "Post and allPost" become "WpPost and allWpPost".
+          typePrefix: `Wp`,
+        },
         develop: {
+          //caches media files outside of Gatsby's default cache an thus allows them to persist through a cache reset.
           hardCacheMediaFiles: true,
         },
-        schema: {
-          timeout: 30000,
-          perPage: 100,
-          requestConcurrency: 50,
-        },
+        
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

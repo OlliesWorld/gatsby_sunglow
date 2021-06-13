@@ -25,7 +25,7 @@ export default function Header() {
   return (
     <HeaderStyles>
       <div className="bar">
-      <StaticImage src="../images/eclipse-logo.png" alt="logo"  />
+      <StaticImage src="../images/eclipse-logo.png" alt="logo" placeholder='blurred' />
         <Nav />
       </div>
       

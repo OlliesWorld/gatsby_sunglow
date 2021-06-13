@@ -27,7 +27,7 @@ const NavStyles = styled.ul`
     &:before {
       content: '';
       width: 2px;
-      background: var(--lightGrey);
+      background: lightGrey;
       height: 100%;
       left: 0;
       position: absolute;
@@ -37,7 +37,7 @@ const NavStyles = styled.ul`
     }
     &:after {
       height: 2px;
-      background: red;
+      background: orange;
       content: '';
       width: 0;
       position: absolute;
