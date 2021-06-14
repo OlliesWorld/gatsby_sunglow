@@ -1,33 +1,6 @@
 import React from 'react'
 import {Link} from 'gatsby'
 import NavStyles from './styles/NavStyles';
-// import styled from 'styled-components';
-// import { StaticImage } from "gatsby-plugin-image";
-
-// const NavStyles = styled.div`
-// display: flex;
-// justify-content: space-around;
-// margin-top: 1rem;
-//     ul {
-//         display: flex;
-//         justify-content: space-between;
-        
-//     }
-//     li {
-//         text-decoration: none;
-//         text-transform: uppercase;
-//         list-style-type: none;
-//         padding: 1rem;
-        
-//     }
-//     a {
-//         color: black;
-//     }
-//     img {
-//         max-height: 3em;
-        
-//     }
-// `
 
 
 export default function Nav () {
