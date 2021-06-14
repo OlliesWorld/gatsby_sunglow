@@ -6,18 +6,18 @@ import styled from 'styled-components';
 const HeroStyles = styled.div `
     position: relative;
     
-    color: orange;
+    color: rgb(252, 83, 8);
     h2{
 
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
     p{
         font-size: 1.5rem;
         color: black;
-        width: 50%;
+       
     }
     button {
-        background-color: orange;
+        background-color: rgb(252, 83, 8);
         padding: 1rem 1.5rem;
         outline: none;
         border: black;
@@ -34,11 +34,12 @@ const HeroStyles = styled.div `
         content:'';
         top: 10rem;
         background: rgba(128, 128, 128, 0.3);
-       
         left: 30rem;
         z-index:1;
         padding: 1rem 4rem;
-        
+    }
+    .wrapper p, button {
+        margin-left: 15rem;
     }
 `
 
