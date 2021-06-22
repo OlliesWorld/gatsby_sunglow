@@ -38,7 +38,7 @@ module.exports = {
       options: {
         url:
         // allows a fallback url if WPGRAPHQL_URL is not set in the env, this may be a local or remote WP instance.
-          `https://gatsbysunglow-89f60b.ingress-erytho.easywp.com/graphql`,
+          `http://sunglogatsby.local/graphql`,
           
         schema: {
           //Prefixes all WP Types with "Wp" so "Post and allPost" become "WpPost and allWpPost".
