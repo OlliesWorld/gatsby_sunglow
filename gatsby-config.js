@@ -38,22 +38,22 @@ module.exports = {
       options: {
         
         // allows a fallback url if WPGRAPHQL_URL is not set in the env, this may be a local or remote WP instance.
-        url: process.env.WPGRAPHQL_URL || `http://sunglogatsby.local/graphql`,
+        url: `http://sunglogatsby.local/graphql`,
           
-        schema: {
-          //Prefixes all WP Types with "Wp" so "Post and allPost" become "WpPost and allWpPost".
-          timeout: 120000,
-          perPage: 25,
-          requestConcurrency: 2,
-          previewRequestConcurrency: 2,
-        },
-        develop: {
-          //caches media files outside of Gatsby's default cache an thus allows them to persist through a cache reset.
-          hardCacheMediaFiles: true,
-        },
-        html: {
-          useGatsbyImage: true,
-        },
+        // schema: {
+        //   //Prefixes all WP Types with "Wp" so "Post and allPost" become "WpPost and allWpPost".
+        //   timeout: 120000,
+        //   perPage: 250,
+        //   requestConcurrency: 2,
+        //   previewRequestConcurrency: 2,
+        // },
+        // develop: {
+        //   //caches media files outside of Gatsby's default cache an thus allows them to persist through a cache reset.
+        //   hardCacheMediaFiles: true,
+        // },
+        // html: {
+        //   useGatsbyImage: true,
+        // },
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
