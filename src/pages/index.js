@@ -3,9 +3,9 @@ import React from "react"
 
 import Header from '../components/Header'
 import Hero from '../components/Hero'
-import Tint from '../components/tint'
-import Services from '../components/services'
-import Footer from "../components/footer"
+import Tint from '../components/Tint'
+import Services from '../components/Services'
+import Footer from "../components/Footer"
 import Other from "../components/Other"
 
 const HomePage = () => {
