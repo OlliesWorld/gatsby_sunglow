@@ -4,19 +4,20 @@ const NavStyles = styled.ul`
   margin: 0;
   padding: 0;
   display: flex;
-  justify-self: end;
-  justify-content: flex-end;
-  font-size: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  
   a,
   button {
     padding: 1rem 1.5rem;
-    display: flex;
+    
     align-items: center;
     color: black;
     position: relative;
     text-transform: uppercase;
+    text-decoration: none;
     font-weight: 900;
-    font-size: .5em;
+    font-size: .8em;
     background: none;
     border: 0;
     cursor: pointer;
@@ -24,17 +25,36 @@ const NavStyles = styled.ul`
       font-size: 10px;
       padding: 0 10px;
     }
-    &:before {
-      content: '';
-      width: 2px;
-      background: lightGrey;
-      height: 100%;
-      left: 0;
-      position: absolute;
-      transform: skew(-20deg);
-      top: 0;
-      bottom: 0;
     }
+  }
+  .cta-btn {
+  position: relative;
+  display: inline-block;
+  padding: 0.875rem;
+  margin: 1rem;
+  background-color: rgb(255, 103, 0);
+  background-image: linear-gradient(0deg, rgb(255, 103, 0) 10%, rgb(255, 160, 0) 90%);
+  border-top: 1px solid rgb(255, 103, 0);
+        border-right: 1px solid rgb(255, 103, 0);
+        border-bottom: 1px solid rgb(255, 103, 0);
+        border-left: 1px solid rgb(255, 103, 0);
+        border-radius: 0px;
+        padding: 0.775em 0.875em;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1rem;
+  cursor: pointer;
+  color: white;
+  overflow: hidden;
+  @media (max-width: 1300px) {
+  
+    width: 100%;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  }
+  .nav-links a {
     &:after {
       height: 2px;
       background: rgb(252, 83, 8);
@@ -57,13 +77,6 @@ const NavStyles = styled.ul`
       @media (max-width: 700px) {
         width: calc(100% - 10px);
       }
-    }
-  }
-  @media (max-width: 1300px) {
-    border-top: 1px solid var(--lightGray);
-    width: 100%;
-    justify-content: center;
-    font-size: 1.5rem;
   }
 `;
 

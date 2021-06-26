@@ -1,11 +1,12 @@
 
-import React from "react";
-// import { StaticImage } from "gatsby-plugin-image";
-// import {useStaticQuery, graphql, Link } from 'gatsby'
-import {Link } from 'gatsby'
- import Header from '../components/Header'
-// import Nav from '../components/Nav'
+import React from "react"
+
+import Header from '../components/Header'
 import Hero from '../components/Hero'
+import Tint from '../components/tint'
+import Services from '../components/services'
+import Footer from "../components/footer"
+import Other from "../components/Other"
 
 const HomePage = () => {
   // const data = useStaticQuery(graphql `
@@ -26,10 +27,15 @@ const HomePage = () => {
   return (
     <main >
       <title>Home Page</title>
+      
       <Header />
+      <h1>SunGlow Films Durango</h1>
       <Hero />
-        <h1>SunGlow Films Durango</h1>
-        
+      <div className='divider-top'></div>
+        <Tint />
+        <div className='divider'></div>
+        <Services />
+        <div className='divider'></div>
           {/* {allWpPost.nodes.map( ({id, title, excerpt,uri}) => (
             <div className="box" key={id}>
             <h2>{title}</h2>
@@ -39,15 +45,9 @@ const HomePage = () => {
             <Link to={uri}>Read More</Link>
           </div>
           )) } */}
-          
-          <div className="box">
-            <h2 >Goodby Mars</h2>
-            
-            {/* <span dangerouslySetInnerHTML={{__html:'<p>This is a 2nd excerpt..</p>'}} /> */}
-           
-            <Link to='#'>Read More</Link>
-       </div>
-    
+          <Other />
+        
+    <Footer />
     </main>
   );
  };
