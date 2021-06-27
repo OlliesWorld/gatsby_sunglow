@@ -18,7 +18,7 @@ export default function Nav () {
                         <Link to='/'>Contact</Link>
                     </div>
 
-                    <Link className="cta-btn" to='/'>Free Estimate</Link>
+                    <Link className="cta-btn" to='/Estimate'>Free Estimate</Link>
                 
             
         </NavStyles>
