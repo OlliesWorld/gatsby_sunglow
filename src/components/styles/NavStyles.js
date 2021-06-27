@@ -29,7 +29,6 @@ const NavStyles = styled.ul`
     }
   }
   .cta-btn {
-   
    padding: 0.875rem;
    margin: 1rem;
    background-color: rgb(255, 103, 0);
@@ -75,5 +74,6 @@ const NavStyles = styled.ul`
   }
 
 `;
+
 
 export default NavStyles;

@@ -5,32 +5,37 @@ import styled from 'styled-components';
 
 const FormStyles = styled.div `
   background-color: black;
+  background-image: url('https://dta0yqvfnusiq.cloudfront.net/sunglowf/2015/12/sunglo_sitebg1_new.jpg');
   form {
     text-align: center;
+    padding-top: 2rem;
     input {
+      
       height: 50px;
       width: 25rem;
       margin: 1rem;
+      border:  1px solid rgb(255, 103, 0);
     }
     textarea {
       width: 25rem;
+      border:  1px solid rgb(255, 103, 0);
     }
   }
+  .Form--Title {
+   text-transform: uppercase;
+   font-weight: bold;
+    border-bottom:solid 1px rgb(255, 103, 0);
+    font-size: 2rem;
+  }
   .Form--SubmitButton {
-    
-      position: relative;
-      display: inline-block;
       padding: 0.875rem 2rem;
       margin: 1rem 2rem;
       background-color: rgb(255, 103, 0);
       background-image: linear-gradient(0deg, rgb(255, 103, 0) 10%, rgb(255, 160, 0) 90%);
-      border-top: 1px solid rgb(255, 103, 0);
-      border-right: 1px solid rgb(255, 103, 0);
-      border-bottom: 1px solid rgb(255, 103, 0);
-      border-left: 1px solid rgb(255, 103, 0);
+      border: 1px solid rgb(255, 103, 0);
       border-radius: 0px;
       padding: 0.775em 0.875em;
-      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+      
       text-transform: uppercase;
       font-weight: bold;
       font-size: 1rem;
@@ -59,6 +64,7 @@ const EstimateForm = () => {
 
   return (
     <Layout>
+      
       <FormStyles>
       <form className="Form" formname="Estimate" formValues={formValues} postSubmit={postSubmit} >
         <label htmlFor="nameInput" className="Form--Title">Free Estimate Form</label>

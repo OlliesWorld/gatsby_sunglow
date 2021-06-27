@@ -3,22 +3,23 @@ import React from 'react';
 import Layout from '../components/layout';
 import '../components/styles/GlobalStyles.css';
 import styled from 'styled-components';
-import {FaCircle} from 'react-icons/fa';
+import {FaArrowCircleRight, FaCircle} from 'react-icons/fa';
 import { StaticImage } from 'gatsby-plugin-image';
 import Sidebar from '../components/Sidebar';
 
 
 const CTAStyles = styled.div`
-  background-color: rgba(0, 0, 0, 0.5);
-        padding-bottom: 35px;
-        padding-top: 35px;
-        color: white;
-        max-width: 1140px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 3rem;
-        padding-left: 20px;
-        padding-right: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 35px;
+    padding-top: 35px;
+    color: white;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
 `
 
 const CommercialStyles = styled.div`
@@ -45,15 +46,29 @@ const CommercialStyles = styled.div`
     margin-left: 3rem;
 }
 
-
 `
+const RightArrow = styled(FaArrowCircleRight)`
+    
+    animation: slide1 1s ease-in-out infinite;
+    margin-right: 1rem;
+    @keyframes slide1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(10px, 0);
+  }
+}
+  `
 
 const CommercialPage = () => (
     <Layout >   
          <CTAStyles>
                 <h2>COMMERCIAL WINDOW TINTING SERVICE DURANGO</h2>
                 <p> As a building owner, commercial window tinting can be your best friend! Window tinting is an affordable way for a business owner to to solve a wide variety of problems that windows create. SunGlo will use this affordable product to save you money & make your building more efficient, safer & more comfortable.</p>
-             <Link className="cta-btn" to='/Estimate'>Start Saving <span>Now</span></Link>
+             <Link className="cta-btn" to='/Estimate'><RightArrow/>Start Saving <span>Now</span></Link>
             </CTAStyles>   
         <CommercialStyles>  
            

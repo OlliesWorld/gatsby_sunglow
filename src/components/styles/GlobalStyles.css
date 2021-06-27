@@ -11,7 +11,7 @@ a {
     position: relative;
     display: inline-block;
     padding: 0.875rem;
-    margin: 1rem;
+    margin: 1rem ;
     background-color: var(--clr-orange);
     background-image: var(--clr-ogradient);
     border-top: 1px solid var(--clr-orange);

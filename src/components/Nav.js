@@ -4,6 +4,7 @@ import NavStyles from './styles/NavStyles';
 import { StaticImage } from 'gatsby-plugin-image';
 
 
+
 export default function Nav () {
     return (
         <NavStyles>
@@ -13,11 +14,12 @@ export default function Nav () {
                     <div className="nav-links">
                         <Link to='/'>Home</Link>
                         <Link to='/Commercial'>Commercial</Link>
-                        <Link to='/'>Residential</Link>
+                        <Link to='/Residential'>Residential</Link>
                         <Link to='/'>About</Link>
                         <Link to='/'>Contact</Link>
                     </div>
 
+                    
                     <Link className="cta-btn" to='/Estimate'>Free Estimate</Link>
                 
             
