@@ -16,7 +16,9 @@ position: relative;
     padding-top: 1.0625rem;
     padding-bottom: 1.0625rem;
   }
-
+h1{ 
+  text-align: center;
+}
   
   
 `;
@@ -27,7 +29,7 @@ export default function Header() {
       
       {/* <StaticImage src="../images/eclipse-logo.png" alt="logo" placeholder='blurred' /> */}
         <Nav />
-      
+        <h1>SunGlow Films Durango</h1>
       
     </HeaderStyles>
   );

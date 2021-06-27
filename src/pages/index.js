@@ -29,7 +29,7 @@ const HomePage = () => {
       <title>Home Page</title>
       
       <Header />
-      <h1>SunGlow Films Durango</h1>
+     
       <Hero />
       <div className='divider-top'></div>
         <Tint />

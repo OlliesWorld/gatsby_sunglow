@@ -1,0 +1,30 @@
+:root {
+  --clr-orange: rgb(255, 103, 0);
+  --clr-ogradient: linear-gradient(0deg, rgb(255, 103, 0) 10%, rgb(255, 160, 0) 90%);
+
+
+}
+a {
+    text-decoration: none;
+}
+.cta-btn {
+    position: relative;
+    display: inline-block;
+    padding: 0.875rem;
+    margin: 1rem;
+    background-color: var(--clr-orange);
+    background-image: var(--clr-ogradient);
+    border-top: 1px solid var(--clr-orange);
+    border-right: 1px solid var(--clr-orange);
+    border-bottom: 1px solid var(--clr-orange);
+    border-left: 1px solid var(--clr-orange);
+    border-radius: 0px;
+    padding: 0.775em 0.875em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    overflow: hidden;
+}

@@ -44,7 +44,7 @@ const EstimateForm = () => {
 
   // Post-Submit Navigate
   const postSubmit = () => {
-    navigate('/thanks')
+    navigate('/Thanks')
   }
 
   // Simple controlled form setup (Control your own state)
@@ -60,7 +60,7 @@ const EstimateForm = () => {
   return (
     <Layout>
       <FormStyles>
-      <form className="Form" formName="Estimate" formValues={formValues} postSubmit={postSubmit} >
+      <form className="Form" formname="Estimate" formValues={formValues} postSubmit={postSubmit} >
         <label htmlFor="nameInput" className="Form--Title">Free Estimate Form</label>
         <div className='Form--Label'>
          <input placeholder='Name' className='Form--Input' type="text" name="name" value={formValues.name} onChange={handleChange} required />
@@ -78,7 +78,7 @@ const EstimateForm = () => {
         <div className='Form--Label'>
           <input className='Form--Input'  type='date'
                     placeholder='Requested Estimate Date'
-                    name='date' value={formValues.date} onChange={handleChange} required />
+                    name='date' value={formValues.date} onChange={handleChange} />
         </div>
         <div className='Form--Label'>
          <textarea className='Form--Input Form--Textarea'

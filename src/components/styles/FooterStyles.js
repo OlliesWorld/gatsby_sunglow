@@ -4,6 +4,7 @@ const FooterStyles = styled.ul`
     margin: 0;
     padding: 0;
     text-align: center;
+    width: 100%;
     a {
         text-decoration: none;
         text-transform: uppercase;

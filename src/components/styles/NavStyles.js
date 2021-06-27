@@ -27,33 +27,8 @@ const NavStyles = styled.ul`
     }
     }
   }
-  .cta-btn {
-  position: relative;
-  display: inline-block;
-  padding: 0.875rem;
-  margin: 1rem;
-  background-color: rgb(255, 103, 0);
-  background-image: linear-gradient(0deg, rgb(255, 103, 0) 10%, rgb(255, 160, 0) 90%);
-  border-top: 1px solid rgb(255, 103, 0);
-        border-right: 1px solid rgb(255, 103, 0);
-        border-bottom: 1px solid rgb(255, 103, 0);
-        border-left: 1px solid rgb(255, 103, 0);
-        border-radius: 0px;
-        padding: 0.775em 0.875em;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 1rem;
-  cursor: pointer;
-  color: white;
-  overflow: hidden;
-  @media (max-width: 1300px) {
-  
-    width: 100%;
-    justify-content: center;
-    font-size: 1.5rem;
-  }
-  }
+
+
   .nav-links a {
     &:after {
       height: 2px;

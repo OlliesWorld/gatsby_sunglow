@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'gatsby'
 import NavStyles from './styles/NavStyles';
 import { StaticImage } from 'gatsby-plugin-image';
-
+import './styles/GlobalStyles.css';
 
 export default function Nav () {
     return (
@@ -12,7 +12,7 @@ export default function Nav () {
             
                     <div className="nav-links">
                         <Link to='/'>Home</Link>
-                        <Link to='/'>Commercial</Link>
+                        <Link to='/Commercial'>Commercial</Link>
                         <Link to='/'>Residential</Link>
                         <Link to='/'>About</Link>
                         <Link to='/'>Contact</Link>

@@ -28,7 +28,7 @@ export default function Footer () {
                     <div className="info">
                         <Link to='/'><StaticImage src="../images/eclipse-logo.png" alt="logo" placeholder="blurred" width={200} /></Link>
                         <div>
-                            <Link className="cta-btn" to='/'>Schedule Your Appointment Now</Link>
+                            <Link className="cta-btn" to='/Estimate'>Schedule Your Appointment Now</Link>
                         </div>
                         
                     </div>
