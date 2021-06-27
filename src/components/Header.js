@@ -1,6 +1,6 @@
 import React from 'react'
+import '../components/styles/GlobalStyles.css';
 
-// import { StaticImage } from "gatsby-plugin-image";
 import Nav from './Nav';
 import styled from 'styled-components';
 

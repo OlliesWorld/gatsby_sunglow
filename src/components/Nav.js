@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'gatsby'
 import NavStyles from './styles/NavStyles';
 import { StaticImage } from 'gatsby-plugin-image';
-import './styles/GlobalStyles.css';
+
 
 export default function Nav () {
     return (
