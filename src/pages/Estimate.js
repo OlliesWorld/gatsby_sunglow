@@ -55,6 +55,8 @@ const FormStyles = styled.div `
 const EstimatePage = () => {
   return (
     <Layout>
+      <title>Estimate | SunGlo Durango | (970) 335-9600
+</title>
       <FormStyles>
 
       <EstimateForm />

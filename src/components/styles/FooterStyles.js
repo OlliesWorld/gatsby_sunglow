@@ -37,7 +37,7 @@ const FooterStyles = styled.ul`
   }
     .info {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         margin-left: 2rem;
     }
     .phone {

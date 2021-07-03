@@ -1,106 +1,70 @@
-import React, { useState } from "react"
-import { navigate } from 'gatsby'
+import React from "react"
+
 import Layout from '../components/layout'
 import styled from 'styled-components';
+import ContactForm from "../components/Form";
+import { StaticImage } from "gatsby-plugin-image";
 
-const FormStyles = styled.div `
-  background-color: black;
-  background-image: url('https://dta0yqvfnusiq.cloudfront.net/sunglowf/2015/12/sunglo_sitebg1_new.jpg');
-  form {
-    text-align: center;
-    padding-top: 2rem;
-    input {
-      
-      height: 50px;
-      width: 25rem;
-      margin: 1rem;
-      border:  1px solid rgb(255, 103, 0);
-    }
-    textarea {
-      width: 25rem;
-      border:  1px solid rgb(255, 103, 0);
-    }
+const ContactStyles = styled.div`
+  display: flex;
+  justify-content: center;
+  background: url('../images/greyzz_@2X.png');
+  
+  background-size: cover;
+`
+const SideBarStyles = styled.div`
+  display: flex;
+  width: 50%;
+  margin-left: 5rem;
+  .box {
+    width: 350px;
   }
-  .Form--Title {
-   text-transform: uppercase;
-   font-weight: bold;
-    border-bottom:solid 1px rgb(255, 103, 0);
+`
+const AreaStyles = styled.div`
+  text-align: center;
+  h2 {
+    font-size: 3.5rem;
+  }
+  p{
     font-size: 2rem;
   }
-  .Form--SubmitButton {
-      padding: 0.875rem 2rem;
-      margin: 1rem 2rem;
-      background-color: rgb(255, 103, 0);
-      background-image: linear-gradient(0deg, rgb(255, 103, 0) 10%, rgb(255, 160, 0) 90%);
-      border: 1px solid rgb(255, 103, 0);
-      border-radius: 0px;
-      padding: 0.775em 0.875em;
-      
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 1rem;
-      cursor: pointer;
-      color: white;
-      overflow: hidden;
-  }
-
 `
-const EstimateForm = () => {
+const ContactPage = () => {
 
-  // Post-Submit Navigate
-  const postSubmit = () => {
-    navigate('/Thanks')
-  }
 
-  // Simple controlled form setup (Control your own state)
-  const handleChange = e => setFormValues({ ...formValues, [e.target.name]: e.target.value })
-  const [formValues, setFormValues] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    date: '',
-    message: ''
-  })
-
+  
   return (
     <Layout>
+      <title>Contact Us | SunGlo Durango | (970) 335-9600</title>
+      <ContactStyles>
       
-      <FormStyles>
-      <form className="Form" formname="Estimate" formValues={formValues} postSubmit={postSubmit} >
-        <label htmlFor="nameInput" className="Form--Title">Free Estimate Form</label>
-        <div className='Form--Label'>
-         <input placeholder='Name' className='Form--Input' type="text" name="name" value={formValues.name} onChange={handleChange} required />
-        </div>
-        <div className='Form--Label'>
-          <input className='Form--Input'  type='email'
-                    placeholder='Email'
-                    name='email' value={formValues.email} onChange={handleChange} required />
-        </div>
-        <div className='Form--Label'>
-          <input className='Form--Input'  type='phone'
-                    placeholder='Phone'
-                    name='phone' value={formValues.phone} onChange={handleChange}  />
-        </div>
-        <div className='Form--Label'>
-          <input className='Form--Input'  type='date'
-                    placeholder='Requested Estimate Date'
-                    name='date' value={formValues.date} onChange={handleChange} />
-        </div>
-        <div className='Form--Label'>
-         <textarea className='Form--Input Form--Textarea'
-                    placeholder='Message'
-                    name='message'
-                    rows='8' value={formValues.message} onChange={handleChange} required />
-        </div>
-        <div>
-          <button className='Button Form--SubmitButton'
-                type='submit'
-                value='Contact' >Send</button>
-        </div>
-      </form>
+      <ContactForm />
+<SideBarStyles className="sidebar">
+  <div className="box about">
+    <StaticImage src="../images/building-img.jpg" layout="constrained"
+            fit="contain"
+            width={270} height={150}
+            placeholder="blurred"/>
+            <h3>About us</h3>
+            <p>Our first priority is to enhance life by improving the windows in our community. SunGlo is designed to provide benefits that will increase one’s standard of living today, and continue to produce benefits into the future.</p>
+      </div>
+      <div className="box tint">
+        <StaticImage src="../images/about-pic.jpg" layout="constrained"
+                fit="contain"
+                width={270} height={150}
+                placeholder="blurred"/>
+                <h3>Home Window Tint</h3>
+                <p>We pride ourselves on high quality home window tint products and elite customer service. Your SunGlo Window Film Expert will exceed your expectations at every turn! We serve in all major areas of Colorado </p>
+      </div>
 
-      </FormStyles>
-      </Layout>
+        </SideBarStyles>
+        
+      </ContactStyles>
+      <AreaStyles>
+        <h2>Contact Us</h2>
+          <p>Commercial and residential window tinting in Durango and all surrounding areas.</p>
+      </AreaStyles>
+  </Layout>
   )
 }
-export default EstimateForm
+export default ContactPage

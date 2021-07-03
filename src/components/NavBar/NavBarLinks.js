@@ -35,7 +35,9 @@ const NavItem = Styled(Link)`
         width: calc(100% - 60px);
       }
     }
- 
+ span.phone-btn {
+   color: orange;
+ }
   
    `
 
@@ -47,8 +49,8 @@ export default function NavBarLinks () {
                         <NavItem to='/Residential'>Residential</NavItem>
                         <NavItem to='/About'>About</NavItem>
                         <NavItem to='/Contact'>Contact</NavItem>
-                
-                        <p className="phone">Call or Text <br/><strong>970-335-9600</strong></p>
+                        <a className="phone" href="tel:3032795884"  style={{color: 'rgb(255, 0, 0)'}}><span className="phone-btn">CALL OR TEXT: <br/>(970) 335-9600</span></a>
+                        
                         <Link className="cta-btn" to='/Estimate'>Free Estimate</Link>
            
         </>
