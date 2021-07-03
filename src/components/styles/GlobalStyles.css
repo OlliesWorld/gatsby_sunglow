@@ -27,4 +27,13 @@ a {
     cursor: pointer;
     color: white;
     overflow: hidden;
+    
+}
+@media (max-width: 750px) {
+    .cta-btn {
+        font-size: .8rem;
+    }
+}
+.cta-btn .footer {
+    font-size: .5rem;
 }

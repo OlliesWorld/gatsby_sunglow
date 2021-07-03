@@ -14,6 +14,7 @@ const TintStyles = styled.div `
     }
     .content {
         width: 50%;
+       
         margin:2rem 5rem;
         
     }
@@ -33,7 +34,6 @@ const TintStyles = styled.div `
    .btn-service {
         border: none;
         margin-left: 3rem;
-        
         border-radius: 0px;
         padding: 0.775em 0.875em;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
@@ -52,7 +52,28 @@ const TintStyles = styled.div `
         background-image: linear-gradient(0deg, rgb(203, 6, 6) 10%, transparent 90%);     
         /* padding: 1rem 2.5rem;  */
    }
-   
+   @media (max-width: 900px) {
+      .wrapper {
+          margin-bottom: 0.5rem;
+      }
+       .content {
+           width: 100%;
+           margin: .5rem 0.9rem;
+       }
+       .btn-service {
+        display: block;
+        margin-top: .5rem;
+        
+       }
+       .btn-service a {
+        font-size: .8rem;
+       }
+   }
+   @media (max-width: 400px) {
+       .gatsby-image-wrapper {
+        display: none;
+       }
+   }
 `
 
 const Tint = ({data}) => {
@@ -74,7 +95,7 @@ const Tint = ({data}) => {
                 height={400}
                 placeholder="blurred"/>
        </div>
-        <button className="btn-service commercial"><Link to="/">Commercial Window Tint</Link></button>
+            <button className="btn-service commercial"><Link to="/">Commercial Window Tint</Link></button>
             <button className="btn-service residential"><Link to="/">Residential Window Tint</Link></button>
             <button className="btn-service quote"><Link to="/">Get Your Free Quote</Link></button>
         </TintStyles>

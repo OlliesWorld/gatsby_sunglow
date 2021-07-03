@@ -33,9 +33,7 @@ const FooterStyles = styled.ul`
     }
 
     .cta-btn {
-        
-      
-        padding: 2rem  0.875rem;
+        padding:  0.875rem;
         margin: 0 5rem;
         background-color: rgb(255, 103, 0);
         background-image: linear-gradient(0deg, rgb(255, 103, 0) 10%, rgb(255, 160, 0) 90%);
@@ -43,20 +41,17 @@ const FooterStyles = styled.ul`
         border-right: 1px solid rgb(255, 103, 0);
         border-bottom: 1px solid rgb(255, 103, 0);
         border-left: 1px solid rgb(255, 103, 0);
-        border-radius: 0px;
-        
+        border-radius: 0px; 
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
         text-transform: uppercase;
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 1rem;
         cursor: pointer;
         color: white;
         overflow: hidden;
-        @media (max-width: 1300px) {
-        
-            
-            justify-content: center;
-            font-size: 1.5rem;
+        @media (max-width: 800px) {
+
+            font-size: .8rem;
         }
   }
 

@@ -48,6 +48,16 @@ const ServiceStyles = styled.div `
     
     color: rgb(255, 255, 255);
    }
+   @media (max-width: 800px) {
+    .service-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-box {
+        margin-bottom: 2rem;
+    }
+    
+   }
 `
 
 const Services = ({data}) => {

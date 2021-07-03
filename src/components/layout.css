@@ -19,7 +19,7 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
-article,
+/* article,
 aside,
 details,
 figcaption,
@@ -32,7 +32,7 @@ nav,
 section,
 summary {
   display: block;
-}
+} */
 audio,
 canvas,
 progress,
@@ -600,6 +600,6 @@ pre tt:after {
 }
 .divider {
   border-top: 10px solid rgb(255, 103, 0);
-  /* padding-bottom: 2rem; */
-  margin-top: 3rem;
+  
+  margin: 2rem 0;
 }

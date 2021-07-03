@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import './styles/GlobalStyles.css';
 
 const HeroStyles = styled.div `
-    /* position: relative; */
     display: flex;
       
     h2{
@@ -25,7 +24,6 @@ const HeroStyles = styled.div `
     
     .wrapper {
         width: 100%;
-        background-image: url('../image/nice_snow.png');
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -37,8 +35,13 @@ const HeroStyles = styled.div `
      .wrapper button {
        /* width: 60%; */
        align-self: center;
+       
     }  
-    
+    @media (max-width: 400px) {
+       .gatsby-image-wrapper {
+        display: none;
+       }
+   }
 `
 
 const Hero = ({data}) => {
