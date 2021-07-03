@@ -1,14 +1,20 @@
 import React from 'react'
 import {Link} from 'gatsby'
-import styled from 'styled-components'
+import Styled from 'styled-components'
 
-const NavItem = styled(Link)`
+const NavItem = Styled(Link)`
     text-transform: uppercase;
     text-decoration: none;
     padding: 1rem 1.5rem;
     border: 0;
     cursor: pointer;
     color: black;
+    
+  @media (min-width: 900px){
+   :nth-last-child(3) {
+      margin-right: 5rem;
+    }
+  }
     :after {
         height: 2px;
         background: rgb(252, 83, 8);
@@ -29,27 +35,9 @@ const NavItem = styled(Link)`
         width: calc(100% - 60px);
       }
     }
-    `
-    // const NavBtn = styled(Link)`
-    //     padding: 0.875rem;
-    //     margin: 1rem;
-    //     background-color: rgb(255, 103, 0);
-    //     background-image:  linear-gradient(0deg, rgb(255, 103, 0) 10%, rgb(255, 160, 0) 90%);
-    //     border-top: 1px solid var(--clr-orange);
-    //     border-right: 1px solid var(--clr-orange);
-    //     border-bottom: 1px solid var(--clr-orange);
-    //     border-left: 1px solid var(--clr-orange);
-    //     border-radius: 0px;
-    //     padding: 0.775em 0.875em;
-    //     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-    //     text-transform: uppercase;
-    //     font-weight: bold;
-    //     font-size: 1rem;
-    //     cursor: pointer;
-    //     color: white;
-    //     overflow: hidden;
-        
-    //  `
+ 
+  
+   `
 
 export default function NavBarLinks () {
     return (
@@ -57,12 +45,11 @@ export default function NavBarLinks () {
                         <NavItem to='/'>Home</NavItem>
                         <NavItem to='/Commercial'>Commercial</NavItem>
                         <NavItem to='/Residential'>Residential</NavItem>
-                        <NavItem to='/'>About</NavItem>
-                        <NavItem to='/'>Contact</NavItem>
+                        <NavItem to='/About'>About</NavItem>
+                        <NavItem to='/Contact'>Contact</NavItem>
                 
-
-                    
-                    <Link className="cta-btn" to='/Estimate'>Free Estimate</Link>
+                        <p className="phone">Call or Text <br/><strong>970-335-9600</strong></p>
+                        <Link className="cta-btn" to='/Estimate'>Free Estimate</Link>
            
         </>
     )

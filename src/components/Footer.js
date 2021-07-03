@@ -12,10 +12,10 @@ export default function Footer () {
                     <div className="footer-nav">
                         <div className="nav-links">
                             <Link to='/'>Home</Link>
-                            <Link to='/'>Commercial</Link>
-                            <Link to='/'>Residential</Link>
-                            <Link to='/'>About</Link>
-                            <Link to='/'>Contact</Link>
+                            <Link to='/Commercial'>Commercial</Link>
+                            <Link to='/Residential'>Residential</Link>
+                            <Link to='/About'>About</Link>
+                            <Link to='/Contact'>Contact</Link>
                         </div>
                         <div className="social-links">
                           <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/SunGloWF/?fref=ts"><FaFacebookF className="white"/></a>
@@ -25,12 +25,13 @@ export default function Footer () {
                     
                     <div className="info">
                         <Link to='/'><StaticImage src="../images/eclipse-logo.png" alt="logo" placeholder="blurred" width={200} /></Link>
+                        <p className="phone">Call or Text <br/><strong className="phone">970-335-9600</strong></p>
                         <div>
-                            <Link className="cta-btn footer" to='/Estimate'>Schedule Your<br/> Appointment Now</Link>
+                            <Link className="cta-btn footer" to='/Estimate'>Free Estimate</Link>
                         </div>
                         
                     </div>
-                    © {new Date().getFullYear()}Sunglo Window Film, Built by <a href="https://roni.rocks/"  ><span className="roni">🐶</span></a>
+                    © {new Date().getFullYear()} Sunglo Window Film, Built by <a href="https://roni.rocks/"  ><span className="roni">🐶Roni</span></a>
         </FooterStyles>
     )
 }

@@ -95,9 +95,9 @@ const Tint = ({data}) => {
                 height={400}
                 placeholder="blurred"/>
        </div>
-            <button className="btn-service commercial"><Link to="/">Commercial Window Tint</Link></button>
-            <button className="btn-service residential"><Link to="/">Residential Window Tint</Link></button>
-            <button className="btn-service quote"><Link to="/">Get Your Free Quote</Link></button>
+            <button className="btn-service commercial"><Link to="/Commercial">Commercial Window Tint</Link></button>
+            <button className="btn-service residential"><Link to="/Residential">Residential Window Tint</Link></button>
+            <button className="btn-service quote"><Link to="/Estimate">Get Your Free Quote</Link></button>
         </TintStyles>
     )
 }

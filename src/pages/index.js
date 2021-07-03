@@ -26,10 +26,10 @@ const HomePage = () => {
   // const {allWpPost} = data
   return (
     <main >
-      <title>Home Page</title>
+      <title>Window Tinting in Durango | Locally Owned &amp; Operated | (970) 335-9600</title>
       
       <Header />
-      <div className='divider'></div>
+      
       <Hero />
       <div className='divider'></div>
         <Tint />

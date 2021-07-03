@@ -42,7 +42,7 @@ const ServiceStyles = styled.div `
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
         text-transform: uppercase;
         font-weight: bold;
-        font-size: 1rem;
+        font-size: .9rem;
    }
    .btn-service a {
     
@@ -89,7 +89,7 @@ const Services = ({data}) => {
                 <h3>Commercial Window Tint Service</h3>
                 <p>As a building owner, commercial window tint can be your best friend! Window tinting is an affordable way for a business owner to to solve a wide variety of problems that windows create. </p>
             
-                <button className="btn-service"><Link to="/">More About Commercial Window Tint</Link></button>
+                <button className="btn-service"><Link to="/">Commercial Window Tint Info</Link></button>
             </div>
             <div className="service-box">
                 <div className="service-img">

@@ -595,11 +595,8 @@ pre tt:after {
     font-size: 100%;
   }
 }
-.divider-top {
-  border-top: 10px solid rgb(213, 213, 213);
-}
 .divider {
   border-top: 10px solid rgb(255, 103, 0);
   
-  margin: 2rem 0;
+  margin: 1rem 0;
 }

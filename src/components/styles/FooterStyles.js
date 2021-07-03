@@ -16,10 +16,19 @@ const FooterStyles = styled.ul`
         display: flex;
         padding: 1rem;
         margin-bottom: 2rem;
+        margin-top: 2rem;
+   
+       @media (max-width: 400px) {
+        flex-direction: column;
+       }
     }
     .nav-links a{
-        padding-left: 1rem;
+        padding-left: 5rem;
+       @media(max-width: 800px){
+           padding-left:1rem;
+       }
     }
+
     .social-links a {
         padding-left: 1rem;
     }
@@ -29,12 +38,16 @@ const FooterStyles = styled.ul`
     .info {
         display: flex;
         justify-content: center;
-        
+        margin-left: 2rem;
     }
-
+    .phone {
+        padding-left: 3rem;
+        padding-top: 1rem;
+    }
     .cta-btn {
         padding:  0.875rem;
-        margin: 0 5rem;
+        margin-top: 1rem;
+        margin-left:2rem;
         background-color: rgb(255, 103, 0);
         background-image: linear-gradient(0deg, rgb(255, 103, 0) 10%, rgb(255, 160, 0) 90%);
         border-top: 1px solid rgb(255, 103, 0);
@@ -55,7 +68,7 @@ const FooterStyles = styled.ul`
         }
   }
 
-  .roni a {
+  span.roni {
       color: blue;
   }
 `

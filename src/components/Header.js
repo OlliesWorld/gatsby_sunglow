@@ -26,7 +26,7 @@ export default function Header() {
       {/* <StaticImage src="../images/eclipse-logo.png" alt="logo" placeholder='blurred' /> */}
         <NavBar />
         
-      
+        <div className='divider'></div>
     </HeaderStyles>
   );
 }

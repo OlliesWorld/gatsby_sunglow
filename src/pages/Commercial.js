@@ -20,12 +20,19 @@ const CTAStyles = styled.div`
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
+    h2 {
+        text-transform:uppercase;
+    }
 `
 
 const CommercialStyles = styled.div`
-    margin: 0;
+    margin-left: 1rem;
     padding: 0;
     display: flex;
+    @media(max-width:400px){
+        flex-direction: column;
+        width:90%;
+    }
    
 .content-box {
     margin: 0 auto;
@@ -43,7 +50,10 @@ const CommercialStyles = styled.div`
     margin-right:.25em;
 }
 .img-box {
-    margin-left: 3rem;
+    margin-left: 2rem;
+    @media(max-width: 800px){
+        margin: 0;
+    }
 }
 
 `
@@ -66,8 +76,12 @@ const RightArrow = styled(FaArrowCircleRight)`
 const CommercialPage = () => (
     <Layout >   
          <CTAStyles>
-                <h2>COMMERCIAL WINDOW TINTING SERVICE DURANGO</h2>
-                <p> As a building owner, commercial window tinting can be your best friend! Window tinting is an affordable way for a business owner to to solve a wide variety of problems that windows create. SunGlo will use this affordable product to save you money & make your building more efficient, safer & more comfortable.</p>
+             <title>Commercial Window Tint in Durango & Surrounding Areas | (970) 335-9600</title>
+                <h2>COMMERCIAL WINDOW TINTING SERVICE <br/>DURANGO & Surrounding Areas</h2>
+                <p> SunGlo Durango is a locally owned and operated commercial window tinting
+installation service. We offer solar control window film, security window film and all types of
+decorative film for glass. Call today to schedule your complementary commercial window tint
+estimate!</p>
              <Link className="cta-btn" to='/Estimate'><RightArrow/>Start Saving <span>Now</span></Link>
             </CTAStyles>   
         <CommercialStyles>  
@@ -104,8 +118,8 @@ const CommercialPage = () => (
             <div className="img-box">
                 <StaticImage src="../images/example1.png" alt="business with window film" placeholder="blurred" width={800} />
             </div>
-  </div>
- <Sidebar />
+            </div>
+            <Sidebar />
         </CommercialStyles>  
 
     </Layout >

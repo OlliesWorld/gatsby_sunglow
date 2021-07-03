@@ -7,9 +7,8 @@ import '../styles/GlobalStyles.css'
 
 const Navigation = Styled.nav`
   margin-bottom: 1rem;
-  padding-bottom: 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   
   @media (max-width: 56.25rem) {
     position: sticky;
@@ -46,12 +45,12 @@ const Navbox = Styled.div`
     width: 40%;
     justify-content: flex-start;
     padding-top: 1vh;
-    background-color: var(--clr-orange);
-    opacity: 0.95;
+    background-color: rgb(73, 69, 70);
+    opacity: 0.9;
     color: white;
     transition: all 0.3s ease-in;
     top: 5vh;
-    left: ${props => (props.open ? "-100%" : "45%")};
+    left: ${props => (props.open ? "-100%" : "60%")};
     
     a{
       color: white;
@@ -59,8 +58,9 @@ const Navbox = Styled.div`
       margin: 0;
       padding: 1rem 0;
       text-transform: uppercase;
-      
+     
     }
+   
     
     @media (max-width: 700px) {
       left: ${props => (props.open ? "-100%" : "0")};
@@ -76,6 +76,7 @@ const Hamburger = Styled.div`
   height: 3px;
   transition: all .3s linear;
   align-self: center;
+  margin-left: 20rem;
   position: relative;
   transform: ${props => (props.open ? "rotate(-45deg)" : "inherit")};
 
@@ -126,6 +127,7 @@ const Navbar = () => {
         </Navbox>
       )}
     </Navigation>
+    
   )
 }
 

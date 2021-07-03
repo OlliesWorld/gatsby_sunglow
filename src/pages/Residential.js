@@ -21,17 +21,27 @@ const CTAStyles = styled.div`
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
+    h2{
+
+        text-transform: uppercase;
+    }
 `
 
 const ResidentialStyles = styled.div`
     margin: 0;
     padding: 0;
     display: flex;
+    @media(max-width:400px){
+        flex-direction: column;
+        width:90%;
+    }
    
 .content-box {
     margin: 0 auto;
     max-width: 980px;
-   
+   @media(max-width:800px){
+       width: 80%;
+   }
 } 
 
 .bullet {
@@ -45,14 +55,25 @@ const ResidentialStyles = styled.div`
 }
 .img-box {
     margin-left: 3rem;
+    @media(max-width: 800px){
+        margin: 0;
+    }
 }
 .video-box {
     text-align: center;
+    
 }
 .intro-video {
     color: var(--clr-orange);
+   
 }
-
+.video-box iframe {
+    width: 100%;
+    height: 80vh;
+    @media(max-width: 800px){
+        height: 30vh;
+    }
+}
 `
 const RightArrow = styled(FaArrowCircleRight)`
     
@@ -73,8 +94,11 @@ const RightArrow = styled(FaArrowCircleRight)`
 const ResidentialPage = () => (
     <Layout >   
          <CTAStyles>
-                <h2>Exceptional Home Window Tinting Services Durango</h2>
-                <p> YOUR #1 CHOICE FOR RESIDENTIAL WINDOW FILM IN COLORADO</p>
+             <title>Residential Window Tinting for Durango & Surrounding Areas | (970) 335-9600
+</title>
+                <h2>Exceptional Home Window Tinting Services <br/>Durango & Surrounding Areas</h2>
+                <p>SunGlo Durango is a professional residential window tint installation company. We pride ourselves on high value, lifetime warrantied window film packaged with the best tint installation services in the Four Corners Area. Schedule you free residential window film consultation now!
+</p>
              <Link className="cta-btn" to='/Estimate'><RightArrow />Schedule a Free Quote</Link>
             </CTAStyles>   
         <ResidentialStyles>  
@@ -113,12 +137,13 @@ const ResidentialPage = () => (
             <div className="img-box">
                 <StaticImage src="../images/residential-example.png" alt="business with window film" placeholder="blurred" width={800} />
             </div>
+            
             <div className="video-box">
                 <h3 class="intro-video">Check Out This Time Lapse Video Of Us Tinting High Up Residential Windows</h3>
-                <iframe width="715" height="455" src="https://www.youtube.com/embed/vmYe3HIM2Yw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe  src="https://www.youtube.com/embed/vmYe3HIM2Yw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
   </div>
- <Sidebar />
+  <Sidebar />
         </ResidentialStyles>  
 
     </Layout >

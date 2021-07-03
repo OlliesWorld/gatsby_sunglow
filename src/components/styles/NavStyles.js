@@ -21,7 +21,7 @@ const NavStyles = styled.ul`
     background: none;
  
   }
-    
+ 
   }
   .cta-btn {
    padding: 0.875rem;
