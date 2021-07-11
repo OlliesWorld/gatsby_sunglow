@@ -111,7 +111,8 @@ const Navbar = () => {
 
   return (
     <Navigation>
-     <StaticImage src="../images/SunGlo-logo.png" alt="logo" placeholder="blurred" width={160} />
+     <StaticImage src="../../images/SunGlo-logo.png" alt="logo" placeholder="blurred" layout="fixed"  width={200} />
+     
       <Toggle
         navbarOpen={navbarOpen}
         onClick={() => setNavbarOpen(!navbarOpen)}

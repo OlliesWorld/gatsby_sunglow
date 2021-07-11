@@ -20,37 +20,57 @@ const CTAStyles = styled.div`
     color: white;
     max-width: 1140px;
     height: 500px;
-    margin-left: 15rem;
+    margin-left: 10rem;
     margin-right: auto;
     margin-bottom: 3rem;
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
+    @media (max-width: 800px) {
+        margin-left:1rem;
+        width: 95%;
+    }
+    @media (max-width: 400px) {
+        margin-left:.5rem;
+        
+    }
     h2 {
         text-transform:uppercase;
     }
     .cta-content {
         background-color: rgba(0, 0, 0, 0.5);
         width: 50%;
-        margin-left: 45rem;
+        margin-left: 47rem;
+        @media (max-width: 800px) {
+        margin-left:1rem;
+        padding: 1rem;
+        width: 95%;
+    }
     }
 `
 
 const CommercialStyles = styled.div`
     margin-left: 1rem;
+    margin-right: 8rem;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     @media(max-width:400px){
         flex-direction: column;
+        
         width:90%;
     }
-   
+  
 .content-box {
     margin: 0 auto;
     max-width: 980px;
     @media(max-width:800px){
        width: 80%;
+       margin:2rem;
+   }
+   @media(max-width:400px){
+       width: 95%;
+       margin:2rem 0;
    }
    p {
        font-size: 1rem;
@@ -75,11 +95,26 @@ const CommercialStyles = styled.div`
     }
     @media(max-width: 800px){
         flex-direction: column;
-        margin: 0;
+        margin-left: 9rem;
+        
+        img{
+
+            padding: 1rem 0;
+        }
+    }
+    @media(max-width: 400px){
+       margin-left: 1rem;
+        
+        
+        img{
+            width: 80%;
+           
+        }
     }
 }
 
 `
+
 const RightArrow = styled(FaArrowCircleRight)`
     
     animation: slide1 1s ease-in-out infinite;
@@ -142,16 +177,16 @@ const CommercialPage = () => (
                 </div>
                
                 <h3>The best part is these benefits can be had at a fraction of the cost of replacing the existing glass!</h3>
-                <p>f you are looking for quality products and customer service excellence in your Denver commercial window tinting company, you have come to the right place! SunGlo Window Films has been in business in Colorado since 1991. We carry an A+ BBB rating. Customer satisfaction is of the highest importance to us to ensure we will be around for another 20 years.</p>
+                <p>If you are looking for quality products and customer service excellence in your Denver commercial window tinting company, you have come to the right place! SunGlo Window Films has been in business in Colorado since 1991. We carry an A+ BBB rating. Customer satisfaction is of the highest importance to us to ensure we will be around for another 20 years.</p>
                 <h3>If you choose SunGlo Window Films for Commercial Window Tinting Services in Denver, you will not be disappointed!</h3>
                 </div>
                 <Sidebar />
             <div className="img-box">
-                <StaticImage src="../images/imagecontent/commercial 1.jpg" alt="business with window film" placeholder="blurred" width={400} height={400} placeholder="blurred"
+                <StaticImage src="../images/imagecontent/commercial 1.jpg" alt="business with window film" placeholder="blurred" width={400} height={400}
      layout="fixed"/>
-                <StaticImage src="../images/imagecontent/commercial 2.jpg" alt="business with window film" placeholder="blurred" width={400} height={400} placeholder="blurred"
+                <StaticImage src="../images/imagecontent/commercial 2.jpg" alt="business with window film" placeholder="blurred" width={400} height={400} 
      layout="fixed"/>
-                <StaticImage src="../images/imagecontent/Commercial-Header.jpg" alt="business with window film" placeholder="blurred" width={400} height={400}  placeholder="blurred"
+                <StaticImage src="../images/imagecontent/Commercial-Header.jpg" alt="business with window film" placeholder="blurred" width={400} height={400}  
      layout="fixed" />
             </div>
             

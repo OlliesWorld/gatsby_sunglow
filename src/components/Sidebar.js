@@ -4,6 +4,12 @@ import './styles/GlobalStyles.css'
 import styled from 'styled-components';
 
 const SidebarStyles = styled.div`
+@media (max-width: 800px) {
+    margin-left: 12rem;
+}
+@media(max-width: 400px){
+     margin-left:2rem;
+    }
 .rec-links {
     width: 280px;
     margin-right: 1rem;
