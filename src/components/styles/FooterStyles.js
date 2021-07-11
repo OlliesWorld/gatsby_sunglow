@@ -27,6 +27,9 @@ const FooterStyles = styled.ul`
        @media(max-width: 800px){
            padding-left:1rem;
        }
+       :hover {
+           color: black;
+       }
     }
 
     .social-links a {

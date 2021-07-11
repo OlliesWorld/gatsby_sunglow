@@ -22,7 +22,7 @@ const NavStyles = styled.ul`
  
   }
  
-  }
+  
   .cta-btn {
    padding: 0.875rem;
    margin: 1rem;
@@ -42,22 +42,6 @@ const NavStyles = styled.ul`
    color: white;
    overflow: hidden;
 }
-
-  .nav-links a {
-    &:after {
-      
-    }
-    &:hover,
-    &:focus {
-      outline: none;
-      text-decoration:none;
-      &:after {
-        width: calc(100% - 60px);
-      }
-      @media (max-width: 700px) {
-        width: calc(100% - 10px);
-      }
-  }
 
 `;
 

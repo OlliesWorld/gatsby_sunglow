@@ -18,7 +18,9 @@ export default function Footer () {
                             <Link to='/Contact'>Contact</Link>
                         </div>
                         <div className="social-links">
-                          <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/SunGloWF/?fref=ts"><FaFacebookF className="white"/></a>
+                          <a target="_blank" rel="noreferrer" href="https://www.facebook.com/SunGloWF/?fref=ts">
+                              <FaFacebookF className="white"/>
+                              </a>
             
                         </div>
                     </div>
@@ -31,7 +33,7 @@ export default function Footer () {
                         </div>
                         
                     </div>
-                    © {new Date().getFullYear()} Sunglo Window Film, Built by <a href="https://roni.rocks/"  ><span className="roni">🐶Roni</span></a>
+                    © {new Date().getFullYear()} Sunglo Window Film, Built by <a href="https://roni.rocks/"  target="_blank" rel="noreferrer" ><span className="roni">🐶Roni</span></a>
         </FooterStyles>
     )
 }

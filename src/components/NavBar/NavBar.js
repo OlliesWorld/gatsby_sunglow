@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import Styled from "styled-components"
 import NavbarLinks from "./NavBarLinks"
 import { StaticImage } from 'gatsby-plugin-image';
-import {Link} from 'gatsby'
+// import {Link} from 'gatsby'
 import '../styles/GlobalStyles.css'
 
 const Navigation = Styled.nav`
@@ -17,6 +17,7 @@ const Navigation = Styled.nav`
     left: 0;
     right: 0;
     left: 0;
+   
   }
 `
 
@@ -110,7 +111,7 @@ const Navbar = () => {
 
   return (
     <Navigation>
-     <Link to='/'><StaticImage src="../images/eclipse-logo.png" alt="logo" placeholder="blurred" width={200} /></Link>
+     <StaticImage src="../images/SunGlo-logo.png" alt="logo" placeholder="blurred" width={160} />
       <Toggle
         navbarOpen={navbarOpen}
         onClick={() => setNavbarOpen(!navbarOpen)}

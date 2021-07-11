@@ -79,9 +79,9 @@ const CommercialPage = () => (
              <title>Commercial Window Tint in Durango & Surrounding Areas | (970) 335-9600</title>
                 <h2>COMMERCIAL WINDOW TINTING SERVICE <br/>DURANGO & Surrounding Areas</h2>
                 <p> SunGlo Durango is a locally owned and operated commercial window tinting
-installation service. We offer solar control window film, security window film and all types of
-decorative film for glass. Call today to schedule your complementary commercial window tint
-estimate!</p>
+                    installation service. We offer solar control window film, security window film and all types of
+                    decorative film for glass. Call today to schedule your complementary commercial window tint
+                    estimate!</p>
              <Link className="cta-btn" to='/Estimate'><RightArrow/>Start Saving <span>Now</span></Link>
             </CTAStyles>   
         <CommercialStyles>  

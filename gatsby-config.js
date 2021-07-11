@@ -3,9 +3,9 @@ require("dotenv").config({
 })
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Window Tinting in Durango | Locally Owned & Operated | (970) 335-9600`,
+    description: `SunGlo Window Films is Durango's best commercial & home window tinting service.`,
+    author: `Roni`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -32,6 +32,7 @@ module.exports = {
         icon: `src/images/eclipse-icon.png`, // This path is relative to the root of the site.
       },
     },
+   
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-fontawesome-css`,
     

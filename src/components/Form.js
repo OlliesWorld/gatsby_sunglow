@@ -3,10 +3,11 @@ import { navigate } from 'gatsby'
 import styled from "styled-components"
 
 const FormStyles = styled.div `
-  
+ 
   form {
     text-align: center;
-    padding-top: 2rem;
+    padding-top: .5rem;
+   
     input {
       
       height: 50px;
@@ -46,7 +47,7 @@ const ContactForm = () => {
 
     // Post-Submit Navigate
     const postSubmit = () => {
-      navigate('/Thanks')
+      navigate('../Thanks')
     }
   
     // Simple controlled form setup (Control your own state)
@@ -55,17 +56,16 @@ const ContactForm = () => {
       name: '',
       email: '',
       phone: '',
-      date: '',
-      message: ''
+      message: '',
     })
   
     return (
    
         
         <FormStyles>
-            <a className="cta-btn" href="tel:3032795884"><span class="button-inner"><span class="button-icon button-icon-is-left"><span class="icon-uxis-phone" aria-hidden="true"></span></span><span class="button-text-wrap button-icon-is-left"><span class="button-text sub-header-font">CALL OR TEXT: (970) 335-9600</span></span></span></a>
+            <a className="cta-btn" href="tel:3032795884">CALL OR TEXT: (970) 335-9600</a>
         <form className="Form" formname="Contact" formValues={formValues} postSubmit={postSubmit} >
-          {/* <label htmlFor="nameInput" className="Form--Title">Free Estimate Form</label> */}
+         
           <div className='Form--Label'>
            <input placeholder='Name' className='Form--Input' type="text" name="name" value={formValues.name} onChange={handleChange} required />
           </div>

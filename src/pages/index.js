@@ -1,5 +1,5 @@
-
 import React from "react"
+import Seo from "../components/seo"
 
 import Header from '../components/Header'
 import Hero from '../components/Hero'
@@ -9,27 +9,15 @@ import Footer from "../components/Footer"
 
 
 const HomePage = () => {
-  // const data = useStaticQuery(graphql `
-  //   query MyQuery {
-  //         allWpPost {
-  //           nodes {
-  //             id
-  //             title
-  //             uri
-  //             excerpt
-  //           }
-  //         }
-  //       }
-
-  // `)
-  // console.log(data)
-  // const {allWpPost} = data
+ 
   return (
     <main >
-      <title>Window Tinting in Durango | Locally Owned &amp; Operated | (970) 335-9600</title>
+      <Seo title="Window Tinting in Durango | Locally Owned &amp; Operated | (970) 335-9600"/>
+      
       
       <Header />
-      
+     
+       
       <Hero />
       <div className='divider'></div>
         <Tint />
@@ -42,5 +30,4 @@ const HomePage = () => {
     </main>
   );
  };
-
 export default HomePage

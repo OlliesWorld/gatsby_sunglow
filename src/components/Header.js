@@ -22,11 +22,7 @@ h1{
 export default function Header() {
   return (
     <HeaderStyles>
-      
-      {/* <StaticImage src="../images/eclipse-logo.png" alt="logo" placeholder='blurred' /> */}
         <NavBar />
-        
-        <div className='divider'></div>
     </HeaderStyles>
   );
 }
