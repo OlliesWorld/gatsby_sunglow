@@ -34,7 +34,7 @@ h1{
 export default function Header() {
   return (
     <HeaderStyles>
-      <StaticImage src="../../images/SunGlo-logo.png" alt="logo" placeholder="blurred" layout="fixed"  width={200} />
+      <StaticImage src="../images/SunGlo-logo.png" alt="logo" placeholder="blurred" layout="fixed"  width={200} />
         <NavBar />
     </HeaderStyles>
   );

@@ -54,6 +54,7 @@ const ResidentialStyles = styled.div`
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    background-image: url("/images/billie_holiday.png");
     
     @media(max-width:400px){
         flex-direction: column;
