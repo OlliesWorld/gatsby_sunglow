@@ -44,7 +44,7 @@ const HeroStyles = styled.div `
    }
 `
 
-const Hero = ({data}) => {
+const Hero = () => {
     
     return (
         <HeroStyles>
@@ -55,10 +55,10 @@ const Hero = ({data}) => {
             placeholder="blurred"/>
         <div className="wrapper">
             <h2>SunGlo Window Films is Durango&#39;s best commercial &amp; home window tinting
-service.</h2>
+                service.</h2>
             <p>Schedule your FREE home window tinting consultation NOW to Save $50. We are the
-most professional commercial and home window tint service in The Four Corners servicing
-Durango, Farmington, Cortez, Pagosa Springs and surrounding areas!</p>
+                most professional commercial and home window tint service in The Four Corners servicing
+                Durango, Farmington, Cortez, Pagosa Springs and surrounding areas!</p>
             <Link to="/" className="cta-btn">Schedule a free estimate</Link>
         </div>
         </HeroStyles>

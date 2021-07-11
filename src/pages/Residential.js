@@ -11,7 +11,7 @@ import { FaArrowCircleRight } from 'react-icons/fa';
 
 const CTAStyles = styled.div`
     background-color: rgba(0, 0, 0, 0.5);
-    background-image: url('/Residential-Header.jpg');
+    background-image: url('/images/Residential-Header.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no repeat;
@@ -178,9 +178,11 @@ const ResidentialPage = () => (
                     <div className="bullet">
                         <FaCircle className="circle"/> <p>Keep your home cooler by rejecting ~60% of incoming solar heat.</p>
                     </div>
+                    <br/>
                     <div className="bullet">
                         <FaCircle className="circle"/> <p>Save up to 15% of your HVAC energy costs.</p>
                     </div>
+                    <br/>
                     <div className="bullet">
                        <FaCircle className="circle"/> <p>Reduce bothersome glare with privacy window film from SunGlo Window Films.</p>
                     </div>
