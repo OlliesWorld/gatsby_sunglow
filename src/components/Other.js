@@ -51,7 +51,7 @@ const Other = ({data}) => {
                         width={500}
                          placeholder="blurred" />
                     </div>
-                    <div class="heading">
+                    <div className="heading">
                         <h2>Safety & Security</h2>
                     </div>
                 </Link>            
@@ -66,7 +66,7 @@ const Other = ({data}) => {
                         width={500}
                         placeholder="blurred"/>
                         </div>
-                    <div class="heading">
+                    <div className="heading">
                         <h2>Anit-Graffiti</h2>
                     </div>
                 </Link>
