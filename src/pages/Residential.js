@@ -58,7 +58,7 @@ const ResidentialStyles = styled.div`
     @media(max-width:400px){
         flex-direction: column;
         
-        width:90%;
+        width:100%;
     }
    
 .section {
@@ -68,7 +68,8 @@ const ResidentialStyles = styled.div`
     
     
     @media(max-width:800px){
-       width: 80%;
+        flex-direction: column;
+       width: 100%;
        margin:2rem;
    }
    @media(max-width:400px){
@@ -78,6 +79,10 @@ const ResidentialStyles = styled.div`
 } 
 .content-box {
     padding-right: 5rem;
+    @media(max-width:400px){
+       margin-left: 2rem;
+        width:100%;
+    }
 }
 .bullet {
     display: inline-flexbox;
@@ -129,6 +134,8 @@ const ResidentialStyles = styled.div`
     height: 80vh;
     @media(max-width: 800px){
         height: 30vh;
+        margin: 0;
+        width: 100%;
     }
 }
 `
