@@ -29,6 +29,7 @@ const CommercialStyles = styled.div`
     margin-left: 1rem;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     @media(max-width:400px){
         flex-direction: column;
         width:90%;
@@ -50,8 +51,14 @@ const CommercialStyles = styled.div`
     margin-right:.25em;
 }
 .img-box {
-    margin-left: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    img {
+        padding-right: 2rem;
+    }
     @media(max-width: 800px){
+        flex-direction: column;
         margin: 0;
     }
 }
@@ -115,11 +122,18 @@ const CommercialPage = () => (
                 <h3>The best part is these benefits can be had at a fraction of the cost of replacing the existing glass!</h3>
                 <p>f you are looking for quality products and customer service excellence in your Denver commercial window tinting company, you have come to the right place! SunGlo Window Films has been in business in Colorado since 1991. We carry an A+ BBB rating. Customer satisfaction is of the highest importance to us to ensure we will be around for another 20 years.</p>
                 <h3>If you choose SunGlo Window Films for Commercial Window Tinting Services in Denver, you will not be disappointed!</h3>
+                </div>
+                <Sidebar />
             <div className="img-box">
-                <StaticImage src="../images/example1.png" alt="business with window film" placeholder="blurred" width={800} />
+                <StaticImage src="../images/imageconent/commercial 1.jpg" alt="business with window film" placeholder="blurred" width={400} height={400} placeholder="blurred"
+     layout="fixed"/>
+                <StaticImage src="../images/imageconent/commercial 2.jpg" alt="business with window film" placeholder="blurred" width={400} height={400} placeholder="blurred"
+     layout="fixed"/>
+                <StaticImage src="../images/imageconent/commercial 1.jpg" alt="business with window film" placeholder="blurred" width={400} height={400}  placeholder="blurred"
+     layout="fixed" />
             </div>
-            </div>
-            <Sidebar />
+            
+           
         </CommercialStyles>  
 
     </Layout >
