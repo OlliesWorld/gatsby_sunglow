@@ -22,7 +22,7 @@ const CTAStyles = styled.div`
     height: 500px;
     margin-left: 10rem;
     margin-right: auto;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
@@ -41,6 +41,7 @@ const CTAStyles = styled.div`
         background-color: rgba(0, 0, 0, 0.5);
         width: 50%;
         margin-left: 47rem;
+        padding: 1rem;
         @media (max-width: 800px) {
         margin-left:1rem;
         padding: 1rem;
@@ -51,10 +52,11 @@ const CTAStyles = styled.div`
 
 const CommercialStyles = styled.div`
     margin-left: 1rem;
-    margin-right: 8rem;
+    margin-right: 2.2rem;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    
     @media(max-width:400px){
         flex-direction: column;
         
@@ -63,7 +65,10 @@ const CommercialStyles = styled.div`
   
 .content-box {
     margin: 0 auto;
-    max-width: 980px;
+    max-width: 1080px;
+    h2 {
+        font-size:8rem;
+    }
     @media(max-width:800px){
        width: 80%;
        margin:2rem;
@@ -154,7 +159,7 @@ const CommercialPage = () => (
         <CommercialStyles>  
            
             <div className="content-box">
-                <h3>What will Commercial Window Tinting Service do for me?</h3>
+                <h2>What will Commercial Window Tinting Service do for me?</h2>
                 <div className="bullet">
                     <FaCircle className="circle"/>  <p>Eliminate “hot spots” where employees & most importantly customers can become uncomfortable & unproductive.</p>
                 </div>
@@ -164,9 +169,9 @@ const CommercialPage = () => (
                 <div className="bullet">
                     <FaCircle className="circle"/>  <p>Reduce fading on inventory & fixtures by eliminating 99% of harmful UV rays.</p>
                 </div>
-                {/* <div className="bullet">
-                <FaDotCircle className="circle"/>  <p>Achieve greater security with Security Window Film. Security Window Film Denver is a thick, clear window film deters intruders by making entry through windows more difficult & noisier.</p>
-                </div> */}
+                <div className="bullet">
+                <FaCircle className="circle"/>  <p>Achieve greater security with Security Window Film. Security Window Film Denver is a thick, clear window film deters intruders by making entry through windows more difficult & noisier.</p>
+                </div>
                 <div className="bullet">
                 <FaCircle className="circle"/> <p>Reduce bothersome glare with Window Privacy Film Denver.</p>
                 </div>
@@ -184,8 +189,9 @@ const CommercialPage = () => (
                 <h3>The best part is these benefits can be had at a fraction of the cost of replacing the existing glass!</h3>
                 <p>If you are looking for quality products and customer service excellence in your Denver commercial window tinting company, you have come to the right place! SunGlo Window Films has been in business in Colorado since 1991. We carry an A+ BBB rating. Customer satisfaction is of the highest importance to us to ensure we will be around for another 20 years.</p>
                 <h3>If you choose SunGlo Window Films for Commercial Window Tinting Services in Denver, you will not be disappointed!</h3>
-                </div>
+                
                 <Sidebar />
+            </div>
             <div className="img-box">
                 <StaticImage src="../images/imagecontent/commercial 1.jpg" alt="business with window film" placeholder="blurred" width={400} height={400}
      layout="fixed"/>
