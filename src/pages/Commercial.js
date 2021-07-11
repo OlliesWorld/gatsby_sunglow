@@ -4,7 +4,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import '../components/styles/GlobalStyles.css';
 import styled from 'styled-components';
-import {FaArrowCircleRight, FaCircle, FaDotCircle} from 'react-icons/fa';
+import {FaArrowCircleRight, FaCircle} from 'react-icons/fa';
 import { StaticImage } from 'gatsby-plugin-image';
 import Sidebar from '../components/Sidebar';
 
@@ -78,13 +78,18 @@ const CommercialStyles = styled.div`
 } 
 
 .bullet {
-    display: flex;
+    display: inline-flexbox;
+    
 }
 .circle {
-    width: .8em;
+    
+    width: .5em;
     color: var(--clr-orange);
     padding-top:.25em;
     margin-right:.25em;
+    @media (max-width: 800px) {
+        display: none;
+    }
 }
 .img-box {
     display: flex;
@@ -151,29 +156,29 @@ const CommercialPage = () => (
             <div className="content-box">
                 <h3>What will Commercial Window Tinting Service do for me?</h3>
                 <div className="bullet">
-                    <FaDotCircle className="circle"/>  <p>Eliminate “hot spots” where employees & most importantly customers can become uncomfortable & unproductive.</p>
+                    <FaCircle className="circle"/>  <p>Eliminate “hot spots” where employees & most importantly customers can become uncomfortable & unproductive.</p>
                 </div>
                 <div className="bullet">
-                    <FaDotCircle className="circle"/> <p>Increase energy efficiency by reducing load on HVAC systems when selecting tinting service from SunGlo Window Film.</p>
+                    <FaCircle className="circle"/> <p>Increase energy efficiency by reducing load on HVAC systems when selecting tinting service from SunGlo Window Film.</p>
                 </div>
                 <div className="bullet">
-                    <FaDotCircle className="circle"/>  <p>Reduce fading on inventory & fixtures by eliminating 99% of harmful UV rays.</p>
+                    <FaCircle className="circle"/>  <p>Reduce fading on inventory & fixtures by eliminating 99% of harmful UV rays.</p>
                 </div>
                 {/* <div className="bullet">
                 <FaDotCircle className="circle"/>  <p>Achieve greater security with Security Window Film. Security Window Film Denver is a thick, clear window film deters intruders by making entry through windows more difficult & noisier.</p>
                 </div> */}
                 <div className="bullet">
-                <FaDotCircle className="circle"/> <p>Reduce bothersome glare with Window Privacy Film Denver.</p>
+                <FaCircle className="circle"/> <p>Reduce bothersome glare with Window Privacy Film Denver.</p>
                 </div>
                 
                 <div className="bullet">
-                    <FaDotCircle className="circle"/> <p>Retrofit current glass with patterned or frosted Decorative Window Film Denver to achieve view control and dress up conference rooms or store fronts.</p>
+                    <FaCircle className="circle"/> <p>Retrofit current glass with patterned or frosted Decorative Window Film Denver to achieve view control and dress up conference rooms or store fronts.</p>
                 </div>
                <div className="bullet">
-                   <FaDotCircle className="circle"/> <p>Diminish the costly impact of glass graffiti.</p>
+                   <FaCircle className="circle"/> <p>Diminish the costly impact of glass graffiti.</p>
                 </div>
                 <div className="bullet">
-                    <FaDotCircle className="circle"/> <p>Create privacy, keeping onlookers from seeing in with Window Privacy Film Denver.</p>
+                    <FaCircle className="circle"/> <p>Create privacy, keeping onlookers from seeing in with Window Privacy Film Denver.</p>
                 </div>
                
                 <h3>The best part is these benefits can be had at a fraction of the cost of replacing the existing glass!</h3>
