@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import Styled from "styled-components"
 import NavbarLinks from "./NavBarLinks"
-import { StaticImage } from 'gatsby-plugin-image';
+// import { StaticImage } from 'gatsby-plugin-image';
 // import {Link} from 'gatsby'
 import '../styles/GlobalStyles.css'
 
@@ -77,7 +77,7 @@ const Hamburger = Styled.div`
   height: 3px;
   transition: all .3s linear;
   align-self: center;
-  margin-left: 20rem;
+  margin-left: 10rem;
   position: relative;
   transform: ${props => (props.open ? "rotate(-45deg)" : "inherit")};
 
@@ -111,7 +111,7 @@ const Navbar = () => {
 
   return (
     <Navigation>
-     <StaticImage src="../../images/SunGlo-logo.png" alt="logo" placeholder="blurred" layout="fixed"  width={200} />
+     {/* <StaticImage src="../../images/eclipse-logo.png" alt="logo" placeholder="blurred" layout="fixed"  width={160} /> */}
      
       <Toggle
         navbarOpen={navbarOpen}
