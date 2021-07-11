@@ -132,7 +132,7 @@ const ResidentialStyles = styled.div`
 .video-box iframe {
     margin: 0 5rem;
     width: 80%;
-    height: 80vh;
+    /* height: 100%; */
     @media(max-width: 800px){
         height: 30vh;
         margin: 0;

@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { navigate } from 'gatsby'
+// import { navigate } from 'gatsby'
 import styled from "styled-components"
 
 const FormStyles = styled.div `
@@ -46,9 +46,9 @@ const FormStyles = styled.div `
 const ContactForm = () => {
 
     // Post-Submit Navigate
-    const postSubmit = () => {
-      navigate('../Thanks')
-    }
+    // const postSubmit = () => {
+    //   navigate('../Thanks')
+    // }
   
     // Simple controlled form setup (Control your own state)
     const handleChange = e => setFormValues({ ...formValues, [e.target.name]: e.target.value })
@@ -63,8 +63,15 @@ const ContactForm = () => {
    
         
         <FormStyles>
-            <a className="cta-btn" href="tel:3032795884">CALL OR TEXT: (970) 335-9600</a>
-        <form className="Form" formname="Contact" formValues={formValues} postSubmit={postSubmit} >
+            <a className="cta-btn" href="tel:9703359600">CALL OR TEXT: (970) 335-9600</a>
+            <form
+              name="contact-us"
+              method="POST"
+              data-netlify="true"
+              // data-netlify-recaptcha="true"   // new Netlify data attribute regarding recaptcha submissions
+              action="/Thanks/"
+              onSubmit={handleChange}
+            >
          
           <div className='Form--Label'>
            <input placeholder='Name' className='Form--Input' type="text" name="name" value={formValues.name} onChange={handleChange} required />
@@ -98,3 +105,4 @@ const ContactForm = () => {
     )
 }
 export default ContactForm
+
