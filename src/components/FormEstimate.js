@@ -1,13 +1,13 @@
 import React, { useState } from "react"
-import { navigate } from 'gatsby'
+// import { navigate } from 'gatsby'
 
 
 const EstimateForm = () => {
 
     // Post-Submit Navigate
-    const postSubmit = () => {
-      navigate('/Thanks')
-    }
+    // const postSubmit = () => {
+    //   navigate('/Thanks')
+    // }
   
     // Simple controlled form setup (Control your own state)
     const handleChange = e => setFormValues({ ...formValues, [e.target.name]: e.target.value })
@@ -23,7 +23,14 @@ const EstimateForm = () => {
    
         
         <>
-        <form className="Form" formname="Estimate" formValues={formValues} postSubmit={postSubmit} >
+       <form
+              name="estimate"
+              Content-Type="POST"
+              data-netlify="true"
+              // data-netlify-recaptcha="true"   // new Netlify data attribute regarding recaptcha submissions
+              action="/Thanks/"
+              onSubmit={handleChange}
+            >
           <label htmlFor="nameInput" className="Form--Title">Free Estimate Form</label>
           <div className='Form--Label'>
            <input placeholder='Name' className='Form--Input' type="text" name="name" value={formValues.name} onChange={handleChange} required />

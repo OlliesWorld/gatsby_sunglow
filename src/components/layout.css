@@ -599,3 +599,8 @@ pre tt:after {
   border-top: 10px solid rgb(255, 103, 0);
   margin: 1rem 0;
 }
+.phone {
+  border: solid rgb(255, 103, 0) 2px;
+  padding: .3rem;
+  color: black
+}

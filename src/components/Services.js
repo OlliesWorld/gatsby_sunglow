@@ -2,9 +2,11 @@ import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import {Link} from 'gatsby'
 import styled from 'styled-components';
+import Seo from "../components/seo"
 
 const ServiceStyles = styled.div `
    text-align: center;
+   background-image: url("/images/squared_metal.png");
    p {
        font-size: 14px;
    }
@@ -64,6 +66,7 @@ const Services = ({data}) => {
     
     return (
         <ServiceStyles>
+            <Seo title="Commercial Window Tint in Durango & Surrounding Areas | (970) 335-9600"/>
         <h2>Industry Leading Services & Products</h2>
         <h4> We offer high quality, American Made films with the best clarity, scratch resistance, and outstanding performance. </h4>
         <div className="service-wrapper">

@@ -1,5 +1,5 @@
 import React from "react"
-
+import Seo from "../components/seo"
 import Layout from '../components/layout'
 import styled from 'styled-components';
 import ContactForm from "../components/Form";
@@ -49,7 +49,7 @@ const ContactPage = () => {
   
   return (
     <Layout>
-      <title>Contact Us | SunGlo Durango | (970) 335-9600</title>
+      <Seo title="Window Tinting in Durango | Locally Owned &amp; Operated | (970) 335-9600"/>
       <ContactStyles>
       
         <ContactForm />
