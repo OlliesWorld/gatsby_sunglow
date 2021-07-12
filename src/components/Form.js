@@ -3,10 +3,14 @@ import React, { useState } from "react"
 import styled from "styled-components"
 
 const FormStyles = styled.div `
- 
+ @media (max-width: 400px) {
+      width: 90%;
+      margin: 0 auro;
+    }
   form {
     text-align: center;
     padding-top: .5rem;
+    
    
     input {
       
@@ -14,11 +18,23 @@ const FormStyles = styled.div `
       width: 25rem;
       margin: 1rem;
       border:  1px solid rgb(255, 103, 0);
+      @media (max-width: 400px) {
+      width: 90%;
+      margin: .5rem 0;
+     
+    }
     }
     textarea {
       width: 25rem;
       border:  1px solid rgb(255, 103, 0);
+      @media (max-width: 400px) {
+      width: 90%;
+      margin: 0;
     }
+    }
+  }
+  .cta-btn {
+    margin-left: 4rem;
   }
   .Form--Title {
    text-transform: uppercase;
