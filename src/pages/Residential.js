@@ -47,18 +47,20 @@ const CTAStyles = styled.div`
     }
 }
 `
-
+const BackgroundStyles = styled.div`
+    background-image: url("/images/billie_holiday.png");
+    padding-bottom: 1rem;
+`
 const ResidentialStyles = styled.div`
     margin-left: 1rem;
     margin-right: 2.2rem;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    background-image: url("/images/billie_holiday.png");
     
     @media(max-width:400px){
         flex-direction: column;
-        
+        margin: 0 1rem;
         width:100%;
     }
    
@@ -130,13 +132,13 @@ const ResidentialStyles = styled.div`
    
 }
 .video-box iframe {
-    margin: 0 5rem;
+    
     width: 80%;
-    /* height: 100%; */
+    height: 95vh;
     @media(max-width: 800px){
-        height: 30vh;
-        margin: 0;
-        width: 100%;
+        height: 50vh;
+      
+        width: 90%;
     }
 }
 `
@@ -167,7 +169,9 @@ const ResidentialPage = () => (
                     </p>
                     <Link className="cta-btn" to='/Estimate'><RightArrow />Schedule a Free Quote</Link>
                 </div>
-            </CTAStyles>   
+            </CTAStyles>  
+            <div className='divider'></div>
+            <BackgroundStyles>
             <ResidentialStyles>  
            
                 <div className="section">
@@ -208,19 +212,19 @@ const ResidentialPage = () => (
                     <Sidebar />
                 </div>
             <div className="img-box">
-                <StaticImage src="../images/imagecontent/Residential 2.jpg" alt="business with window film" placeholder="blurred" width={400} height={400} layout="fixed"/>
-                <StaticImage src="../images/imagecontent/Residential 3.jpg" alt="business with window film" placeholder="blurred" width={400} height={400} layout="fixed"/>
-                <StaticImage src="../images/imagecontent/Residential 4.jpg" alt="business with window film" placeholder="blurred" width={400} height={400} layout="fixed"/>
+                <StaticImage src="../images/imagecontent/Residential 2.jpg" alt="Man on tall scaffolding installing Sunglo's Window Film" placeholder="blurred" width={400} height={400} layout="fixed"/>
+                <StaticImage src="../images/imagecontent/Residential 3.jpg" alt="Window looking outside displays Sunglo's Window Film" placeholder="blurred" width={400} height={400} layout="fixed"/>
+                <StaticImage src="../images/imagecontent/Residential 4.jpg" alt="Man on scaffolding installing Sunglo's Window Film " placeholder="blurred" width={400} height={400} layout="fixed"/>
             </div>
             
             <div className="video-box">
                 <h2 class="intro-video">Check Out This Time Lapse Video Of Us Tinting High Up Residential Windows</h2>
-                <iframe  src="https://www.youtube.com/embed/vmYe3HIM2Yw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe  src="https://www.youtube.com/embed/vmYe3HIM2Yw" title="Residential Sunglo's Window Film Install" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
   
   
         </ResidentialStyles>  
-
+        </BackgroundStyles> 
     </Layout >
 );
 

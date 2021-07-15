@@ -74,7 +74,7 @@ const Services = ({data}) => {
                 <Link to="/">
                     <div className="service-img">
                         <StaticImage src="../images/about-pic.jpg"
-                        alt="installation from below" layout="fixed"
+                        alt="2 men installing Sunglo's Window Film" layout="fixed"
                          placeholder="blurred" />
                     </div>
                     <h3>About Us</h3>
@@ -86,7 +86,7 @@ const Services = ({data}) => {
             <div className="service-box">
                 <div className="service-img">
                     <StaticImage src="../images/building-img.jpg"
-                        alt="installation from below" layout="fixed"
+                        alt="Outside an office building displaying Sunglo's mirrored window film" layout="fixed"
                         placeholder="blurred"/>
                         </div>
                 <h3>Commercial Window Tint Service</h3>
@@ -96,8 +96,8 @@ const Services = ({data}) => {
             </div>
             <div className="service-box">
                 <div className="service-img">
-                    <StaticImage src="../images/about-pic.jpg"
-                        alt="installation from below" layout="fixed"
+                    <StaticImage src="../images/imagecontent/Residential 3.jpg"
+                        alt="Looking out windows wall" width={365} height={192} layout="constrained"
                         placeholder="blurred"/>
                         </div>
                 <h3>Residential Window Tint Service</h3>

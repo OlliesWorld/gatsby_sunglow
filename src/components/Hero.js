@@ -49,7 +49,7 @@ const Hero = () => {
     return (
         <HeroStyles>
         <StaticImage src="../images/sunglo_hero.jpg" 
-            alt="mountain snow" layout="constrained"
+            alt="Office Looking out the window displaying Sunglo's window film" layout="constrained"
             fit="contain"
             width={1820} height={450}
             placeholder="blurred"/>

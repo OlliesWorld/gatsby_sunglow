@@ -103,7 +103,7 @@ const AboutPage = () => (
                 <li>Security</li>
                 <li>View Control</li>
                 <li>Ambiance</li>
-                <StaticImage src="../images/hallway.jpg" alt="hallway"layout="constrained"
+                <StaticImage src="../images/hallway.jpg" alt="hallway with large windows at the end with Sunglo Window Film"layout="constrained"
                 fit="contain" width={258} height={300}
                 placeholder="blurred"/>
             

@@ -91,7 +91,7 @@ const Tint = ({data}) => {
            </div>
            
            <StaticImage src="https://dta0yqvfnusiq.cloudfront.net/sunglowf/2015/03/sunglo_sitebg2.jpg"
-               alt="mountain snow" layout="fixed"
+               alt="Zoomed in on door handle and hand opening Door with Sunglo Window Film" layout="fixed"
                 height={400}
                 placeholder="blurred"/>
        </div>

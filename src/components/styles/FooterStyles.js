@@ -16,7 +16,7 @@ const FooterStyles = styled.ul`
         display: flex;
         padding: 1rem;
         margin-bottom: 2rem;
-        margin-top: 2rem;
+        margin-top: 0;
    
        @media (max-width: 400px) {
         flex-direction: column;

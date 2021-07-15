@@ -111,7 +111,7 @@ const Navbar = () => {
 
   return (
     <Navigation>
-     {/* <StaticImage src="../../images/eclipse-logo.png" alt="logo" placeholder="blurred" layout="fixed"  width={160} /> */}
+     
      
       <Toggle
         navbarOpen={navbarOpen}

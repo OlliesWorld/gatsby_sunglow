@@ -33,7 +33,7 @@ section,
 summary {
   display: block;
 } */
-audio,
+/* audio,
 canvas,
 progress,
 video {
@@ -42,7 +42,7 @@ video {
 audio:not([controls]) {
   display: none;
   height: 0;
-}
+} */
 progress {
   vertical-align: baseline;
 }
@@ -53,6 +53,9 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  @media (max-width: 800px) {
+    font-size: .5rem;
+  }
 }
 a:active,
 a:hover {

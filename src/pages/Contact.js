@@ -23,11 +23,12 @@ const SideBarStyles = styled.div`
     width: 350px;
   }
   @media (max-width: 800px){
+    flex-direction: column;
     width: 80%;
     margin-left: 2rem;
   }
   @media (max-width: 400px){
-    flex-direction: column;
+    
     margin-left: 1rem;
     p {
       width: 80%;

@@ -203,8 +203,8 @@ const CommercialPage = () => (
                 <Sidebar />
             </div>
             <div className="img-box">
-                <StaticImage src="../images/imagecontent/commercial 1.jpg" alt="business with window film" placeholder="blurred" width={400} height={400} layout="fixed"/>
-                <StaticImage src="../images/imagecontent/commercial 2.jpg" alt="business with window film" placeholder="blurred" width={400} height={400} 
+                <StaticImage src="../images/imagecontent/commercial 1.jpg" alt="Office Cubicle with Sunglo's Decorative Window Film" placeholder="blurred" width={400} height={400} layout="fixed"/>
+                <StaticImage src="../images/imagecontent/commercial 2.jpg" alt="Man installing Sunglo's Window Film" placeholder="blurred" width={400} height={400} 
      layout="fixed"/>
                 <StaticImage src="../images/imagecontent/Commercial-Header.jpg" alt="business with window film" placeholder="blurred" width={400} height={400}  
      layout="fixed" />

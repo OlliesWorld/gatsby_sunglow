@@ -35,7 +35,7 @@ export default function NavBarLinks () {
                         <NavItem to='/Residential'>Residential</NavItem>
                         <NavItem to='/About'>About</NavItem>
                         <NavItem to='/Contact'>Contact</NavItem>
-                        <a className="phone" href="tel:3032795884"  ><span className="phone-btn">CALL OR TEXT: <br/>(970) 335-9600</span></a>
+                        <a className="phone" href="tel:3032795884"  >CALL OR TEXT: <br/>(970) 335-9600</a>
                         
                         <Link className="cta-btn" to='/Estimate'>Free Estimate</Link>
            

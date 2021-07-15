@@ -5,7 +5,7 @@ import styled from "styled-components"
 const FormStyles = styled.div `
  @media (max-width: 400px) {
       width: 90%;
-      margin: 0 auro;
+      margin: 0 auto;
     }
   form {
     text-align: center;
