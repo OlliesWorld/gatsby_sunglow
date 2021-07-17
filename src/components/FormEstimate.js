@@ -27,6 +27,7 @@ const EstimateForm = () => {
               name="estimate"
               Content-Type="POST"
               data-netlify="true"
+              netlify-honeypot="bot-field"
               // data-netlify-recaptcha="true"   // new Netlify data attribute regarding recaptcha submissions
               action="/Thanks/"
               onSubmit={handleChange}
