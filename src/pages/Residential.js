@@ -48,7 +48,7 @@ const CTAStyles = styled.div`
 }
 `
 const BackgroundStyles = styled.div`
-    background-image: url("/images/billie_holiday.png");
+    background-image: url("/images/nice_snow.png");
     padding-bottom: 1rem;
 `
 const ResidentialStyles = styled.div`

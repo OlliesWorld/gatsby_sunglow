@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import {FaArrowCircleRight} from 'react-icons/fa';
 import { StaticImage } from 'gatsby-plugin-image';
 import Sidebar from '../components/Sidebar';
+import Seo from '../components/seo';
 
 
 const CTAStyles = styled.div`
@@ -26,8 +27,9 @@ const CTAStyles = styled.div`
 `
 
 const AboutStyles = styled.div`
+background-image: url("/images/nice_snow.png");
     margin-left: 1rem;
-    padding: 0;
+    padding-top: 1rem;
     display: flex;
     @media(max-width:400px){
         flex-direction: column;
@@ -74,10 +76,9 @@ const RightArrow = styled(FaArrowCircleRight)`
   `
 
 const AboutPage = () => (
-    <Layout >   
-         <CTAStyles>
-             <title>About Us | Durango’s Best Commercial & Home Window Tinting Company | (970)335-9600</title>
-                {/* <h2>COMMERCIAL WINDOW TINTING SERVICE <br/>DURANGO & Surrounding Areas</h2> */}
+    <Layout >
+        <Seo title="About Us | Durango’s Best Commercial &amp; Home Window Tinting Company"/>     
+         <CTAStyles>  
                 <p>We are Durango’s most professional residential and commercial window film installation company. SunGlo Durango is here to help with you window tinting needs across the Four Corner’s Area servicing Durango, Farmington, Cortez, Pagosa Springs and surrounding areas. Call now to schedule a FREE window tint estimate!
 </p>
              <Link className="cta-btn" to='/Estimate'><RightArrow/>Start Saving <span>Now</span></Link>

@@ -18,8 +18,9 @@ export default function Footer () {
                             <Link to='/Contact'>Contact</Link>
                         </div>
                         <div className="social-links">
-                          <a target="_blank" rel="noreferrer" href="https://www.facebook.com/SunGloWF/?fref=ts">
+                          <a target="_blank" rel="noreferrer" href="https://www.facebook.com/SunGloWF/?fref=ts" aria-labelledby="button-label">
                               <FaFacebookF className="white"/>
+                                <span id="button-label" hidden>Facebook</span>
                               </a>
             
                         </div>

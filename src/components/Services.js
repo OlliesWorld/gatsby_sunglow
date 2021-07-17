@@ -6,7 +6,8 @@ import Seo from "../components/seo"
 
 const ServiceStyles = styled.div `
    text-align: center;
-   background-image: url("/images/squared_metal.png");
+   background-image: url("/images/cork_1.png");
+   padding: 2rem 0;
    p {
        font-size: 14px;
    }
@@ -68,7 +69,7 @@ const Services = ({data}) => {
         <ServiceStyles>
             <Seo title="Commercial Window Tint in Durango & Surrounding Areas | (970) 335-9600"/>
         <h2>Industry Leading Services & Products</h2>
-        <h4> We offer high quality, American Made films with the best clarity, scratch resistance, and outstanding performance. </h4>
+        <h3> We offer high quality, American Made films with the best clarity, scratch resistance, and outstanding performance. </h3>
         <div className="service-wrapper">
             <div className="service-box">
                 <Link to="/">
@@ -97,7 +98,7 @@ const Services = ({data}) => {
             <div className="service-box">
                 <div className="service-img">
                     <StaticImage src="../images/imagecontent/Residential 3.jpg"
-                        alt="Looking out windows wall" width={365} height={192} layout="constrained"
+                        alt="Looking out windows wall" width={365} height={189} layout="fixed"
                         placeholder="blurred"/>
                         </div>
                 <h3>Residential Window Tint Service</h3>
