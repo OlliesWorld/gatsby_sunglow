@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-// import { navigate } from 'gatsby'
 import styled from "styled-components"
 
 const FormStyles = styled.div `
@@ -60,11 +59,6 @@ const FormStyles = styled.div `
   }
 `
 const ContactForm = () => {
-
-    // Post-Submit Navigate
-    // const postSubmit = () => {
-    //   navigate('../Thanks')
-    // }
   
     // Simple controlled form setup (Control your own state)
     const handleChange = e => setFormValues({ ...formValues, [e.target.name]: e.target.value })
@@ -72,11 +66,10 @@ const ContactForm = () => {
       name: '',
       email: '',
       phone: '',
-      message: '',
+      message: ''
     })
   
     return (
-   
         
         <FormStyles>
             <a className="cta-btn" href="tel:9703359600">CALL OR TEXT: (970) 335-9600</a>
@@ -114,7 +107,7 @@ const ContactForm = () => {
           <div>
             <button className='Button Form--SubmitButton'
                   type='submit'
-                  value='Contact' >Contact Us</button>
+                   >Contact Us</button>
           </div>
         </form>
   

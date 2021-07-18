@@ -3,18 +3,22 @@ import React from 'react';
 import Layout from '../components/layout';
 import '../components/styles/GlobalStyles.css';
 import styled from 'styled-components';
-import {FaArrowCircleRight} from 'react-icons/fa';
+import { FaArrowCircleRight, FaCircle } from 'react-icons/fa';
 import { StaticImage } from 'gatsby-plugin-image';
 import Sidebar from '../components/Sidebar';
 import Seo from '../components/seo';
 
 
 const CTAStyles = styled.div`
+    background-image: url("/images/Residential 5.jpg");
+    background-position: center center;
+    background-size: cover;
     background-color: rgba(0, 0, 0, 0.5);
     padding-bottom: 35px;
     padding-top: 35px;
     color: white;
     max-width: 1140px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3rem;
@@ -27,19 +31,27 @@ const CTAStyles = styled.div`
 `
 
 const AboutStyles = styled.div`
-background-image: url("/images/nice_snow.png");
-    margin-left: 1rem;
+    background-image: url("/images/nice_snow.png");
     padding-top: 1rem;
     display: flex;
+   
     @media(max-width:400px){
         flex-direction: column;
-        width:90%;
+       
     }
    
 .content-box {
     margin: 0 auto;
-    max-width: 980px;
-   
+    /* max-width: 980px; */
+   @media (max-width: 800px) {
+       margin-left: 2rem;
+       width: 100%;
+   }
+   @media(max-width:400px){
+        width: 90%;
+        margin-left: 1rem;
+       
+    }
 } 
 
 .bullet {
@@ -52,10 +64,23 @@ background-image: url("/images/nice_snow.png");
     margin-right:.25em;
 }
 .img-box {
-    margin-left: 2rem;
+    margin-left: 3rem;
+    
     @media(max-width: 800px){
         margin: 0;
     }
+    @media(max-width:400px){
+        margin-left: 4rem;
+        padding-bottom: .5rem;
+       
+    }
+}
+.img-box img {
+    padding-right: 2rem;
+}
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 `
@@ -82,7 +107,8 @@ const AboutPage = () => (
                 <p>We are Durango’s most professional residential and commercial window film installation company. SunGlo Durango is here to help with you window tinting needs across the Four Corner’s Area servicing Durango, Farmington, Cortez, Pagosa Springs and surrounding areas. Call now to schedule a FREE window tint estimate!
 </p>
              <Link className="cta-btn" to='/Estimate'><RightArrow/>Start Saving <span>Now</span></Link>
-            </CTAStyles>   
+            </CTAStyles>  
+            <div className='divider'></div> 
         <AboutStyles>  
            
             <div className="content-box">
@@ -97,18 +123,41 @@ const AboutPage = () => (
           
                 <h3>A Problem Solver</h3>
                 <p>It is our priority to provide our residential and commercial customers with high value solutions for their window problems. SunGlo retrofits your windows to provide:</p>
-                <li>Solar Control</li>
-                <li>Energy </li>
-                <li>UV Protection</li>
-                <li>Glare Prevention</li>
-                <li>Security</li>
-                <li>View Control</li>
-                <li>Ambiance</li>
-                <StaticImage src="../images/hallway.jpg" alt="hallway with large windows at the end with Sunglo Window Film"layout="constrained"
-                fit="contain" width={258} height={300}
-                placeholder="blurred"/>
-            
-            <p>We provide high quality window films that have the best clarity and scratch resistance. These films are long-term solutions to your window problem at an affordable cost. SunGlo offers window film installation services in Denver, Fort Collins, Boulder, Colorado Springs, Durango and all surrounding areas. All films furnished by SunGlo carry a substantial manufacture warranty.</p>
+                    <div class="list">
+                        <div className="bullet">
+                            <FaCircle className="circle"/><p>Solar Control</p>
+                        </div>
+                        <div className="bullet">
+                            <FaCircle className="circle"/><p>Energy </p>
+                        </div>
+                        <div className="bullet">
+                            <FaCircle className="circle"/><p>UV Protection</p>
+                        </div>
+                        <div className="bullet">
+                            <FaCircle className="circle"/><p>Glare Prevention</p>
+                        </div>
+                        <div className="bullet">
+                            <FaCircle className="circle"/><p>Security</p>
+                        </div>
+                        <div className="bullet">
+                            <FaCircle className="circle"/><p>View Control</p>
+                        </div>
+                        <div className="bullet">
+                            <FaCircle className="circle"/><p>Ambiance</p>
+                        </div>
+                    </div>
+                    <p>We provide high quality window films that have the best clarity and scratch resistance. These films are long-term solutions to your window problem at an affordable cost. SunGlo offers window film installation services in Denver, Fort Collins, Boulder, Colorado Springs, Durango and all surrounding areas. All films furnished by SunGlo carry a substantial manufacture warranty.</p>
+                        <div class="img-box">
+                            <StaticImage src="../images/hallway.jpg" alt="hallway with large windows at the end with Sunglo Window Film"layout="constrained"
+                            fit="contain" width={258} height={300}
+                            placeholder="blurred"/>
+                            <StaticImage src="../images/imagecontent/Residential 6.jpg" alt="hallway with large windows at the end with Sunglo Window Film"layout="constrained"
+                            fit="contain" width={258} height={300}
+                            placeholder="blurred"/>
+                            <StaticImage src="../images/imagecontent/Commercial 2.jpg" alt="hallway with large windows at the end with Sunglo Window Film"layout="constrained"
+                            fit="contain" width={258} height={300}
+                            placeholder="blurred"/>
+                        </div>        
                 
            
                 </div>

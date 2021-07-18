@@ -4,10 +4,10 @@ import Seo from "../components/seo"
 import Layout from '../components/layout';
 import '../components/styles/GlobalStyles.css';
 import styled from 'styled-components';
-import {FaCircle} from 'react-icons/fa';
+
 import { StaticImage } from 'gatsby-plugin-image';
 import Sidebar from '../components/Sidebar';
-import { FaArrowCircleRight } from 'react-icons/fa';
+import { FaArrowCircleRight, FaCircle } from 'react-icons/fa';
 
 const CTAStyles = styled.div`
     background-color: rgba(0, 0, 0, 0.5);

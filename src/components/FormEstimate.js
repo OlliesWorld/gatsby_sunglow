@@ -4,10 +4,6 @@ import React, { useState } from "react"
 
 const EstimateForm = () => {
 
-    // Post-Submit Navigate
-    // const postSubmit = () => {
-    //   navigate('/Thanks')
-    // }
   
     // Simple controlled form setup (Control your own state)
     const handleChange = e => setFormValues({ ...formValues, [e.target.name]: e.target.value })
@@ -60,7 +56,7 @@ const EstimateForm = () => {
           <div>
             <button className='Button Form--SubmitButton'
                   type='submit'
-                  value='Contact' >Send</button>
+                   >Send</button>
           </div>
         </form>
   
