@@ -1,11 +1,36 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import {Link} from 'gatsby'
-import styled from 'styled-components';
+import styled from 'styled-components'
+
+const Tint = () => {
+    
+    return (
+        <TintStyles>
+       <div className="wrapper">
+           
+           <div className="content">
+               <h2>WINDOW TINTING SERVICES</h2>
+               <p>Window tinting is PERFECT for Colorado homes & businesses. It allows you to enjoy the view & natural light of our 300+ days of sunshine through your windows while keeping out the negative effects of solar radiation. Reduce heat & glare, conserve energy and stop fading with commercial & home window tinting.</p>
+           
+           
+           
+           </div>
+           
+           <StaticImage src="https://dta0yqvfnusiq.cloudfront.net/sunglowf/2015/03/sunglo_sitebg2.jpg"
+               alt="Zoomed in on door handle and hand opening Door with Sunglo Window Film" layout="fixed"
+                height={400}
+                placeholder="blurred"/>
+       </div>
+            <button className="btn-service commercial"><Link to="/Commercial">Commercial Window Tint</Link></button>
+            <button className="btn-service residential"><Link to="/Residential">Residential Window Tint</Link></button>
+            <button className="btn-service quote"><Link to="/Estimate">Get Your Free Quote</Link></button>
+        </TintStyles>
+    )
+}
+export default Tint
 
 const TintStyles = styled.div `
-   
-    
     .wrapper {
         width: 100%;
         display: flex;
@@ -75,30 +100,3 @@ const TintStyles = styled.div `
        }
    }
 `
-
-const Tint = ({data}) => {
-    
-    return (
-        <TintStyles>
-       <div className="wrapper">
-           
-           <div className="content">
-               <h2>WINDOW TINTING SERVICES</h2>
-               <p>Window tinting is PERFECT for Colorado homes & businesses. It allows you to enjoy the view & natural light of our 300+ days of sunshine through your windows while keeping out the negative effects of solar radiation. Reduce heat & glare, conserve energy and stop fading with commercial & home window tinting.</p>
-           
-           
-           
-           </div>
-           
-           <StaticImage src="https://dta0yqvfnusiq.cloudfront.net/sunglowf/2015/03/sunglo_sitebg2.jpg"
-               alt="Zoomed in on door handle and hand opening Door with Sunglo Window Film" layout="fixed"
-                height={400}
-                placeholder="blurred"/>
-       </div>
-            <button className="btn-service commercial"><Link to="/Commercial">Commercial Window Tint</Link></button>
-            <button className="btn-service residential"><Link to="/Residential">Residential Window Tint</Link></button>
-            <button className="btn-service quote"><Link to="/Estimate">Get Your Free Quote</Link></button>
-        </TintStyles>
-    )
-}
-export default Tint

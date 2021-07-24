@@ -9,6 +9,82 @@ import { StaticImage } from 'gatsby-plugin-image';
 import Sidebar from '../components/Sidebar';
 import { FaArrowCircleRight, FaCircle } from 'react-icons/fa';
 
+
+const ResidentialPage = () => (
+    <Layout > 
+        <Seo title="Residential Window Tinting for Durango & Surrounding Areas | (970) 335-9600"/>  
+            <CTAStyles>
+                <div className="cta-content">
+                    
+                        <h2>Exceptional Home Window Tinting Services <br/>Durango & Surrounding Areas</h2>
+                        <p>SunGlo Durango is a professional residential window tint installation company. We pride ourselves on high value, lifetime warrantied window film packaged with the best tint installation services in the Four Corners Area. Schedule you free residential window film consultation now!
+                    </p>
+                    <Link className="cta-btn" to='/Estimate'><RightArrow />Schedule a Free Quote</Link>
+                </div>
+            </CTAStyles>  
+            <div className='divider'></div>
+            <BackgroundStyles>
+            <ResidentialStyles>  
+           
+                <div className="section">
+                <div className="content-box">
+                    <h2>What will Residential Window Tinting Service do for me?</h2>
+                    <div className="bullet">
+                       <FaCircle className="circle"/> <p>Keep out uncomfortable & harmful solar energy while still enjoying the natural light and views of your windows!</p>
+                    </div>
+                    <div className="bullet">
+                        <FaCircle className="circle"/> <p>Keep your home cooler by rejecting ~60% of incoming solar heat.</p>
+                    </div>
+                    <br/>
+                    <div className="bullet">
+                        <FaCircle className="circle"/> <p>Save up to 15% of your HVAC energy costs.</p>
+                    </div>
+                    <br/>
+                    <div className="bullet">
+                       <FaCircle className="circle"/> <p>Reduce bothersome glare with privacy window film from SunGlo Window Films.</p>
+                    </div>
+                    <div className="bullet">
+                        <FaCircle className="circle"/> <p>Protect your floors, wall hangings & fixtures from fading and sun damage.</p>
+                    </div>
+                    <div className="bullet">
+                        <FaCircle className="circle"/> <p>Shade your family while inside your home from the skin damage that can result from UV ray exposure.</p>
+                    </div>
+                    <div className="bullet">
+                       <FaCircle className="circle"/> <p>Improve the quality of your CURRENT windows at an affordable cost!</p>
+                    </div>
+                    <div className="bullet">
+                        <FaCircle className="circle"/> <p>Create privacy where it is needed with privacy window film in Denver.</p>
+                    </div>
+                        <h3>Not only will you enjoy energy savings, diminished glare, reduced fading, privacy and better window insulation, but your home will have greater temperature comfort with home window tinting in Denver!</h3>
+                        <h3>SunGlo Window Films is Denver, Colorado’s BEST Home Window Tinting Denver Service</h3>
+                        <p>We pride ourselves on high quality home window tint products & elite customer service. Your SunGlo Window Tint Film Denver Expert will exceed your expectations at every turn! Plus, nearly all of our home window tinting Denver products carry a Lifetime Warranty.</p>
+                        <p>Take the time to have a FREE home window tinting Denver estimate done on your home! During the estimate you will learn how film can benefit specific areas of your home, see actual film samples, and discover exactly what retrofitting your windows will cost.</p>
+                        <h2>We are eager to meet your residential window tinting service needs in Denver!</h2>
+                </div>
+                    <Sidebar />
+                </div>
+            <div className="img-box">
+                <StaticImage src="../images/residential/Residential_2.jpg" alt="Man on tall scaffolding installing Sunglo's Window Film" placeholder="blurred" width={500} height={400} layout="fixed"/>
+                <StaticImage src="../images/residential/Residential_3.jpg" alt="Window looking outside displays Sunglo's Window Film" placeholder="blurred" width={500} height={400} layout="fixed"/>
+                <StaticImage src="../images/residential/Residential_8.jpeg" alt="Man on scaffolding installing Sunglo's Window Film " placeholder="blurred" width={500} height={400} layout="fixed"/>
+                <StaticImage src="../images/residential/Residential_4.jpg" alt="Man on tall scaffolding installing Sunglo's Window Film" placeholder="blurred" width={500} height={500} layout="fixed"/>
+                <StaticImage src="../images/residential/Residential_6.jpeg" alt="Window looking outside displays Sunglo's Window Film" placeholder="blurred" width={500} height={500} layout="fixed"/>
+                <StaticImage src="../images/residential/Residential_7.jpeg" alt="Man on scaffolding installing Sunglo's Window Film " placeholder="blurred" width={500} height={500} layout="fixed"/>
+            </div>
+            
+            <div className="video-box">
+                <h2 class="intro-video">Check Out This Time Lapse Video Of Us Tinting High Up Residential Windows</h2>
+                <iframe  src="https://www.youtube.com/embed/vmYe3HIM2Yw" title="Residential Sunglo's Window Film Install" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+  
+  
+        </ResidentialStyles>  
+        </BackgroundStyles> 
+    </Layout >
+);
+
+export default ResidentialPage
+
 const CTAStyles = styled.div`
     background-color: rgba(0, 0, 0, 0.5);
     background-image: url('/images/Residential_Header.jpg');
@@ -156,78 +232,3 @@ const RightArrow = styled(FaArrowCircleRight)`
   }
 }
   `
-
-const ResidentialPage = () => (
-    <Layout > 
-        <Seo title="Residential Window Tinting for Durango & Surrounding Areas | (970) 335-9600"/>  
-            <CTAStyles>
-                <div className="cta-content">
-                    
-                        <h2>Exceptional Home Window Tinting Services <br/>Durango & Surrounding Areas</h2>
-                        <p>SunGlo Durango is a professional residential window tint installation company. We pride ourselves on high value, lifetime warrantied window film packaged with the best tint installation services in the Four Corners Area. Schedule you free residential window film consultation now!
-                    </p>
-                    <Link className="cta-btn" to='/Estimate'><RightArrow />Schedule a Free Quote</Link>
-                </div>
-            </CTAStyles>  
-            <div className='divider'></div>
-            <BackgroundStyles>
-            <ResidentialStyles>  
-           
-                <div className="section">
-                <div className="content-box">
-                    <h2>What will Residential Window Tinting Service do for me?</h2>
-                    <div className="bullet">
-                       <FaCircle className="circle"/> <p>Keep out uncomfortable & harmful solar energy while still enjoying the natural light and views of your windows!</p>
-                    </div>
-                    <div className="bullet">
-                        <FaCircle className="circle"/> <p>Keep your home cooler by rejecting ~60% of incoming solar heat.</p>
-                    </div>
-                    <br/>
-                    <div className="bullet">
-                        <FaCircle className="circle"/> <p>Save up to 15% of your HVAC energy costs.</p>
-                    </div>
-                    <br/>
-                    <div className="bullet">
-                       <FaCircle className="circle"/> <p>Reduce bothersome glare with privacy window film from SunGlo Window Films.</p>
-                    </div>
-                    <div className="bullet">
-                        <FaCircle className="circle"/> <p>Protect your floors, wall hangings & fixtures from fading and sun damage.</p>
-                    </div>
-                    <div className="bullet">
-                        <FaCircle className="circle"/> <p>Shade your family while inside your home from the skin damage that can result from UV ray exposure.</p>
-                    </div>
-                    <div className="bullet">
-                       <FaCircle className="circle"/> <p>Improve the quality of your CURRENT windows at an affordable cost!</p>
-                    </div>
-                    <div className="bullet">
-                        <FaCircle className="circle"/> <p>Create privacy where it is needed with privacy window film in Denver.</p>
-                    </div>
-                        <h3>Not only will you enjoy energy savings, diminished glare, reduced fading, privacy and better window insulation, but your home will have greater temperature comfort with home window tinting in Denver!</h3>
-                        <h3>SunGlo Window Films is Denver, Colorado’s BEST Home Window Tinting Denver Service</h3>
-                        <p>We pride ourselves on high quality home window tint products & elite customer service. Your SunGlo Window Tint Film Denver Expert will exceed your expectations at every turn! Plus, nearly all of our home window tinting Denver products carry a Lifetime Warranty.</p>
-                        <p>Take the time to have a FREE home window tinting Denver estimate done on your home! During the estimate you will learn how film can benefit specific areas of your home, see actual film samples, and discover exactly what retrofitting your windows will cost.</p>
-                        <h2>We are eager to meet your residential window tinting service needs in Denver!</h2>
-                </div>
-                    <Sidebar />
-                </div>
-            <div className="img-box">
-                <StaticImage src="../images/residential/Residential_2.jpg" alt="Man on tall scaffolding installing Sunglo's Window Film" placeholder="blurred" width={500} height={400} layout="fixed"/>
-                <StaticImage src="../images/residential/Residential_3.jpg" alt="Window looking outside displays Sunglo's Window Film" placeholder="blurred" width={500} height={400} layout="fixed"/>
-                <StaticImage src="../images/residential/Residential_8.jpeg" alt="Man on scaffolding installing Sunglo's Window Film " placeholder="blurred" width={500} height={400} layout="fixed"/>
-                <StaticImage src="../images/residential/Residential_4.jpg" alt="Man on tall scaffolding installing Sunglo's Window Film" placeholder="blurred" width={500} height={500} layout="fixed"/>
-                <StaticImage src="../images/residential/Residential_6.jpeg" alt="Window looking outside displays Sunglo's Window Film" placeholder="blurred" width={500} height={500} layout="fixed"/>
-                <StaticImage src="../images/residential/Residential_7.jpeg" alt="Man on scaffolding installing Sunglo's Window Film " placeholder="blurred" width={500} height={500} layout="fixed"/>
-            </div>
-            
-            <div className="video-box">
-                <h2 class="intro-video">Check Out This Time Lapse Video Of Us Tinting High Up Residential Windows</h2>
-                <iframe  src="https://www.youtube.com/embed/vmYe3HIM2Yw" title="Residential Sunglo's Window Film Install" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-  
-  
-        </ResidentialStyles>  
-        </BackgroundStyles> 
-    </Layout >
-);
-
-export default ResidentialPage

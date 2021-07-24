@@ -1,8 +1,60 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import {Link} from 'gatsby'
-import styled from 'styled-components';
-import Seo from "../components/seo"
+import styled from 'styled-components'
+import Seo from './seo'
+
+const Services = ({data}) => {
+    
+    return (
+        <ServiceStyles>
+            <Seo title="Commercial Window Tint in Durango & Surrounding Areas | (970) 335-9600"/>
+        <h2>Industry Leading Services & Products</h2>
+        <h3> We offer high quality, American Made films with the best clarity, scratch resistance, and outstanding performance. </h3>
+        <div className="service-wrapper">
+            <div className="service-box">
+                <Link to="/">
+                    <div className="service-img">
+                        <StaticImage src="../images/about-pic.jpg"
+                        alt="2 men installing Sunglo's Window Film" layout="fixed"
+                         placeholder="blurred" />
+                    </div>
+                    <h3>About Us</h3>
+                </Link>
+                <p>SunGlo is a Denver window film company established in 1991. It is our priority to provide residential and commercial customers with the best solutions for their window problems.</p>
+            
+                <button className="btn-service"><Link to="/">Learn More About Us</Link></button>
+            </div>
+            <div className="service-box">
+                <div className="service-img">
+                    <StaticImage src="../images/building-img.jpg"
+                        alt="Outside an office building displaying Sunglo's mirrored window film" layout="fixed"
+                        placeholder="blurred"/>
+                        </div>
+                <h3>Commercial Window Tint Service</h3>
+                <p>As a building owner, commercial window tint can be your best friend! Window tinting is an affordable way for a business owner to to solve a wide variety of problems that windows create. </p>
+            
+                <button className="btn-service"><Link to="/Commercial">Commercial Window Tint Info</Link></button>
+            </div>
+            <div className="service-box">
+                <div className="service-img">
+                    <StaticImage src="../images/residential/Residential_3.jpg"
+                        alt="Looking out windows wall" width={365} height={189} layout="fixed"
+                        placeholder="blurred"/>
+                        </div>
+                <h3>Residential Window Tint Service</h3>
+                <p>Not only will you enjoy energy savings, diminished glare, reduced fading, and better window insulation, but your home will have greater temperature comfort with home window film!</p>
+            
+                <button className="btn-service"><Link to="/Residential">Residential Window Tint Info</Link></button>
+            </div>
+        </div>
+        
+      
+       
+        </ServiceStyles>
+    )
+}
+export default Services
 
 const ServiceStyles = styled.div `
    text-align: center;
@@ -62,55 +114,3 @@ const ServiceStyles = styled.div `
     
    }
 `
-
-const Services = ({data}) => {
-    
-    return (
-        <ServiceStyles>
-            <Seo title="Commercial Window Tint in Durango & Surrounding Areas | (970) 335-9600"/>
-        <h2>Industry Leading Services & Products</h2>
-        <h3> We offer high quality, American Made films with the best clarity, scratch resistance, and outstanding performance. </h3>
-        <div className="service-wrapper">
-            <div className="service-box">
-                <Link to="/">
-                    <div className="service-img">
-                        <StaticImage src="../images/about-pic.jpg"
-                        alt="2 men installing Sunglo's Window Film" layout="fixed"
-                         placeholder="blurred" />
-                    </div>
-                    <h3>About Us</h3>
-                </Link>
-                <p>SunGlo is a Denver window film company established in 1991. It is our priority to provide residential and commercial customers with the best solutions for their window problems.</p>
-            
-                <button className="btn-service"><Link to="/">Learn More About Us</Link></button>
-            </div>
-            <div className="service-box">
-                <div className="service-img">
-                    <StaticImage src="../images/building-img.jpg"
-                        alt="Outside an office building displaying Sunglo's mirrored window film" layout="fixed"
-                        placeholder="blurred"/>
-                        </div>
-                <h3>Commercial Window Tint Service</h3>
-                <p>As a building owner, commercial window tint can be your best friend! Window tinting is an affordable way for a business owner to to solve a wide variety of problems that windows create. </p>
-            
-                <button className="btn-service"><Link to="/Commercial">Commercial Window Tint Info</Link></button>
-            </div>
-            <div className="service-box">
-                <div className="service-img">
-                    <StaticImage src="../images/imagecontent/Residential 3.jpg"
-                        alt="Looking out windows wall" width={365} height={189} layout="fixed"
-                        placeholder="blurred"/>
-                        </div>
-                <h3>Residential Window Tint Service</h3>
-                <p>Not only will you enjoy energy savings, diminished glare, reduced fading, and better window insulation, but your home will have greater temperature comfort with home window film!</p>
-            
-                <button className="btn-service"><Link to="/Residential">Residential Window Tint Info</Link></button>
-            </div>
-        </div>
-        
-      
-       
-        </ServiceStyles>
-    )
-}
-export default Services

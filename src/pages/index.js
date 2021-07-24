@@ -1,11 +1,11 @@
-import React from "react"
-import Seo from "../components/seo"
+import React from 'react'
+import Seo from '../components/seo'
 
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Tint from '../components/Tint'
 import Services from '../components/Services'
-import Footer from "../components/Footer"
+import Footer from '../components/Footer'
 
 
 const HomePage = () => {
@@ -19,15 +19,14 @@ const HomePage = () => {
      
        
       <Hero />
-      <div className='divider'></div>
+        
+        <div className='divider'></div>
         <Tint />
         <div className='divider'></div>
         <Services />
         
-         
-        
-    <Footer />
+      <Footer />
     </main>
-  );
- };
+  )
+ }
 export default HomePage

@@ -1,7 +1,7 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import {Link} from 'gatsby'
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const OtherStyles = styled.div `
    text-align: center;

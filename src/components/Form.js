@@ -1,63 +1,6 @@
 import React, { useState } from "react"
 import styled from "styled-components"
 
-const FormStyles = styled.div `
- @media (max-width: 400px) {
-      width: 90%;
-      margin: 0 auto;
-    }
-  form {
-    text-align: center;
-    padding-top: .5rem;
-    
-   
-    input {
-      
-      height: 50px;
-      width: 25rem;
-      margin: 1rem;
-      border:  1px solid rgb(255, 103, 0);
-      @media (max-width: 400px) {
-      width: 90%;
-      margin: .5rem 0;
-     
-    }
-    }
-    textarea {
-      width: 25rem;
-      border:  1px solid rgb(255, 103, 0);
-      @media (max-width: 400px) {
-      width: 90%;
-      margin: 0;
-    }
-    }
-  }
-  .cta-btn {
-    margin-left: 4rem;
-  }
-  .Form--Title {
-   text-transform: uppercase;
-   font-weight: bold;
-    border-bottom:solid 1px rgb(255, 103, 0);
-    font-size: 2rem;
-  }
-  .Form--SubmitButton {
-      padding: 0.875rem 2rem;
-      margin: 1rem 2rem;
-      background-color: rgb(255, 103, 0);
-      background-image: linear-gradient(0deg, rgb(255, 103, 0) 10%, rgb(255, 160, 0) 90%);
-      border: 1px solid rgb(255, 103, 0);
-      border-radius: 0px;
-      padding: 0.775em 0.875em;
-      
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 1rem;
-      cursor: pointer;
-      color: white;
-      overflow: hidden;
-  }
-`
 const ContactForm = () => {
   
     // Simple controlled form setup (Control your own state)
@@ -115,4 +58,62 @@ const ContactForm = () => {
     )
 }
 export default ContactForm
+
+const FormStyles = styled.div `
+ @media (max-width: 400px) {
+      width: 90%;
+      margin: 0 auto;
+    }
+  form {
+    text-align: center;
+    padding-top: .5rem;
+    
+   
+    input {
+      
+      height: 50px;
+      width: 25rem;
+      margin: 1rem;
+      border:  1px solid rgb(255, 103, 0);
+      @media (max-width: 400px) {
+      width: 90%;
+      margin: .5rem 0;
+     
+    }
+    }
+    textarea {
+      width: 25rem;
+      border:  1px solid rgb(255, 103, 0);
+      @media (max-width: 400px) {
+      width: 90%;
+      margin: 0;
+    }
+    }
+  }
+  .cta-btn {
+    margin-left: 4rem;
+  }
+  .Form--Title {
+   text-transform: uppercase;
+   font-weight: bold;
+    border-bottom:solid 1px rgb(255, 103, 0);
+    font-size: 2rem;
+  }
+  .Form--SubmitButton {
+      padding: 0.875rem 2rem;
+      margin: 1rem 2rem;
+      background-color: rgb(255, 103, 0);
+      background-image: linear-gradient(0deg, rgb(255, 103, 0) 10%, rgb(255, 160, 0) 90%);
+      border: 1px solid rgb(255, 103, 0);
+      border-radius: 0px;
+      padding: 0.775em 0.875em;
+      
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      color: white;
+      overflow: hidden;
+  }
+`
 

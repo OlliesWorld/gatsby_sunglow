@@ -1,10 +1,17 @@
 import React from 'react'
-import '../components/styles/GlobalStyles.css';
-import { StaticImage } from 'gatsby-plugin-image';
-import NavBar from './NavBar/NavBar';
-import styled from 'styled-components';
+import '../components/styles/GlobalStyles.css'
+import { StaticImage } from 'gatsby-plugin-image'
+import NavBar from './NavBar/NavBar'
+import styled from 'styled-components'
 
-
+export default function Header() {
+  return (
+    <HeaderStyles>
+      <StaticImage src="../images/SunGlo-logo.png" alt="Sunglo Window Films Durango Logo" placeholder="blurred" layout="fixed"  width={200} />
+        <NavBar />
+    </HeaderStyles>
+  );
+}
 
 const HeaderStyles = styled.header`
   margin-bottom: .5rem;
@@ -29,13 +36,4 @@ h1{
     }
   }
   
-`;
-
-export default function Header() {
-  return (
-    <HeaderStyles>
-      <StaticImage src="../images/SunGlo-logo.png" alt="Sunglo Window Films Durango Logo" placeholder="blurred" layout="fixed"  width={200} />
-        <NavBar />
-    </HeaderStyles>
-  );
-}
+`
