@@ -34,7 +34,7 @@ export default function Footer () {
                         </div>
                         
                     </div>
-                    © {new Date().getFullYear()} Sunglo Window Film, Built by <a href="https://roni.rocks/"  target="_blank" rel="noreferrer" ><span className="roni">🐶Roni</span></a>
+                    © {new Date().getFullYear()} Sunglo Window Film, Built by <a href="https://roni.rocks/"  target="_blank" rel="noreferrer" ><span className="roni" role="img">🐶Roni</span></a>
         </FooterStyles>
     )
 }

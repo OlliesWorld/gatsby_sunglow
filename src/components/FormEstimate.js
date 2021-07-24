@@ -20,11 +20,10 @@ const EstimateForm = () => {
               Content-Type="POST"
               data-netlify="true"
               netlify-honeypot="bot-field"
-              // data-netlify-recaptcha="true"   // new Netlify data attribute regarding recaptcha submissions
-              action="/Thanks/"
+              action="/ThanksEstimate/"
               onSubmit={handleChange}
             >
-              <input type="hidden" name="contact-us" value="contact" />
+              <input type="hidden" name="estimate" value="contact" />
           <label htmlFor="nameInput" className="Form--Title">Free Estimate Form</label>
           <div className='Form--Label'>
            <input placeholder='Name' className='Form--Input' type="text" name="name" value={formValues.name} onChange={handleChange} required />

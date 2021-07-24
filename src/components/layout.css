@@ -607,4 +607,5 @@ pre tt:after {
   padding: .3rem .5rem;
   color: black;
   font-size: .8rem;
+  line-height: 1.3;
 }
