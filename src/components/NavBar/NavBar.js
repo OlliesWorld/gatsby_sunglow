@@ -55,9 +55,9 @@ const Navbox = Styled.div`
     
     a{
       color: white;
-      font-size: 1.5rem;
-      margin: 0;
-      padding: 1rem 0;
+      font-size: 1.2rem;
+      margin: .2rem;
+      padding: 1rem .5rem;
       text-transform: uppercase;
      
     }
@@ -67,6 +67,7 @@ const Navbox = Styled.div`
       left: ${props => (props.open ? "-100%" : "0")};
       width: 50%;
       top: 13vh;
+
     }
   }
 `

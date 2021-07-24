@@ -3,8 +3,6 @@ import React, { useState } from "react"
 
 
 const EstimateForm = () => {
-
-  
     // Simple controlled form setup (Control your own state)
     const handleChange = e => setFormValues({ ...formValues, [e.target.name]: e.target.value })
     const [formValues, setFormValues] = useState({
@@ -15,11 +13,9 @@ const EstimateForm = () => {
       message: ''
     })
   
-    return (
-   
-        
+    return (  
         <>
-       <form
+         <form
               name="estimate"
               Content-Type="POST"
               data-netlify="true"

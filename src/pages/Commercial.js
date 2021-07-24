@@ -50,7 +50,6 @@ const CTAStyles = styled.div`
 `
 
 const CommercialStyles = styled.div`
-    margin-left: 1rem;
     margin-right: 2.2rem;
     padding-top: 5rem;
     display: flex;
@@ -60,8 +59,8 @@ const CommercialStyles = styled.div`
     padding-bottom: 10rem;
     @media(max-width:400px){
         flex-direction: column;
-        
-        width:90%;
+        padding: 0;
+        width:99%;
     }
   
     .section {
@@ -75,7 +74,6 @@ const CommercialStyles = styled.div`
        margin:2rem;
    }
    @media(max-width:400px){
-       width: 95%;
        margin:2rem 0;
    }
 } 
@@ -103,28 +101,27 @@ const CommercialStyles = styled.div`
     }
 }
 .img-box {
-    display: flex;
-    justify-content: center;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     img {
-        padding-right: 2rem;
+        padding: .8rem 0;
+        margin-left: 2rem;
     }
     @media(max-width: 800px){
-        flex-direction: column;
-        margin-left: 9rem;
+        grid-template-columns: 1fr;
+        margin-left: 6rem;
         
         img{
-
             padding: 1rem 0;
         }
     }
     @media(max-width: 400px){
        margin-left: 1rem;
         
-        
         img{
-            width: 80%;
-           
+            margin: 0;
+            width: 60%;
         }
     }
 }
@@ -203,11 +200,12 @@ const CommercialPage = () => (
                 <Sidebar />
             </div>
             <div className="img-box">
-                <StaticImage src="../images/imagecontent/commercial 1.jpg" alt="Office Cubicle with Sunglo's Decorative Window Film" placeholder="blurred" width={400} height={400} layout="fixed"/>
-                <StaticImage src="../images/imagecontent/commercial 2.jpg" alt="Man installing Sunglo's Window Film" placeholder="blurred" width={400} height={400} 
-     layout="fixed"/>
-                <StaticImage src="../images/imagecontent/Commercial-Header.jpg" alt="business with window film" placeholder="blurred" width={400} height={400}  
-     layout="fixed" />
+                <StaticImage src="../images/commercial/Commercial_1.jpeg" alt="Office Cubicle with Sunglo's Decorative Window Film" placeholder="blurred" width={550} height={400} layout="fixed"/>
+                <StaticImage src="../images/commercial/Commercial_2.jpeg" alt="Man installing Sunglo's Window Film" placeholder="blurred" width={550} height={400} layout="fixed"/>
+                <StaticImage src="../images/commercial/Commercial_3.jpeg" alt="business with window film" placeholder="blurred" width={550} height={400}  layout="fixed" />
+     <StaticImage src="../images/commercial/Commercial_4.jpeg" alt="Office Cubicle with Sunglo's Decorative Window Film" placeholder="blurred" width={550} height={400} layout="fixed"/>
+                <StaticImage src="../images/commercial/Commercial_5.jpeg" alt="Man installing Sunglo's Window Film" placeholder="blurred" width={550} height={400} layout="fixed"/>
+                <StaticImage src="../images/commercial/Commercial_6.jpeg" alt="business with window film" placeholder="blurred" width={550} height={400}  layout="fixed" />
             </div>
             
            

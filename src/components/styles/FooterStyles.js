@@ -15,7 +15,7 @@ const FooterStyles = styled.ul`
         justify-content: space-evenly;
         display: flex;
         padding: 1rem;
-        margin-bottom: 2rem;
+        margin-bottom: .5rem;
         margin-top: 0;
    
        @media (max-width: 400px) {
@@ -42,10 +42,16 @@ const FooterStyles = styled.ul`
         display: flex;
         justify-content: space-evenly;
         margin-left: 2rem;
+        @media (max-width: 400px) {
+            flex-direction: column;
+        }
     }
-    .phone {
-        padding-left: 3rem;
-        padding-top: 1rem;
+    .callLink {
+        font-size: 1.5rem;
+        font-weight: Bold;
+        color: rgb(255,103,0);
+        padding-top: .8rem;
+        
     }
     .cta-btn {
         padding:  0.875rem;

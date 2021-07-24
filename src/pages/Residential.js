@@ -11,7 +11,7 @@ import { FaArrowCircleRight, FaCircle } from 'react-icons/fa';
 
 const CTAStyles = styled.div`
     background-color: rgba(0, 0, 0, 0.5);
-    background-image: url('/images/Residential-Header.jpg');
+    background-image: url('/images/Residential_Header.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no repeat;
@@ -97,29 +97,28 @@ const ResidentialStyles = styled.div`
     margin-right:.25em;
 }
 .img-box {
-    display: flex;
-    justify-content: center;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
-    margin-bottom: 1rem;
+ 
     img {
-        padding-right: 2rem;
+        padding: .8rem 0;
+        margin-left: 4rem;
     }
     @media(max-width: 800px){
-        flex-direction: column;
-        margin-left: 9rem;
+        grid-template-columns: 1fr;
+        margin-left: 4rem;
         
         img{
-
             padding: 1rem 0;
         }
     }
     @media(max-width: 400px){
        margin-left: 1rem;
         
-        
-        img{
-            width: 80%;
-           
+       img{
+            margin: 0;
+            width: 60%;
         }
     }
 }
@@ -212,9 +211,12 @@ const ResidentialPage = () => (
                     <Sidebar />
                 </div>
             <div className="img-box">
-                <StaticImage src="../images/imagecontent/Residential 2.jpg" alt="Man on tall scaffolding installing Sunglo's Window Film" placeholder="blurred" width={400} height={400} layout="fixed"/>
-                <StaticImage src="../images/imagecontent/Residential 3.jpg" alt="Window looking outside displays Sunglo's Window Film" placeholder="blurred" width={400} height={400} layout="fixed"/>
-                <StaticImage src="../images/imagecontent/Residential 4.jpg" alt="Man on scaffolding installing Sunglo's Window Film " placeholder="blurred" width={400} height={400} layout="fixed"/>
+                <StaticImage src="../images/residential/Residential_2.jpg" alt="Man on tall scaffolding installing Sunglo's Window Film" placeholder="blurred" width={500} height={400} layout="fixed"/>
+                <StaticImage src="../images/residential/Residential_3.jpg" alt="Window looking outside displays Sunglo's Window Film" placeholder="blurred" width={500} height={400} layout="fixed"/>
+                <StaticImage src="../images/residential/Residential_8.jpeg" alt="Man on scaffolding installing Sunglo's Window Film " placeholder="blurred" width={500} height={400} layout="fixed"/>
+                <StaticImage src="../images/residential/Residential_4.jpg" alt="Man on tall scaffolding installing Sunglo's Window Film" placeholder="blurred" width={500} height={500} layout="fixed"/>
+                <StaticImage src="../images/residential/Residential_6.jpeg" alt="Window looking outside displays Sunglo's Window Film" placeholder="blurred" width={500} height={500} layout="fixed"/>
+                <StaticImage src="../images/residential/Residential_7.jpeg" alt="Man on scaffolding installing Sunglo's Window Film " placeholder="blurred" width={500} height={500} layout="fixed"/>
             </div>
             
             <div className="video-box">

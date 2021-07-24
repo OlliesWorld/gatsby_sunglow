@@ -10,7 +10,7 @@ import Seo from '../components/seo';
 
 
 const CTAStyles = styled.div`
-    background-image: url("/images/Residential 5.jpg");
+    background-image: url("/images/Residential_5.jpg");
     background-position: center center;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.5);
@@ -33,6 +33,7 @@ const CTAStyles = styled.div`
 const AboutStyles = styled.div`
     background-image: url("/images/nice_snow.png");
     padding-top: 1rem;
+    padding-right: 3.5rem;
     display: flex;
    
     @media(max-width:400px){
@@ -41,8 +42,8 @@ const AboutStyles = styled.div`
     }
    
 .content-box {
-    margin: 0 auto;
-    /* max-width: 980px; */
+    margin: 1rem 8rem;
+    
    @media (max-width: 800px) {
        margin-left: 2rem;
        width: 100%;
@@ -151,10 +152,10 @@ const AboutPage = () => (
                             <StaticImage src="../images/hallway.jpg" alt="hallway with large windows at the end with Sunglo Window Film"layout="constrained"
                             fit="contain" width={258} height={300}
                             placeholder="blurred"/>
-                            <StaticImage src="../images/imagecontent/Residential 6.jpg" alt="hallway with large windows at the end with Sunglo Window Film"layout="constrained"
+                            <StaticImage src="../images/residential/Residential_6.jpg" alt="hallway with large windows at the end with Sunglo Window Film"layout="constrained"
                             fit="contain" width={258} height={300}
                             placeholder="blurred"/>
-                            <StaticImage src="../images/imagecontent/Commercial 2.jpg" alt="hallway with large windows at the end with Sunglo Window Film"layout="constrained"
+                            <StaticImage src="../images/commercial/Commercial_2.jpg" alt="hallway with large windows at the end with Sunglo Window Film"layout="constrained"
                             fit="contain" width={258} height={300}
                             placeholder="blurred"/>
                         </div>        

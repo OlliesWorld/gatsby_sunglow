@@ -42,6 +42,9 @@ const AreaStyles = styled.div`
   }
   p{
     font-size: 2rem;
+    @media (max-width: 400px) {
+            font-size: 1rem;
+        }
   }
 `
 const ContactPage = () => {

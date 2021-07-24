@@ -27,8 +27,8 @@ export default function Footer () {
                     </div>
                     
                     <div className="info">
-                        <Link to='/'><StaticImage src="../images/eclipse-logo.png" alt="Sunglo Window Films Durango Logo" placeholder="blurred" width={200} /></Link>
-                        <a style={{color: 'rgb(255, 0, 0)'}} href="tel:3032795884">CALL OR TEXT: <br/>(970) 335-9600</a>
+                        <Link to='/'><StaticImage src="../images/SunGlo-logo.png" alt="Sunglo Window Film Durango Logo" placeholder="blurred" width={200} /></Link>
+                        <a className="callLink" href="tel:3032795884">CALL OR TEXT: <br/>(970) 335-9600</a>
                         <div>
                             <Link className="cta-btn footer" to='/Estimate'>Free Estimate</Link>
                         </div>
