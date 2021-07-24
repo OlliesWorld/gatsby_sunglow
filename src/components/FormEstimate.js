@@ -24,6 +24,7 @@ const EstimateForm = () => {
               action="/Thanks/"
               onSubmit={handleChange}
             >
+              <input type="hidden" name="contact-us" value="contact" />
           <label htmlFor="nameInput" className="Form--Title">Free Estimate Form</label>
           <div className='Form--Label'>
            <input placeholder='Name' className='Form--Input' type="text" name="name" value={formValues.name} onChange={handleChange} required />

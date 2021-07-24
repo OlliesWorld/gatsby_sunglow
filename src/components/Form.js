@@ -18,14 +18,13 @@ const ContactForm = () => {
             <a className="cta-btn" href="tel:9703359600">CALL OR TEXT: (970) 335-9600</a>
             <form
               name="contact-us"
-              method="POST"
+              Content-Type="POST"
               data-netlify="true"
               netlify-honeypot="bot-field"
-              // data-netlify-recaptcha="true"   // new Netlify data attribute regarding recaptcha submissions
               action="/Thanks/"
               onSubmit={handleChange}
             >
-         
+         <input type="hidden" name="contact-us" value="contact" />
           <div className='Form--Label'>
            <input placeholder='Name' className='Form--Input' type="text" name="name" value={formValues.name} onChange={handleChange} required />
           </div>
