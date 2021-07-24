@@ -136,8 +136,8 @@ const ResidentialStyles = styled.div`
     height: 95vh;
     @media(max-width: 800px){
         height: 50vh;
-      
         width: 90%;
+        margin-left: 3rem;
     }
 }
 `
