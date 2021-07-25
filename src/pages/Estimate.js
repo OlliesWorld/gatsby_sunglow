@@ -21,11 +21,12 @@ const FormStyles = styled.div `
     align-items: center;
     .Form--Input {
       height: 50px;
-      width: 21rem;
+      width: 22rem;
       margin: 1rem;
       border:  1px solid rgb(255, 103, 0);
     }
     textarea {
+     
       width: 22rem;
       border:  1px solid rgb(255, 103, 0);
     }

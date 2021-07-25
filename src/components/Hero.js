@@ -31,10 +31,16 @@ const HeroStyles = styled.div `
       
     h2{
         font-size: 2.8rem;
+        margin-top: -1.2rem;
+        
     }
     p{
         font-size: 1.5rem;
         color: black;
+        line-height: 1.5;
+        width: 90%;
+        margin-right: 4rem;
+        padding-bottom: .5rem;
     }
   
     a{

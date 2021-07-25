@@ -69,10 +69,10 @@ const CommercialPage = () => (
             <div className="img-box">
                 <StaticImage src="../images/commercial/Commercial_1.jpeg" alt="Office Cubicle with Sunglo's Decorative Window Film" placeholder="blurred" width={550} height={400} layout="fixed"/>
                 <StaticImage src="../images/commercial/Commercial_2.jpeg" alt="Man installing Sunglo's Window Film" placeholder="blurred" width={550} height={400} layout="fixed"/>
-                <StaticImage src="../images/commercial/Commercial_3.jpeg" alt="business with window film" placeholder="blurred" width={550} height={400}  layout="fixed" />
-     <StaticImage src="../images/commercial/Commercial_4.jpeg" alt="Office Cubicle with Sunglo's Decorative Window Film" placeholder="blurred" width={550} height={400} layout="fixed"/>
-                <StaticImage src="../images/commercial/Commercial_5.jpeg" alt="Man installing Sunglo's Window Film" placeholder="blurred" width={550} height={400} layout="fixed"/>
-                <StaticImage src="../images/commercial/Commercial_6.jpeg" alt="business with window film" placeholder="blurred" width={550} height={400}  layout="fixed" />
+                <StaticImage src="../images/commercial/Commercial_3.jpeg" alt="business with Sunglo Window film installation in progress" placeholder="blurred" width={550} height={400}  layout="fixed" />
+                <StaticImage src="../images/commercial/Commercial_4.jpeg" alt="Office Cubicle with Sunglo's Decorative Window Film" placeholder="blurred" width={550} height={400} layout="fixed"/>
+                <StaticImage src="../images/commercial/Commercial_5.jpeg" alt="Installing Sunglo's Window Film using ladders in a office" placeholder="blurred" width={550} height={400} layout="fixed"/>
+                <StaticImage src="../images/commercial/Commercial_6.jpeg" alt="Office with a beautiful view now with Sunglo Window Film installed" placeholder="blurred" width={550} height={400}  layout="fixed" />
             </div>
             
            
@@ -164,7 +164,7 @@ const CommercialStyles = styled.div`
 
 const CTAStyles = styled.div`
     background-color: rgba(0, 0, 0, 0.5);
-    background-image: url('/images/Commercial-Header.jpg');
+    background-image: url('/images/Commercial_Header.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no repeat;

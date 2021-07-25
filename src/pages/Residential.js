@@ -66,10 +66,10 @@ const ResidentialPage = () => (
             <div className="img-box">
                 <StaticImage src="../images/residential/Residential_2.jpg" alt="Man on tall scaffolding installing Sunglo's Window Film" placeholder="blurred" width={500} height={400} layout="fixed"/>
                 <StaticImage src="../images/residential/Residential_3.jpg" alt="Window looking outside displays Sunglo's Window Film" placeholder="blurred" width={500} height={400} layout="fixed"/>
-                <StaticImage src="../images/residential/Residential_8.jpeg" alt="Man on scaffolding installing Sunglo's Window Film " placeholder="blurred" width={500} height={400} layout="fixed"/>
-                <StaticImage src="../images/residential/Residential_4.jpg" alt="Man on tall scaffolding installing Sunglo's Window Film" placeholder="blurred" width={500} height={500} layout="fixed"/>
-                <StaticImage src="../images/residential/Residential_6.jpeg" alt="Window looking outside displays Sunglo's Window Film" placeholder="blurred" width={500} height={500} layout="fixed"/>
-                <StaticImage src="../images/residential/Residential_7.jpeg" alt="Man on scaffolding installing Sunglo's Window Film " placeholder="blurred" width={500} height={500} layout="fixed"/>
+                <StaticImage src="../images/residential/Residential_8.jpeg" alt="Great living room view with Sunglo's Window Film installed " placeholder="blurred" width={500} height={400} layout="fixed"/>
+                <StaticImage src="../images/residential/Residential_4.jpg" alt="Installing Sunglo's Window Film with scaffolding" placeholder="blurred" width={500} height={500} layout="fixed"/>
+                <StaticImage src="../images/residential/Residential_6.jpeg" alt="Installing Sunglo's Window Film with ladder while enjoying the view" placeholder="blurred" width={500} height={500} layout="fixed"/>
+                <StaticImage src="../images/residential/Residential_7.jpeg" alt="Sunglo's Window Film provides home owner with a incredible view" placeholder="blurred" width={500} height={500} layout="fixed"/>
             </div>
             
             <div className="video-box">
@@ -136,7 +136,7 @@ const ResidentialStyles = styled.div`
     
     @media(max-width:400px){
         flex-direction: column;
-        margin: 0 1rem;
+        margin-left: 0.5rem;
         width:100%;
     }
    
@@ -153,7 +153,7 @@ const ResidentialStyles = styled.div`
    }
    @media(max-width:400px){
        width: 95%;
-       margin:2rem 0;
+       margin: 2rem 0;
    }
 } 
 .content-box {
@@ -174,46 +174,50 @@ const ResidentialStyles = styled.div`
 }
 .img-box {
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
  
-    img {
-        padding: .8rem 0;
-        margin-left: 4rem;
-    }
     @media(max-width: 800px){
         grid-template-columns: 1fr;
-        margin-left: 4rem;
+        margin-left: 6rem;
         
-        img{
-            padding: 1rem 0;
-        }
     }
     @media(max-width: 400px){
-       margin-left: 1rem;
-        
-       img{
-            margin: 0;
-            width: 60%;
+        margin-left: .2rem;
+        margin-bottom: 1rem;
+       img{ 
+            width: 70%;
         }
     }
 }
 .video-box {
     margin: 0 auto;
-    
+    @media (max-width: 400px) {
+        margin: 0;
+    }
 }
 .intro-video {
     color: var(--clr-orange);
-   
+    @media (max-width: 400px) {
+        font-size: 1rem;
+        width: 70%;
+        text-align: center;
+    }
 }
 .video-box iframe {
     margin-left: 5rem;
     width: 80%;
-    height: 55vh;
+    height: 75vh;
     @media(max-width: 800px){
-        height: 50vh;
+        height: 40vh;
         width: 90%;
         margin-left: 3rem;
+    }
+    @media (max-width: 400px) {
+        margin-left: .5rem;
+        width: 92vw;
     }
 }
 `
