@@ -104,7 +104,7 @@ const CTAStyles = styled.div`
     h2{
         text-transform: uppercase;
     }
-    @media (max-width: 800px) {
+    @media (max-width: 1200px) {
         margin-left:1rem;
         width: 95%;
     }
@@ -116,7 +116,7 @@ const CTAStyles = styled.div`
         width: 50%;
         margin-left: 45rem;
         padding: 1rem;
-        @media (max-width: 800px) {
+        @media (max-width: 1200px) {
         margin-left:1rem;
         padding: 1rem;
         width: 95%;
@@ -176,15 +176,19 @@ const ResidentialStyles = styled.div`
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+    .gatsby-image-wrapper {
+        box-shadow: 5px 5px 5px 5px grey;
+    }
  
-    @media(max-width: 800px){
-        grid-template-columns: 1fr;
+    @media(max-width: 1200px){
+        grid-template-columns: 1fr 1fr;
         margin-left: 6rem;
         
     }
     @media(max-width: 400px){
+        grid-template-columns: 1fr;
         margin-left: .2rem;
         margin-bottom: 1rem;
        img{ 

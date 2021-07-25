@@ -16,7 +16,7 @@ const ContactForm = () => {
         
         <FormStyles>
             <a className="cta-btn" href="tel:9703359600">CALL OR TEXT: (970) 335-9600</a>
-            <form name="contact-us" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/Thanks/">
+            <form name="contact-us" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/">
          
               <input className='Form--Input' type='text' placeholder='Name' name='name' required />
           

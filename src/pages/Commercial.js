@@ -114,7 +114,7 @@ const CommercialStyles = styled.div`
 .content-box {
     padding-right: 5rem;
     
-    @media(max-width:400px){
+    @media(max-width:1200px){
        margin-left: 2rem;
         width:100%;
     }
@@ -136,14 +136,14 @@ const CommercialStyles = styled.div`
 }
 .img-box {
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-    img {
-        padding: .8rem 0;
-        margin-left: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin-left: 2rem;
+    .gatsby-image-wrapper {
+        box-shadow: 5px 5px 5px 1px  rgb(255, 103, 0) ;
     }
-    @media(max-width: 800px){
-        grid-template-columns: 1fr;
+    @media(max-width: 1200px){
+        grid-template-columns: 1fr 1fr;
         margin-left: 6rem;
         
         img{
@@ -152,7 +152,7 @@ const CommercialStyles = styled.div`
     }
     @media(max-width: 400px){
        margin-left: 1rem;
-        
+       grid-template-columns: 1fr;
         img{
             margin: 0;
             width: 60%;
@@ -178,7 +178,7 @@ const CTAStyles = styled.div`
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
-    @media (max-width: 800px) {
+    @media (max-width: 1200px) {
         margin-left:1rem;
         width: 95%;
     }
@@ -194,7 +194,7 @@ const CTAStyles = styled.div`
         width: 50%;
         margin-left: 47rem;
         padding: 1rem;
-        @media (max-width: 800px) {
+        @media (max-width: 1200px) {
         margin-left:1rem;
         padding: 1rem;
         width: 95%;
