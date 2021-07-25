@@ -78,7 +78,7 @@ const FooterStyles = styled.ul`
   }
 
   span.roni {
-      color: blue;
+      color: #007c8f;
   }
 `
 export default FooterStyles;

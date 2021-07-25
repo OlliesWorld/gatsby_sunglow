@@ -7,13 +7,19 @@ import EstimateForm from '../components/FormEstimate';
 const FormStyles = styled.div `
   background-color: black;
   background-image: url('https://dta0yqvfnusiq.cloudfront.net/sunglowf/2015/12/sunglo_sitebg1_new.jpg');
-  
+  @media (max-width: 400px) {
+    background-image: none;
+  }
   form {
     background-color: rgb(73, 69, 70);
     opacity: 0.9;
     text-align: center;
-    padding-top: 2rem;
-    input {
+    padding-top: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .Form--Input {
       height: 50px;
       width: 21rem;
       margin: 1rem;
