@@ -3,15 +3,6 @@ import styled from "styled-components"
 
 const ContactForm = () => {
   
-    // Simple controlled form setup (Control your own state)
-    // const handleChange = e => setFormValues({ ...formValues, [e.target.name]: e.target.value })
-    // const [formValues, setFormValues] = useState({
-    //   name: '',
-    //   email: '',
-    //   phone: '',
-    //   message: ''
-    // })
-  
     return (
         
         <FormStyles>
@@ -22,36 +13,18 @@ const ContactForm = () => {
               data-netlify="true"
               netlify-honeypot="bot-field"
               action="/Thanks/"
-              // onSubmit={handleChange}
             >
-         <input type="hidden" name="contact-us" value="contact" />
-          <div className='Form--Label'>
-           <input placeholder='Name' className='Form--Input' type="text" name="name"  
-           required />
-          </div>
-          <div className='Form--Label'>
-            <input className='Form--Input'  type='email'
-                      placeholder='Email'
-                      name='email' required />
-          </div>
-          <div className='Form--Label'>
-            <input className='Form--Input'  type='phone'
-                      placeholder='Phone'
-                      name='phone'  />
-          </div>
          
-          <div className='Form--Label'>
+            <input placeholder='Name' className='Form--Input' type="text" name="name" required />
+            <input className='Form--Input' type='phone' placeholder='Phone' name='phone'  />
+          
               <p>How Can We Assist You?</p>
-           <textarea className='Form--Input Form--Textarea'
-                      placeholder='Message'
-                      name='message'
-                      rows='8'  required />
-          </div>
-          <div>
-            <button className='Button Form--SubmitButton'
-                  type='submit'
-                   >Contact Us</button>
-          </div>
+           <textarea className=' Form--Textarea' placeholder='Message' name='message' rows='8'  required />
+         
+            <div>
+              <button className='Button Form--SubmitButton' type='submit'>Contact Us</button>
+            </div>
+         
         </form>
   
         </FormStyles>
@@ -60,6 +33,7 @@ const ContactForm = () => {
 export default ContactForm
 
 const FormStyles = styled.div `
+
  @media (max-width: 400px) {
       width: 90%;
       margin: 0 auto;
@@ -69,7 +43,7 @@ const FormStyles = styled.div `
     padding-top: .5rem;
     
    
-    input {
+    .Form--Input {
       
       height: 50px;
       width: 25rem;
@@ -78,8 +52,7 @@ const FormStyles = styled.div `
       @media (max-width: 400px) {
       width: 90%;
       margin: .5rem 0;
-     
-    }
+      }
     }
     textarea {
       width: 25rem;
@@ -87,11 +60,11 @@ const FormStyles = styled.div `
       @media (max-width: 400px) {
       width: 90%;
       margin: 0;
-    }
+      }
     }
   }
   .cta-btn {
-    margin-left: 4rem;
+    margin-left: 15rem;
   }
   .Form--Title {
    text-transform: uppercase;
