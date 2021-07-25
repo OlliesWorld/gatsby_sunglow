@@ -1,59 +1,24 @@
 import React, { useState } from "react"
-// import { navigate } from 'gatsby'
-
 
 const EstimateForm = () => {
-    // Simple controlled form setup (Control your own state)
-    const handleChange = e => setFormValues({ ...formValues, [e.target.name]: e.target.value })
-    const [formValues, setFormValues] = useState({
-      name: '',
-      email: '',
-      phone: '',
-      date: '',
-      message: ''
-    })
   
     return (  
         <>
-         <form
-              name="estimate"
-              Content-Type="POST"
-              
-              netlify-honeypot="bot-field"
-              action="/ThanksEstimate/"
-              onSubmit={handleChange}
-              netlify
-            >
-              <input type="hidden" name="estimate" value="contact" />
-          <label htmlFor="nameInput" className="Form--Title">Free Estimate Form</label>
-          <div className='Form--Label'>
-           <input placeholder='Name' className='Form--Input' type="text" name="name" value={formValues.name} onChange={handleChange} required />
-          </div>
-          <div className='Form--Label'>
-            <input className='Form--Input'  type='email'
-                      placeholder='Email'
-                      name='email' value={formValues.email} onChange={handleChange} required />
-          </div>
-          <div className='Form--Label'>
-            <input className='Form--Input'  type='phone'
-                      placeholder='Phone'
-                      name='phone' value={formValues.phone} onChange={handleChange}  />
-          </div>
-          <div className='Form--Label'>
-            <input className='Form--Input'  type='date'
-                      placeholder='Requested Estimate Date'
-                      name='date' value={formValues.date} onChange={handleChange} />
-          </div>
-          <div className='Form--Label'>
-           <textarea className='Form--Input Form--Textarea'
-                      placeholder='Message'
-                      name='message'
-                      rows='8' value={formValues.message} onChange={handleChange} required />
-          </div>
+         <form name="estimate" Content-Type="POST" netlify-honeypot="bot-field" action="/ThanksEstimate/" netlify>
+            <label htmlFor="nameInput" className="Form--Title">Free Estimate Form</label>
+         
+            <input placeholder='Name' className='Form--Input' type="text" name="name"  required />
+          
+            <input className='Form--Input' type='email' placeholder='Email' name='email' required />
+        
+            <input className='Form--Input' type='phone' placeholder='Phone' name='phone'   />
+          
+            <input className='Form--Input'  type='date' placeholder='Requested Estimate Date' name='date'  />
+         
+           <textarea className='Form--Input Form--Textarea' placeholder='Message' name='message' rows='8'  required />
+         
           <div>
-            <button className='Button Form--SubmitButton'
-                  type='submit'
-                   >Send</button>
+            <button className='Button Form--SubmitButton' type='submit'>Send</button>
           </div>
         </form>
   

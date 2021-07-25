@@ -16,29 +16,19 @@ const ContactForm = () => {
         
         <FormStyles>
             <a className="cta-btn" href="tel:9703359600">CALL OR TEXT: (970) 335-9600</a>
-            <form
-              name="contact-us"
-              Content-Type="POST"
-              data-netlify="true"
-              netlify-honeypot="bot-field"
-              action="/Thanks/"
-              // onSubmit={handleChange}
-            >
+            <form name="contact-us" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/Thanks/">
          
-         
-           <input placeholder='Name' className='Form--Input' type="text" name="name" required />
+              <input placeholder='Name' className='Form--Input' type="text" name="name" required />
           
-            <input className='Form--Input' type='email' placeholder='Email' name='email' required />
+              <input className='Form--Input' type='email' placeholder='Email' name='email' required />
           
-            <input className='Form--Input' type='phone' placeholder='Phone' name='phone'  />
+              <input className='Form--Input' type='phone' placeholder='Phone' name='phone'  />
           
               <p>How Can We Assist You?</p>
-           <textarea className=' Form--Textarea' placeholder='Message' name='message' rows='8'  required />
+              <textarea className=' Form--Textarea' placeholder='Message' name='message' rows='8'  required />
          
             <div>
-              <button className='Button Form--SubmitButton'
-                    type='submit'
-                     >Contact Us</button>
+              <button className='Button Form--SubmitButton' type='submit' >Contact Us</button>
             </div>
          
         </form>
