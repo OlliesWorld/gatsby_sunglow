@@ -3,6 +3,15 @@ import styled from "styled-components"
 
 const ContactForm = () => {
   
+    // Simple controlled form setup (Control your own state)
+    // const handleChange = e => setFormValues({ ...formValues, [e.target.name]: e.target.value })
+    // const [formValues, setFormValues] = useState({
+    //   name: '',
+    //   email: '',
+    //   phone: '',
+    //   message: ''
+    // })
+  
     return (
         
         <FormStyles>
@@ -13,16 +22,23 @@ const ContactForm = () => {
               data-netlify="true"
               netlify-honeypot="bot-field"
               action="/Thanks/"
+              // onSubmit={handleChange}
             >
          
-            <input placeholder='Name' className='Form--Input' type="text" name="name" required />
+         
+           <input placeholder='Name' className='Form--Input' type="text" name="name" required />
+          
+            <input className='Form--Input' type='email' placeholder='Email' name='email' required />
+          
             <input className='Form--Input' type='phone' placeholder='Phone' name='phone'  />
           
               <p>How Can We Assist You?</p>
            <textarea className=' Form--Textarea' placeholder='Message' name='message' rows='8'  required />
          
             <div>
-              <button className='Button Form--SubmitButton' type='submit'>Contact Us</button>
+              <button className='Button Form--SubmitButton'
+                    type='submit'
+                     >Contact Us</button>
             </div>
          
         </form>
@@ -33,7 +49,6 @@ const ContactForm = () => {
 export default ContactForm
 
 const FormStyles = styled.div `
-
  @media (max-width: 400px) {
       width: 90%;
       margin: 0 auto;
@@ -52,7 +67,8 @@ const FormStyles = styled.div `
       @media (max-width: 400px) {
       width: 90%;
       margin: .5rem 0;
-      }
+     
+    }
     }
     textarea {
       width: 25rem;
@@ -60,11 +76,11 @@ const FormStyles = styled.div `
       @media (max-width: 400px) {
       width: 90%;
       margin: 0;
-      }
+    }
     }
   }
   .cta-btn {
-    margin-left: 15rem;
+    margin-left: 12rem;
   }
   .Form--Title {
    text-transform: uppercase;

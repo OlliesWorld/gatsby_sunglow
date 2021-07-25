@@ -1,56 +1,13 @@
 import React from "react"
 import Seo from "../components/seo"
 import Layout from '../components/layout'
-import styled from 'styled-components';
-import ContactForm from "../components/Form";
-import { StaticImage } from "gatsby-plugin-image";
+import styled from 'styled-components'
+import ContactForm from '../components/Form'
+import { StaticImage } from 'gatsby-plugin-image'
 
-const ContactStyles = styled.div`
-  display: flex;
-  justify-content: center;
-  
-  @media (max-width: 800px) {
-    flex-direction: column; 
-    align-items: center;
-    
-  }
-`
-const SideBarStyles = styled.div`
-  display: flex;
-  width: 50%;
-  margin-left: 5rem;
-  .box {
-    width: 350px;
-  }
-  @media (max-width: 800px){
-    flex-direction: column;
-    width: 80%;
-    margin-left: 2rem;
-  }
-  @media (max-width: 400px){
-    
-    margin-left: 1rem;
-    p {
-      width: 80%;
-    }
-  }
-`
-const AreaStyles = styled.div`
-  text-align: center;
-  h2 {
-    font-size: 3.5rem;
-  }
-  p{
-    font-size: 2rem;
-    @media (max-width: 400px) {
-            font-size: 1rem;
-        }
-  }
-`
+
 const ContactPage = () => {
 
-
-  
   return (
     <Layout>
       <Seo title="Window Tinting in Durango | Locally Owned &amp; Operated | (970) 335-9600"/>
@@ -79,10 +36,55 @@ const ContactPage = () => {
         
       </ContactStyles>
       <AreaStyles>
-        <h2>Contact Us</h2>
+        {/* <h2>Contact Us</h2> */}
           <p>Commercial and residential window tinting in Durango and all surrounding areas.</p>
       </AreaStyles>
   </Layout>
   )
 }
 export default ContactPage
+
+const ContactStyles = styled.div`
+  display: flex;
+  justify-content: center;
+  
+  @media (max-width: 800px) {
+    flex-direction: column; 
+    align-items: center;
+    
+  }
+`
+const SideBarStyles = styled.div`
+  display: flex;
+  width: 50%;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  padding-top: 7rem;
+  .box {
+    width: 350px;
+  }
+  @media (max-width: 800px){
+    flex-direction: column;
+    width: 80%;
+    margin-left: 2rem;
+  }
+  @media (max-width: 400px){
+    
+    margin-left: 1rem;
+    p {
+      width: 80%;
+    }
+  }
+`
+const AreaStyles = styled.div`
+  text-align: center;
+  h2 {
+    font-size: 3.5rem;
+  }
+  p{
+    font-size: 2rem;
+    @media (max-width: 400px) {
+            font-size: 1rem;
+        }
+  }
+`
