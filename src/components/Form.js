@@ -4,13 +4,13 @@ import styled from "styled-components"
 const ContactForm = () => {
   
     // Simple controlled form setup (Control your own state)
-    const handleChange = e => setFormValues({ ...formValues, [e.target.name]: e.target.value })
-    const [formValues, setFormValues] = useState({
-      name: '',
-      email: '',
-      phone: '',
-      message: ''
-    })
+    // const handleChange = e => setFormValues({ ...formValues, [e.target.name]: e.target.value })
+    // const [formValues, setFormValues] = useState({
+    //   name: '',
+    //   email: '',
+    //   phone: '',
+    //   message: ''
+    // })
   
     return (
         
@@ -22,21 +22,22 @@ const ContactForm = () => {
               data-netlify="true"
               netlify-honeypot="bot-field"
               action="/Thanks/"
-              onSubmit={handleChange}
+              // onSubmit={handleChange}
             >
          <input type="hidden" name="contact-us" value="contact" />
           <div className='Form--Label'>
-           <input placeholder='Name' className='Form--Input' type="text" name="name" value={formValues.name} onChange={handleChange} required />
+           <input placeholder='Name' className='Form--Input' type="text" name="name"  
+           required />
           </div>
           <div className='Form--Label'>
             <input className='Form--Input'  type='email'
                       placeholder='Email'
-                      name='email' value={formValues.email} onChange={handleChange} required />
+                      name='email' required />
           </div>
           <div className='Form--Label'>
             <input className='Form--Input'  type='phone'
                       placeholder='Phone'
-                      name='phone' value={formValues.phone} onChange={handleChange}  />
+                      name='phone'  />
           </div>
          
           <div className='Form--Label'>
@@ -44,7 +45,7 @@ const ContactForm = () => {
            <textarea className='Form--Input Form--Textarea'
                       placeholder='Message'
                       name='message'
-                      rows='8' value={formValues.message} onChange={handleChange} required />
+                      rows='8'  required />
           </div>
           <div>
             <button className='Button Form--SubmitButton'

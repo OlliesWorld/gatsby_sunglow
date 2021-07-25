@@ -18,10 +18,11 @@ const EstimateForm = () => {
          <form
               name="estimate"
               Content-Type="POST"
-              data-netlify="true"
+              
               netlify-honeypot="bot-field"
               action="/ThanksEstimate/"
               onSubmit={handleChange}
+              netlify
             >
               <input type="hidden" name="estimate" value="contact" />
           <label htmlFor="nameInput" className="Form--Title">Free Estimate Form</label>
