@@ -47,6 +47,7 @@ export default ContactPage
 const ContactStyles = styled.div`
   display: flex;
   justify-content: center;
+
   
   @media (max-width: 800px) {
     flex-direction: column; 
@@ -56,6 +57,7 @@ const ContactStyles = styled.div`
 `
 const SideBarStyles = styled.div`
   display: flex;
+  
   width: 50%;
   margin-left: 8rem;
   margin-right: 8rem;
@@ -64,13 +66,17 @@ const SideBarStyles = styled.div`
     width: 350px;
   }
   @media (max-width: 800px){
-    flex-direction: column;
+    justify-content: center;
     width: 80%;
-    margin-left: 2rem;
+    padding-top: 1rem;
+    margin: 0;
   }
   @media (max-width: 400px){
-    
-    margin-left: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin-left: 3.5rem;
+    width: 100%;
     p {
       width: 80%;
     }
@@ -83,8 +89,9 @@ const AreaStyles = styled.div`
   }
   p{
     font-size: 2rem;
+    line-height: 1;
     @media (max-width: 400px) {
-            font-size: 1rem;
+            font-size: 1.5rem;
         }
   }
 `

@@ -21,7 +21,7 @@ const ThanksPage = () => (
        
         
             <ThanksStyles>
-                <div class="content">
+                <div className="content">
 
                     <h2>Thank you for requesting an Estimate! </h2>
                     <h2> We will get back to you as soon as the sun goes down!</h2>

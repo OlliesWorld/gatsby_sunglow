@@ -33,6 +33,9 @@ h1{
       height: 50px;
       margin-left: 2rem;
       margin-top: 1rem;
+      @media (max-width: 400px) {
+        margin: .2rem 0;
+      }
     }
   }
   

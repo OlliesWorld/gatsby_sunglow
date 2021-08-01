@@ -29,12 +29,7 @@ return (
 export default Sidebar
 
 const SidebarStyles = styled.div`
-@media (max-width: 800px) {
-    margin-left:   9rem;
-}
-@media(max-width: 400px){
-     margin-left: 2rem;
-    }
+
 .rec-links {
     width: 280px;
     margin-right: 1rem;

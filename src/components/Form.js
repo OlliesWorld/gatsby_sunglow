@@ -43,13 +43,21 @@ const FormStyles = styled.div `
       width: 90%;
       margin: 0 auto;
     }
+    .cta-btn {
+      text-align: center;
+      margin-left: 12rem;
+    @media (max-width: 400px) {
+      
+      margin-left: 2rem;
+      width: 80%;
+    }
+  }
   form {
     text-align: center;
     padding-top: .5rem;
     
    
     .Form--Input {
-      
       height: 50px;
       width: 25rem;
       margin: 1rem;
@@ -66,15 +74,13 @@ const FormStyles = styled.div `
       @media (max-width: 400px) {
       width: 90%;
       margin: 0;
-    }
+      }
     }
   }
-  .cta-btn {
-    margin-left: 12rem;
-  }
+  
   .Form--Title {
-   text-transform: uppercase;
-   font-weight: bold;
+    text-transform: uppercase;
+    font-weight: bold;
     border-bottom:solid 1px rgb(255, 103, 0);
     font-size: 2rem;
   }

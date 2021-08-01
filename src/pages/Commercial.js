@@ -19,19 +19,17 @@ const CommercialPage = () => (
              
                 <div className="cta-content">
                     <h2>COMMERCIAL WINDOW TINTING SERVICE <br/>DURANGO & Surrounding Areas</h2>
-                    <p> SunGlo Durango is a locally owned and operated commercial window tinting
-                        installation service. We offer solar control window film, security window film and all types of
-                        decorative film for glass. Call today to schedule your complementary commercial window tint
-                        estimate!</p>
+                    <p>SunGlo Durango is a locally owned and operated commercial window tinting installation service for 10 years. We offer Solar control window film, Security window film and all types of Decorative film for glass. Call today to schedule your Complementary commercial window tint estimate!</p>
                                  <Link className="cta-btn" to='/Estimate'><RightArrow/>Start Saving <span>Now</span></Link>
                 </div>
                 
             </CTAStyles>   
             <div className='divider'></div>
-        <CommercialStyles>  
+            <BackgroundStyles>
+            <CommercialStyles>  
            
             <div className="section">
-                <div class="content-box">
+                <div className="content-box">
                     <h2>What will Commercial Window Tinting Service do for me?</h2>
                     <div className="bullet">
                         <FaCircle className="circle"/>  <p>Eliminate “hot spots” where employees & most importantly customers can become uncomfortable & unproductive.</p>
@@ -42,26 +40,28 @@ const CommercialPage = () => (
                     <div className="bullet">
                         <FaCircle className="circle"/>  <p>Reduce fading on inventory & fixtures by eliminating 99% of harmful UV rays.</p>
                     </div>
+                    <br/>
+                    <div className="bullet">
+                    <FaCircle className="circle"/>  <p>Control Reduce glare.</p>
+                    </div>
                     <div className="bullet">
                     <FaCircle className="circle"/>  <p>Achieve greater security with Security Window Film. Security Window Film Denver is a thick, clear window film deters intruders by making entry through windows more difficult & noisier.</p>
                     </div>
-                    <div className="bullet">
-                    <FaCircle className="circle"/> <p>Reduce bothersome glare with Window Privacy Film Denver.</p>
-                    </div>
+        
                     
                     <div className="bullet">
                         <FaCircle className="circle"/> <p>Retrofit current glass with patterned or frosted Decorative Window Film Denver to achieve view control and dress up conference rooms or store fronts.</p>
                     </div>
                                    <div className="bullet">
-                       <FaCircle className="circle"/> <p>Diminish the costly impact of glass graffiti.</p>
+                       <FaCircle className="circle"/> <p>Our Safety & Security solutions help reduce the risk of crime, personal injury, and property damage by holding broken glass shards together and keeping windows intact.</p>
                     </div>
                     <br/>
                     <div className="bullet">
-                        <FaCircle className="circle"/> <p>Create privacy, keeping onlookers from seeing in with Window Privacy Film Denver.</p>
+                        <FaCircle className="circle"/> <p>Graffiti Free films reduce this cost by allowing you to simply replace the film instead of the defaced windows or glass.</p>
                     </div>
-                    <h3>The best part is these benefits can be had at a fraction of the cost of replacing the existing glass!</h3>
-                    <p>If you are looking for quality products and customer service excellence in your Denver commercial window tinting company, you have come to the right place! SunGlo Window Films has been in business in Colorado since 1991. We carry an A+ BBB rating. Customer satisfaction is of the highest importance to us to ensure we will be around for another 20 years.</p>
-                    <h3>If you choose SunGlo Window Films for Commercial Window Tinting Services in Denver, you will not be disappointed!</h3>
+                    <h3>The best part of these benefits can be had at a fraction of the cost of replacing the existing glass!</h3>
+                    <p>If you are looking for quality products and Excellent Customer service in you Commercial film needs call SunGlo Window Films Durango. We has been in business in Colorado since 1991 and in Durango since 2011. We carry an A+ BBB rating. Customer satisfaction is of the highest importance to us!</p>
+                    <h3>If you choose SunGlo Window Films for Commercial Window Tinting Services in Durango, you will not be disappointed!</h3>
                 </div>
                 
                 <Sidebar />
@@ -76,47 +76,52 @@ const CommercialPage = () => (
             </div>
             
            
-        </CommercialStyles>  
-
+            </CommercialStyles>  
+        </BackgroundStyles>
     </Layout >
 );
 
 export default CommercialPage
-
+const BackgroundStyles = styled.div`
+    background-image: url("/images/nice_snow.png");
+    padding-bottom: 1rem;
+`
 const CommercialStyles = styled.div`
     margin-right: 2.2rem;
     padding-top: 5rem;
     display: flex;
     flex-wrap: wrap;
-    background-image: url("/images/nice_snow.png");
-    width: 100%;
-    padding-bottom: 10rem;
+    justify-content: center;
+   
     @media(max-width:400px){
         flex-direction: column;
+        margin: 0;
         padding: 0;
         width:99%;
     }
   
-    .section {
+.section {
     display: flex;
     justify-content: space-evenly;
     margin: 1rem 8rem;
     
     @media(max-width:800px){
         flex-direction: column;
-       width: 100%;
-       margin:2rem;
+        justify-content: center;
+        width: 100%;
+        margin:2rem;
    }
    @media(max-width:400px){
        margin:2rem 0;
+       width: 95%;
    }
 } 
 .content-box {
-    padding-right: 5rem;
-    
-    @media(max-width:1200px){
-       margin-left: 2rem;
-        width:100%;
+    /* padding-right: 5rem; */
+    justify-items: center;
+    @media(max-width:400px){
+       padding: 0 1rem;
+        width:90%;
     }
 }
 
@@ -130,32 +135,39 @@ const CommercialStyles = styled.div`
     color: var(--clr-orange);
     padding-top:.25em;
     margin-right:.25em;
-    @media (max-width: 800px) {
+    /* @media (max-width: 400px) {
         display: none;
-    }
+    } */
+}
+.Sidebar {
+    display: flex;
+    justify-content: center;
 }
 .img-box {
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
-    margin-left: 2rem;
+  
+    
+    
     .gatsby-image-wrapper {
-        box-shadow: 5px 5px 5px 1px  rgb(255, 103, 0) ;
-    }
-    @media(max-width: 1200px){
-        grid-template-columns: 1fr 1fr;
-        margin-left: 6rem;
+        box-shadow: 5px 5px 5px 1px  rgb(255, 103, 0);
         
-        img{
-            padding: 1rem 0;
+        @media (max-width: 450px) {
+            box-shadow: none;  
+             
+            }
         }
+    @media(max-width: 800px){
+        grid-template-columns: 1fr;
+    
     }
     @media(max-width: 400px){
-       margin-left: 1rem;
+      
        grid-template-columns: 1fr;
         img{
-            margin: 0;
-            width: 60%;
+           margin-left: .5rem;
+            width: 65%;
         }
     }
 }
@@ -198,7 +210,10 @@ const CTAStyles = styled.div`
         margin-left:1rem;
         padding: 1rem;
         width: 95%;
-    }
+        }
+        @media (max-width: 400px) {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
     }
 `
 

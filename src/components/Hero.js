@@ -56,15 +56,31 @@ const HeroStyles = styled.div `
         flex-direction: column;
         align-items: center;
         padding: .5rem 2rem;
+        @media (max-width: 800px) {
+            background-color: rgba(0, 0, 0, 0.5);
+            background-image: url('/images/sunglo_hero.jpg');
+            padding: 2rem;
+            h2 {
+                background-color: rgb(255, 103, 0, .7);
+                padding: 1rem;
+                text-align: center;
+            }
+            p {
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                margin: 0;
+            }
+        }
     }
     .wrapper h2 {
         font-size: 3rem;
+       
     }
      .wrapper button {
        align-self: center;
        
     }  
-    @media (max-width: 400px) {
+    @media (max-width: 800px) {
        .gatsby-image-wrapper {
         display: none;
        }
