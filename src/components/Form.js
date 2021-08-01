@@ -1,31 +1,69 @@
-import React from "react"
-import styled from "styled-components"
+import { navigate } from 'gatsby'
+import React, { useState } from 'react'
+import styled from 'styled-components'
+import './styles/GlobalStyles.css'
 
-const ContactForm = () => {
-  
-    // Simple controlled form setup (Control your own state)
-    // const handleChange = e => setFormValues({ ...formValues, [e.target.name]: e.target.value })
-    // const [formValues, setFormValues] = useState({
-    //   name: '',
-    //   email: '',
-    //   phone: '',
-    //   message: ''
-    // })
-  
-    return (
-        
-        <FormStyles>
-            <a className="cta-btn" href="tel:9703359600">CALL OR TEXT: (970) 335-9600</a>
-            <form name="contactUs" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/Thanks">
-         
-              <input className='Form--Input' type='text' placeholder='Name' name='name' required />
+// This function encodes the captured form data in the format that Netlify's backend requires
+function encode(data) {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
+
+const ContactForm = (props) => {
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [phone, setPhone] = useState("")
+  const [message, setMessage] = useState("")
+
+  const handleChange = (e) => {
+    setName({ ...name, [e.target.name]: e.target.value })
+    setEmail({ ...email, [e.target.email]: e.target.value })
+    setPhone({ ...phone, [e.target.phone]: e.target.value })
+    setMessage({ ...message, [e.target.message]: e.target.value })
+  }
+
+  const handleSubmit = (event) => {
+    // Prevent the default onSubmit behavior
+    event.preventDefault();
+    // POST the encoded form with the content-type header that's required for a text submission
+    // Note that the header will be different for POSTing a file
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ 
+        "form-name": event.target.getAttribute("name"), 
+        ...name
+      })
+    })
+      // On success, redirect to the custom success page using Gatsby's `navigate` helper function
+      .then(() => navigate("/Thanks/"))
+      // On error, show the error in an alert
+      .catch(error => alert(error));
+  };
+
+  return (
+    <FormStyles>
+    <a className="cta-btn" href="tel:9703359600">CALL OR TEXT: (970) 335-9600</a>
+    <form data-netlify="true" action="/" name="contactUs" method="post" onSubmit={handleSubmit}>
+      <input type="hidden" name="form-name" value="contact-form" />
+     
+        <input
+          name="Name"
+          type="text"
+          onChange={handleChange}
+          required
+          placeholder="Name"
+          className='Form--Input'
+        />
+      
           
-              <input className='Form--Input' type='email' placeholder='Email' name='email' required />
+              <input className='Form--Input' type='email' placeholder='Email' name='email' onChange={handleChange} required />
           
-              <input className='Form--Input' type='phone' placeholder='Phone' name='phone'  />
+              <input className='Form--Input' type='phone' placeholder='Phone' name='phone'  onChange={handleChange}/>
           
               <p>How Can We Assist You?</p>
-              <textarea className='Form--Textarea' placeholder='Message' name='message' rows='8'  required />
+              <textarea className='Form--Textarea' placeholder='Message' name='message' rows='8'  onChange={handleChange} required />
          
             <div>
               <button className='Button Form--SubmitButton' type='submit' >Contact Us</button>
