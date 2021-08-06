@@ -32,8 +32,8 @@ const FooterStyles = styled.ul`
        }
     }
 
-    .social-links a {
-        padding-left: 1rem;
+    .social-links {
+        padding-top: 1rem;
     }
     .white {
       color: white;
@@ -41,7 +41,7 @@ const FooterStyles = styled.ul`
     .info {
         display: flex;
         justify-content: space-evenly;
-        margin-left: 2rem;
+        
         @media (max-width: 400px) {
             flex-direction: column;
         }
@@ -51,12 +51,14 @@ const FooterStyles = styled.ul`
         font-weight: Bold;
         color: rgb(255,103,0);
         padding-top: .8rem;
-        
+        @media (max-width: 400px) {
+            font-size: 1.3rem;
+        }
     }
     .cta-btn {
         padding:  0.875rem;
         margin-top: 1rem;
-        margin-left:2rem;
+        /* margin-left:2rem; */
         background-color: rgb(255, 103, 0);
         background-image: linear-gradient(0deg, rgb(255, 103, 0) 10%, rgb(255, 160, 0) 90%);
         border-top: 1px solid rgb(255, 103, 0);
@@ -81,4 +83,4 @@ const FooterStyles = styled.ul`
       color: #007c8f;
   }
 `
-export default FooterStyles;
+export default FooterStyles

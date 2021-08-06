@@ -4,7 +4,7 @@ import Seo from "../components/seo"
 import Layout from '../components/layout';
 import '../components/styles/GlobalStyles.css';
 import styled from 'styled-components';
-
+import CTAStyles from '../components/styles/CTAStyles'
 import { StaticImage } from 'gatsby-plugin-image';
 import Sidebar from '../components/Sidebar';
 import { FaArrowCircleRight, FaCircle } from 'react-icons/fa';
@@ -13,6 +13,7 @@ import { FaArrowCircleRight, FaCircle } from 'react-icons/fa';
 const ResidentialPage = () => (
     <Layout > 
         <Seo title="Residential Window Tinting for Durango & Surrounding Areas | (970) 335-9600"/>  
+            <RCTAStyles>
             <CTAStyles>
                 <div className="cta-content">
                     
@@ -20,7 +21,8 @@ const ResidentialPage = () => (
                         <p>SunGlo Durango is a professional Residential window tint installation company. We pride ourselves on High Value, Lifetime warrantied window film added with the best Tint Installation services in the Four Corners Area! Schedule your FREE Window Film consultation Today!</p>
                     <Link className="cta-btn" to='/Estimate'><RightArrow />Schedule a Free Quote</Link>
                 </div>
-            </CTAStyles>  
+                </CTAStyles>
+            </RCTAStyles>  
             <div className='divider'></div>
             <BackgroundStyles>
             <ResidentialStyles>  
@@ -60,12 +62,12 @@ const ResidentialPage = () => (
                     <Sidebar />
                 </div>
                 <div className="img-box">
-                    <StaticImage src="../images/residential/Residential_2.jpg" alt="Man on tall scaffolding installing Sunglo's Window Film" placeholder="blurred" width={500} height={400} layout="fixed"/>
-                    <StaticImage src="../images/residential/Residential_3.jpg" alt="Window looking outside displays Sunglo's Window Film" placeholder="blurred" width={500} height={400} layout="fixed"/>
-                    <StaticImage src="../images/residential/Residential_8.jpeg" alt="Great living room view with Sunglo's Window Film installed " placeholder="blurred" width={500} height={400} layout="fixed"/>
-                    <StaticImage src="../images/residential/Residential_4.jpg" alt="Installing Sunglo's Window Film with scaffolding" placeholder="blurred" width={500} height={500} layout="fixed"/>
-                    <StaticImage src="../images/residential/Residential_6.jpeg" alt="Installing Sunglo's Window Film with ladder while enjoying the view" placeholder="blurred" width={500} height={500} layout="fixed"/>
-                    <StaticImage src="../images/residential/Residential_7.jpeg" alt="Sunglo's Window Film provides home owner with a incredible view" placeholder="blurred" width={500} height={500} layout="fixed"/>
+                    <StaticImage src="../images/residential/Residential_2.jpg" alt="Man on tall scaffolding installing Sunglo's Window Film" placeholder="blurred" width={375} height={300}  layout="fixed"/>
+                    <StaticImage src="../images/residential/Residential_3.jpg" alt="Window looking outside displays Sunglo's Window Film" placeholder="blurred" width={375} height={300} layout="fixed"/>
+                    <StaticImage src="../images/residential/Residential_8.jpeg" alt="Great living room view with Sunglo's Window Film installed " placeholder="blurred" width={375} height={300}  layout="fixed"/>
+                    <StaticImage src="../images/residential/Residential_4.jpg" alt="Installing Sunglo's Window Film with scaffolding" placeholder="blurred" width={375} height={300}  layout="fixed"/>
+                    <StaticImage src="../images/residential/Residential_6.jpeg" alt="Installing Sunglo's Window Film with ladder while enjoying the view" placeholder="blurred" width={375} height={300}  layout="fixed"/>
+                    <StaticImage src="../images/residential/Residential_7.jpeg" alt="Sunglo's Window Film provides home owner with a incredible view" placeholder="blurred" width={375} height={300} layout="fixed"/>
                 </div>
             
             <div className="video-box">
@@ -81,46 +83,20 @@ const ResidentialPage = () => (
 
 export default ResidentialPage
 
-const CTAStyles = styled.div`
-    background-color: rgba(0, 0, 0, 0.5);
+const RCTAStyles = styled.div`
+    /* background-color: rgba(0, 0, 0, 0.5); */
     background-image: url('/images/Residential_Header.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no repeat;
-    padding-bottom: 35px;
-    padding-top: 35px;
-    color: white;
     max-width: 1140px;
-    margin-left: 10rem;
-    margin-right: auto;
-    margin-bottom: 1rem;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: center;
-    h2{
-        text-transform: uppercase;
-    }
-    @media (max-width: 1200px) {
-        margin-left:1rem;
-        width: 95%;
-    }
     @media (max-width: 400px) {
-        margin-left:.5rem;   
+        /* display: none; */
+        background-image: none;
+        margin: 0;
+        /* height: 350px; */
     }
-    .cta-content {
-        background-color: rgba(0, 0, 0, 0.5);
-        width: 50%;
-        margin-left: 45rem;
-        padding: 1rem;
-        @media (max-width: 1200px) {
-        margin-left:1rem;
-        padding: 1rem;
-        width: 95%;
-        }
-        @media (max-width: 400px) {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-}
+    
 `
 const BackgroundStyles = styled.div`
     background-image: url("/images/nice_snow.png");
@@ -158,8 +134,8 @@ const ResidentialStyles = styled.div`
 .content-box {
     /* padding-right: 5rem; */
     @media(max-width:400px){
-       /* margin-left: 2rem; */
-        width:100%;
+        padding: 0 1rem;
+        width:90%;
     }
 }
 .bullet {
@@ -205,7 +181,7 @@ const ResidentialStyles = styled.div`
         grid-template-columns: 1fr;
         margin-bottom: 1rem;
        img{ 
-            width: 70%;
+            width: 96%;
        }
     }
 }
@@ -222,6 +198,7 @@ const ResidentialStyles = styled.div`
         font-size: 1rem;
         width: 70%;
         text-align: center;
+        margin: 0.5rem auto;
     }
 }
 .video-box iframe {

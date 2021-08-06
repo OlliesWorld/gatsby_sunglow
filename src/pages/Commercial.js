@@ -2,7 +2,7 @@ import { Link } from 'gatsby'
 import Seo from '../components/seo'
 import React from 'react'
 import Layout from '../components/layout'
-
+import CTAStyles from '../components/styles/CTAStyles'
 import '../components/styles/GlobalStyles.css'
 import styled from 'styled-components'
 import {FaArrowCircleRight, FaCircle} from 'react-icons/fa'
@@ -15,15 +15,17 @@ const CommercialPage = () => (
     <Layout >  
         <Seo title="Commercial Window Tint in Durango & Surrounding Areas | (970) 335-9600"/>
           
-         <CTAStyles>
-             
-                <div className="cta-content">
-                    <h2>COMMERCIAL WINDOW TINTING SERVICE <br/>DURANGO & Surrounding Areas</h2>
-                    <p>SunGlo Durango is a locally owned and operated commercial window tinting installation service for 10 years. We offer Solar control window film, Security window film and all types of Decorative film for glass. Call today to schedule your Complementary commercial window tint estimate!</p>
-                                 <Link className="cta-btn" to='/Estimate'><RightArrow/>Start Saving <span>Now</span></Link>
-                </div>
-                
-            </CTAStyles>   
+             <CCTAStyles>
+                <CTAStyles>
+                 
+                    <div className="cta-content">
+                        <h2>COMMERCIAL WINDOW TINTING SERVICE <br/>DURANGO & Surrounding Areas</h2>
+                        <p>SunGlo Durango is a locally owned and operated commercial window tinting installation service for 10 years. We offer Solar control window film, Security window film and all types of Decorative film for glass. Call today to schedule your Complementary commercial window tint estimate!</p>
+                                     <Link className="cta-btn" to='/Estimate'><RightArrow/>Start Saving <span>Now</span></Link>
+                    </div>
+                 
+                </CTAStyles>   
+             </CCTAStyles>
             <div className='divider'></div>
             <BackgroundStyles>
             <CommercialStyles>  
@@ -67,12 +69,12 @@ const CommercialPage = () => (
                 <Sidebar />
             </div>
             <div className="img-box">
-                <StaticImage src="../images/commercial/Commercial_1.jpeg" alt="Office Cubicle with Sunglo's Decorative Window Film" placeholder="blurred" width={550} height={400} layout="fixed"/>
-                <StaticImage src="../images/commercial/Commercial_2.jpeg" alt="Man installing Sunglo's Window Film" placeholder="blurred" width={550} height={400} layout="fixed"/>
-                <StaticImage src="../images/commercial/Commercial_3.jpeg" alt="business with Sunglo Window film installation in progress" placeholder="blurred" width={550} height={400}  layout="fixed" />
-                <StaticImage src="../images/commercial/Commercial_4.jpeg" alt="Office Cubicle with Sunglo's Decorative Window Film" placeholder="blurred" width={550} height={400} layout="fixed"/>
-                <StaticImage src="../images/commercial/Commercial_5.jpeg" alt="Installing Sunglo's Window Film using ladders in a office" placeholder="blurred" width={550} height={400} layout="fixed"/>
-                <StaticImage src="../images/commercial/Commercial_6.jpeg" alt="Office with a beautiful view now with Sunglo Window Film installed" placeholder="blurred" width={550} height={400}  layout="fixed" />
+                <StaticImage src="../images/commercial/Commercial_1.jpeg" alt="Office Cubicle with Sunglo's Decorative Window Film" placeholder="blurred" width={375} height={300} layout="fixed"/>
+                <StaticImage src="../images/commercial/Commercial_2.jpeg" alt="Man installing Sunglo's Window Film" placeholder="blurred" width={375} height={300} layout="fixed"/>
+                <StaticImage src="../images/commercial/Commercial_3.jpeg" alt="business with Sunglo Window film installation in progress" placeholder="blurred" width={375} height={300}  layout="fixed" />
+                <StaticImage src="../images/commercial/Commercial_7.jpeg" alt="Looking at office widows from the outside with Sunglo's Decorative Window Film" placeholder="blurred" width={375} height={300}  layout="fixed"/>
+                <StaticImage src="../images/commercial/Commercial_5.jpeg" alt="Installing Sunglo's Window Film using ladders in a office" placeholder="blurred" width={375} height={300} layout="fixed"/>
+                <StaticImage src="../images/commercial/Commercial_6.jpeg" alt="Office with a beautiful view now with Sunglo Window Film installed" placeholder="blurred" width={375} height={300} layout="fixed" />
             </div>
             
            
@@ -87,7 +89,7 @@ const BackgroundStyles = styled.div`
     padding-bottom: 1rem;
 `
 const CommercialStyles = styled.div`
-    margin-right: 2.2rem;
+    
     padding-top: 5rem;
     display: flex;
     flex-wrap: wrap;
@@ -104,20 +106,21 @@ const CommercialStyles = styled.div`
     display: flex;
     justify-content: space-evenly;
     margin: 1rem 8rem;
-    
+  
     @media(max-width:800px){
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        margin:2rem;
+        margin: 2rem;
    }
    @media(max-width:400px){
        margin:2rem 0;
+       align-items: center;
        width: 95%;
    }
 } 
 .content-box {
-    /* padding-right: 5rem; */
+    padding-right: 5rem;
     justify-items: center;
     @media(max-width:400px){
        padding: 0 1rem;
@@ -135,20 +138,12 @@ const CommercialStyles = styled.div`
     color: var(--clr-orange);
     padding-top:.25em;
     margin-right:.25em;
-    /* @media (max-width: 400px) {
-        display: none;
-    } */
 }
-.Sidebar {
-    display: flex;
-    justify-content: center;
-}
+
 .img-box {
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
-  
-    
+    grid-gap: 1.5rem;
     
     .gatsby-image-wrapper {
         box-shadow: 5px 5px 5px 1px  rgb(255, 103, 0);
@@ -166,68 +161,40 @@ const CommercialStyles = styled.div`
       
        grid-template-columns: 1fr;
         img{
-           margin-left: .5rem;
-            width: 65%;
+           
+            width: 96%;
         }
     }
 }
 
 `
 
-const CTAStyles = styled.div`
-    background-color: rgba(0, 0, 0, 0.5);
+const CCTAStyles = styled.div`
     background-image: url('/images/Commercial_Header.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no repeat;
-    padding-bottom: 35px;
-    padding-top: 35px;
-    color: white;
     max-width: 1140px;
-    height: 500px;
-    margin-left: 10rem;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: center;
-    @media (max-width: 1200px) {
-        margin-left:1rem;
-        width: 95%;
-    }
     @media (max-width: 400px) {
-        margin-left:.5rem;
-        
+        /* display: none; */
+        background-image: none;
+        margin: 0;
+        /* height: 350px; */
     }
-    h2 {
-        text-transform:uppercase;
-    }
-    .cta-content {
-        background-color: rgba(0, 0, 0, 0.5);
-        width: 50%;
-        margin-left: 47rem;
-        padding: 1rem;
-        @media (max-width: 1200px) {
-        margin-left:1rem;
-        padding: 1rem;
-        width: 95%;
-        }
-        @media (max-width: 400px) {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-    }
-`
+    
+  `
 
 const RightArrow = styled(FaArrowCircleRight)`
-    animation: slide1 1s ease-in-out infinite;
-    margin-right: 1rem;
-    @keyframes slide1 {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-
-  50% {
-    transform: translate(10px, 0);
-  }
+  animation: slide1 1s ease-in-out infinite;
+  margin-right: 1rem;
+  @keyframes slide1 {
+0%,
+100% {
+  transform: translate(0, 0);
 }
-  `
+
+50% {
+  transform: translate(10px, 0);
+}
+}
+`

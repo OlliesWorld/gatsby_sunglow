@@ -24,7 +24,7 @@ const ThanksPage = () => (
                 <div className="content">
 
                     <h2>Thank you for requesting an Estimate! </h2>
-                    <h2> We will get back to you as soon as the sun goes down!</h2>
+                    <h2>A SunGlo representative will be in contact shortly.</h2>
                 </div>
                 
             </ThanksStyles>

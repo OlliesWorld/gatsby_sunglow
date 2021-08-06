@@ -70,6 +70,7 @@ const ServiceStyles = styled.div `
     .service-wrapper {
         display: flex;
         justify-content: space-evenly;
+      
     }
    .service-box {
         width: 377px;
@@ -83,6 +84,9 @@ const ServiceStyles = styled.div `
     width: 100%;
     padding: .2rem;
     margin-bottom: 1rem;
+    @media (max-width: 400px) {
+            border: none;
+        }
    }
   
    .btn-service {
@@ -113,4 +117,5 @@ const ServiceStyles = styled.div `
     }
     
    }
+   
 `

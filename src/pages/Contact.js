@@ -57,29 +57,29 @@ const ContactStyles = styled.div`
 `
 const SideBarStyles = styled.div`
   display: flex;
-  
+  justify-content: center;
   width: 50%;
-  margin-left: 8rem;
-  margin-right: 8rem;
+  /* margin-left: 8rem; */
+  /* margin-right: 8rem; */
   padding-top: 7rem;
   .box {
     width: 350px;
   }
   @media (max-width: 800px){
-    justify-content: center;
+    
     width: 80%;
     padding-top: 1rem;
-    margin: 0;
+    .box {
+      margin: 0 .5rem;
+    }
   }
   @media (max-width: 400px){
     flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    margin-left: 3.5rem;
-    width: 100%;
-    p {
-      width: 80%;
+    .box {
+      width: 99%;
     }
+   
+    
   }
 `
 const AreaStyles = styled.div`

@@ -1,8 +1,8 @@
 import React from 'react'
 import {Link} from 'gatsby'
-import FooterStyles from './styles/FooterStyles';
-import { StaticImage } from 'gatsby-plugin-image';
-import { FaFacebookF } from 'react-icons/fa';
+import FooterStyles from './styles/FooterStyles'
+import { StaticImage } from 'gatsby-plugin-image'
+import { FaFacebookF } from 'react-icons/fa'
 
 
 export default function Footer () {
