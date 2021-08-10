@@ -23,7 +23,7 @@ const HeaderStyles = styled.header`
 h1{ 
   text-align: center;
 }
-  @media ( max-width: 400px) {
+  @media ( max-width: 640px) {
     .gatsby-image-wrapper {
       overflow: none;
       width: 100px;
@@ -33,7 +33,7 @@ h1{
       height: 50px;
       margin-left: 2rem;
       margin-top: 1rem;
-      @media (max-width: 400px) {
+      @media (max-width: 640px) {
         margin: .2rem 0;
       }
     }

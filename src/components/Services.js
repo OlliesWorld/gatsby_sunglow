@@ -84,7 +84,7 @@ const ServiceStyles = styled.div `
     width: 100%;
     padding: .2rem;
     margin-bottom: 1rem;
-    @media (max-width: 400px) {
+    @media (max-width: 640px) {
             border: none;
         }
    }
@@ -107,7 +107,7 @@ const ServiceStyles = styled.div `
     
     color: rgb(255, 255, 255);
    }
-   @media (max-width: 800px) {
+   @media (max-width: 1007px) {
     .service-wrapper{
         flex-direction: column;
         align-items: center;

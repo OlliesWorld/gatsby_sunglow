@@ -95,7 +95,7 @@ const CommercialStyles = styled.div`
     flex-wrap: wrap;
     justify-content: center;
    
-    @media(max-width:400px){
+    @media(max-width: 640px){
         flex-direction: column;
         margin: 0;
         padding: 0;
@@ -107,13 +107,13 @@ const CommercialStyles = styled.div`
     justify-content: space-evenly;
     margin: 1rem 8rem;
   
-    @media(max-width:800px){
+    @media(max-width: 1007px){
         flex-direction: column;
         justify-content: center;
         width: 100%;
         margin: 2rem;
    }
-   @media(max-width:400px){
+   @media(max-width: 640px){
        margin:2rem 0;
        align-items: center;
        width: 95%;
@@ -122,7 +122,7 @@ const CommercialStyles = styled.div`
 .content-box {
     padding-right: 5rem;
     justify-items: center;
-    @media(max-width:400px){
+    @media(max-width: 640px){
        padding: 0 1rem;
         width:90%;
     }
@@ -148,16 +148,16 @@ const CommercialStyles = styled.div`
     .gatsby-image-wrapper {
         box-shadow: 5px 5px 5px 1px  rgb(255, 103, 0);
         
-        @media (max-width: 450px) {
+        @media (max-width: 640px) {
             box-shadow: none;  
              
             }
         }
-    @media(max-width: 800px){
+    @media(max-width: 1007px){
         grid-template-columns: 1fr;
     
     }
-    @media(max-width: 400px){
+    @media(max-width: 640px){
       
        grid-template-columns: 1fr;
         img{

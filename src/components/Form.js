@@ -77,14 +77,14 @@ const ContactForm = (props) => {
 export default ContactForm
 
 const FormStyles = styled.div `
- @media (max-width: 400px) {
+ @media (max-width: 640px) {
       width: 90%;
       margin: 0 auto;
     }
     .cta-btn {
       text-align: center;
       margin-left: 12rem;
-    @media (max-width: 400px) {
+    @media (max-width: 640px) {
       
       margin-left: 2rem;
       width: 80%;
@@ -100,7 +100,7 @@ const FormStyles = styled.div `
       width: 25rem;
       margin: 1rem;
       border:  1px solid rgb(255, 103, 0);
-      @media (max-width: 400px) {
+      @media (max-width: 640px) {
       width: 90%;
       margin: .5rem 0;
      
@@ -109,7 +109,7 @@ const FormStyles = styled.div `
     textarea {
       width: 25rem;
       border:  1px solid rgb(255, 103, 0);
-      @media (max-width: 400px) {
+      @media (max-width: 640px) {
       width: 90%;
       margin: 0;
       }

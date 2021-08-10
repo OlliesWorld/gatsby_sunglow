@@ -58,13 +58,13 @@ const HeroStyles = styled.div `
         flex-direction: column;
         align-items: center;
         padding: .5rem 2rem;
-        @media (max-width: 800px) {
+        @media (max-width: 1007px) {
             /* background-color: rgba(0, 0, 0, .8); */
             background-image: url('/images/sunglo_hero.jpg');
             padding: 2rem;
             
         }
-        @media ( max-width: 400px) {
+        @media ( max-width: 640px) {
             background-image: none;
            
         }
@@ -77,7 +77,7 @@ const HeroStyles = styled.div `
     
     
      
-    @media (max-width: 800px) {
+    @media (max-width: 1007px) {
        .gatsby-image-wrapper {
         display: none;
        }

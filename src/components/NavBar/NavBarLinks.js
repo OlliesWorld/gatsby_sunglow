@@ -13,12 +13,10 @@ const NavItem = Styled(Link)`
     background-color: transparent; 
     background: transparent center bottom / 100% 5px no-repeat linear-gradient(var(--clr-orange) 0 0);
     transition: 0.3s linear;
-    :hover {
-      /* background: linear-gradient(red 0 0) center bottom / 100% 5px no-repeat; */
-      
+    :hover {      
       background-size: 50% 5px;
     }
-  @media (min-width: 900px){
+  @media (min-width: 1007px){
    :nth-last-child(3) {
       margin-right: 5rem;
     }

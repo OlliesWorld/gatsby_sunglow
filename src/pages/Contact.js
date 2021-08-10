@@ -49,7 +49,7 @@ const ContactStyles = styled.div`
   justify-content: center;
 
   
-  @media (max-width: 800px) {
+  @media (max-width: 1007px) {
     flex-direction: column; 
     align-items: center;
     
@@ -65,7 +65,7 @@ const SideBarStyles = styled.div`
   .box {
     width: 350px;
   }
-  @media (max-width: 800px){
+  @media (max-width: 1007px){
     
     width: 80%;
     padding-top: 1rem;
@@ -73,7 +73,7 @@ const SideBarStyles = styled.div`
       margin: 0 .5rem;
     }
   }
-  @media (max-width: 400px){
+  @media (max-width: 640px){
     flex-direction: column;
     .box {
       width: 99%;
@@ -90,7 +90,7 @@ const AreaStyles = styled.div`
   p{
     font-size: 2rem;
     line-height: 1;
-    @media (max-width: 400px) {
+    @media (max-width: 640px) {
             font-size: 1.5rem;
         }
   }

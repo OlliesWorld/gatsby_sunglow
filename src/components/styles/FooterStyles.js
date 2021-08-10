@@ -18,13 +18,13 @@ const FooterStyles = styled.ul`
         margin-bottom: .5rem;
         margin-top: 0;
    
-       @media (max-width: 400px) {
+       @media (max-width: 640px) {
         flex-direction: column;
        }
     }
     .nav-links a{
         padding-left: 5rem;
-       @media(max-width: 800px){
+       @media(max-width: 1007px){
            padding-left:1rem;
        }
        :hover {
@@ -42,7 +42,7 @@ const FooterStyles = styled.ul`
         display: flex;
         justify-content: space-evenly;
         
-        @media (max-width: 400px) {
+        @media (max-width: 640px) {
             flex-direction: column;
         }
     }
@@ -51,7 +51,7 @@ const FooterStyles = styled.ul`
         font-weight: Bold;
         color: rgb(255,103,0);
         padding-top: .8rem;
-        @media (max-width: 400px) {
+        @media (max-width: 640px) {
             font-size: 1.3rem;
         }
     }
@@ -73,7 +73,7 @@ const FooterStyles = styled.ul`
         cursor: pointer;
         color: white;
         overflow: hidden;
-        @media (max-width: 800px) {
+        @media (max-width: 1007px) {
 
             font-size: .8rem;
         }

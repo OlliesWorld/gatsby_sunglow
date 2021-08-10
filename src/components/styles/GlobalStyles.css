@@ -29,7 +29,7 @@ a {
     overflow: hidden;
     
 }
-@media (max-width: 750px) {
+@media (max-width: 1007px) {
     .cta-btn {
         font-size: .8rem;
     }

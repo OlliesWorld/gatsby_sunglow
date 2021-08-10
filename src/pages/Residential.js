@@ -72,7 +72,7 @@ const ResidentialPage = () => (
             
             <div className="video-box">
                 <h2 className="intro-video">Check Out This Time Lapse Video Of Us Tinting High Up Residential Windows</h2>
-                <iframe  src="https://www.youtube.com/embed/vmYe3HIM2Yw" title="Residential Sunglo's Window Film Install" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <iframe  src="https://www.youtube.com/embed/vmYe3HIM2Yw" title="Residential Sunglo's Window Film Install" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
   
   
@@ -90,7 +90,7 @@ const RCTAStyles = styled.div`
     background-size: cover;
     background-repeat: no repeat;
     max-width: 1140px;
-    @media (max-width: 400px) {
+    @media (max-width: 640px) {
         /* display: none; */
         background-image: none;
         margin: 0;
@@ -108,7 +108,7 @@ const ResidentialStyles = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    @media(max-width:400px){
+    @media(max-width: 640px){
         flex-direction: column;
         padding-left: .5rem;
         width:100%;
@@ -120,20 +120,20 @@ const ResidentialStyles = styled.div`
     margin: 1rem 8rem;
     
     
-    @media(max-width:800px){
+    @media(max-width: 1007px){
         flex-direction: column;
         justify-content: center;
         width: 100%;
         margin:2rem;
    }
-   @media(max-width:400px){
+   @media(max-width: 640px){
        width: 95%;
        margin: 2rem 0;
    }
 } 
 .content-box {
     /* padding-right: 5rem; */
-    @media(max-width:400px){
+    @media(max-width: 640px){
         padding: 0 1rem;
         width:90%;
     }
@@ -155,7 +155,7 @@ const ResidentialStyles = styled.div`
     text-decoration: underline var(--clr-orange);
     text-align: center;
     line-height: 1.2;
-    @media (max-width: 400px) {
+    @media (max-width: 640px) {
         font-size: 1.5rem;
     }
 }
@@ -172,12 +172,12 @@ const ResidentialStyles = styled.div`
         }
     }
  
-    @media(max-width: 800px){
+    @media(max-width: 1007px){
         grid-template-columns: 1fr;
         
         
     }
-    @media(max-width: 400px){
+    @media(max-width: 640px){
         grid-template-columns: 1fr;
         margin-bottom: 1rem;
        img{ 
@@ -187,14 +187,14 @@ const ResidentialStyles = styled.div`
 }
 .video-box {
     margin: 0 auto;
-    @media (max-width: 400px) {
+    @media (max-width: 640px) {
         margin: 0;
     }
 }
 .intro-video {
     color: var(--clr-orange);
     text-align: center;
-    @media (max-width: 400px) {
+    @media (max-width: 640px) {
         font-size: 1rem;
         width: 70%;
         text-align: center;
@@ -205,12 +205,12 @@ const ResidentialStyles = styled.div`
     margin-left: 5rem;
     width: 80%;
     height: 75vh;
-    @media(max-width: 800px){
+    @media(max-width: 1007px){
         height: 40vh;
         width: 90%;
         margin-left: 3rem;
     }
-    @media (max-width: 400px) {
+    @media (max-width: 640px) {
         margin-left: .5rem;
         width: 92vw;
     }

@@ -57,7 +57,7 @@ const SidebarStyles = styled.div`
     flex-direction: column;
     width:90%;
 }
-@media (max-width: 800px) {
+@media (max-width: 1007px) {
     margin: 0 auto;
 }
 `

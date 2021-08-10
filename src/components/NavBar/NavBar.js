@@ -10,7 +10,7 @@ const Navigation = Styled.nav`
   display: flex;
   justify-content: space-evenly;
   
-  @media (max-width: 56.25rem) {
+  @media (max-width: 1007px) {
     position: sticky;
     height: 8vh;
     top: 0;
@@ -28,7 +28,7 @@ const Toggle = Styled.div`
   padding: 0 5vw;
  
 
-  @media (max-width: 900px) {
+  @media (max-width: 1007px) {
     display: flex;
      
   }
@@ -40,7 +40,7 @@ const Navbox = Styled.div`
   justify-content: flex-end;
   align-items: center;
   
-  @media (max-width: 900px) {
+  @media (max-width: 1007px) {
     flex-direction: column;
     position: fixed;
     width: 40%;
@@ -63,7 +63,7 @@ const Navbox = Styled.div`
     }
    
     
-    @media (max-width: 700px) {
+    @media (max-width: 43.75rem) {
       left: ${props => (props.open ? "-100%" : "50%")};
       width: 50%;
       top: 13vh;
@@ -74,8 +74,8 @@ const Navbox = Styled.div`
 
 const Hamburger = Styled.div`
   background-color: #111;
-  width: 30px;
-  height: 3px;
+  width: 1.875rem;
+  height: .1875rem;
   transition: all .3s linear;
   align-self: center;
   margin-left: 10rem;
@@ -84,8 +84,8 @@ const Hamburger = Styled.div`
 
   ::before,
   ::after {
-    width: 30px;
-    height: 3px;
+    width: 1.875rem;
+    height: .1875rem;
     background-color: #111;
     content: "";
     position: absolute;
@@ -94,14 +94,14 @@ const Hamburger = Styled.div`
 
   ::before {
     transform: ${props =>
-    props.open ? "rotate(-90deg) translate(-10px, 0px)" : "rotate(0deg)"};
-    top: -10px;
+    props.open ? "rotate(-90deg) translate(-0.625rem, 0rem)" : "rotate(0deg)"};
+    top: -0.625rem;
   }
 
   ::after {
     opacity: ${props => (props.open ? "0" : "1")};
     transform: ${props => (props.open ? "rotate(90deg) " : "rotate(0deg)")};
-    top: 10px;
+    top: .625rem;
   }
   a {
     margin-top: 1rem;

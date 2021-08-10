@@ -78,7 +78,7 @@ const ACTAStyles = styled.div`
     background-position: center center;
     background-size: cover;
     max-width: 1140px;
-    @media (max-width: 400px) {
+    @media (max-width: 640px) {
         /* display: none; */
         background-image: none;
         margin: 0;
@@ -94,7 +94,7 @@ const AboutStyles = styled.div`
     display: flex;
     margin: 0 ;
    
-    @media(max-width:800px){
+    @media(max-width: 1007px){
         flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -109,26 +109,26 @@ const AboutStyles = styled.div`
     justify-content: space-evenly;
     margin: 1rem 8rem;
     
-    @media(max-width:800px){
+    @media(max-width: 1007px){
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 90%;
         margin:1rem auto;
    }
-   @media(max-width:400px){
+   @media(max-width: 640px){
        margin:2rem 0;
        width: 95%;
    }
 } 
 .content-box {
     padding-right: 5rem;
-   @media (max-width: 800px) { 
+   @media (max-width: 1007px) { 
        width: 100%;
        margin:0 auto;
        padding: 0;
    }
-   @media(max-width:400px){
+   @media(max-width: 640px){
         width: 90%;
        
        
@@ -151,11 +151,11 @@ const AboutStyles = styled.div`
     width: 100%;
     text-align: center;
 
-    @media(max-width: 800px){
+    @media(max-width: 1007px){
         margin: 0;
         
     }
-    @media(max-width:400px){
+    @media(max-width: 640px){
         
         padding-bottom: .5rem;
        
@@ -163,7 +163,7 @@ const AboutStyles = styled.div`
 }
 .img-box img {
     padding-right: 2rem;
-    @media(max-width:400px){
+    @media(max-width: 640px){
         
         padding-right: 0;
        
