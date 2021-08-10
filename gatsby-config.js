@@ -8,6 +8,7 @@ module.exports = {
     author: `Roni`,
   },
   plugins: [
+    `gatsby-plugin-percy`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
