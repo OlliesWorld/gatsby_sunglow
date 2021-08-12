@@ -98,7 +98,7 @@ const TintStyles = styled.div `
    }
    @media (max-width: 815px) {
        .btn-box {
-           margin-top: 3rem;
+           margin-top: 5rem;
        }
    }
    @media (max-width: 640px) {

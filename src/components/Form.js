@@ -83,7 +83,11 @@ const FormStyles = styled.div `
     }
     .cta-btn {
       text-align: center;
-      margin-left: 12rem;
+      margin-left: 4rem;
+      @media (max-width: 800px) {
+        margin-left: 8rem;
+        
+      }
     @media (max-width: 640px) {
       
       margin-left: 2rem;
@@ -93,8 +97,10 @@ const FormStyles = styled.div `
   form {
     text-align: center;
     padding-top: .5rem;
-    
-   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     .Form--Input {
       height: 50px;
       width: 25rem;
