@@ -77,7 +77,12 @@ const ACTAStyles = styled.div`
     background-image: url("/images/Residential_5.jpg");
     background-position: center center;
     background-size: cover;
-    max-width: 1140px;
+    width: 90%;
+    /* max-width: 1140px; */
+    @media (max-width: 1245px) {
+        margin-left:1rem;
+        width: 95%;
+    }
     @media (max-width: 640px) {
         /* display: none; */
         background-image: none;

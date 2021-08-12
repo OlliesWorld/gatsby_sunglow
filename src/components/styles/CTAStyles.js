@@ -6,7 +6,8 @@ const CTAStyles = styled.div`
     color: white; 
     height: 500px;
     text-align: center;
-    @media (max-width: 1007px) {
+    width: 100%;
+    @media (max-width: 1245px) {
         margin-left:1rem;
         width: 95%;
     }
@@ -20,9 +21,9 @@ const CTAStyles = styled.div`
     .cta-content {
         background-color: rgba(0, 0, 0, 0.5);
         width: 50%;
-        margin-left: 47rem;
+        margin-left: 37rem;
         padding: 1rem;
-        @media (max-width: 1007px) {
+        @media (max-width: 1245px) {
        
         margin: 0 auto;
         padding: 1rem;

@@ -84,17 +84,21 @@ const ResidentialPage = () => (
 export default ResidentialPage
 
 const RCTAStyles = styled.div`
-    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: rgba(0, 0, 0, 0.5);
     background-image: url('/images/Residential_Header.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no repeat;
-    max-width: 1140px;
+    width: 90%;
+    /* max-width: 1140px; */
+    @media (max-width: 1245px) {
+        margin-left:1rem;
+        width: 95%;
+    }
     @media (max-width: 640px) {
-        /* display: none; */
         background-image: none;
         margin: 0;
-        /* height: 350px; */
+       
     }
     
 `

@@ -22,9 +22,11 @@ const Tint = () => {
                 height={400}
                 placeholder="blurred"/>
        </div>
-            <button className="btn-service commercial"><Link to="/Commercial">Commercial Window Tint</Link></button>
-            <button className="btn-service residential"><Link to="/Residential">Residential Window Tint</Link></button>
-            <button className="btn-service quote"><Link to="/Estimate">Get Your Free Quote</Link></button>
+            <div className="btn-box">
+                <button className="btn-service commercial"><Link to="/Commercial">Commercial Window Tint</Link></button>
+                <button className="btn-service residential"><Link to="/Residential">Residential Window Tint</Link></button>
+                <button className="btn-service quote"><Link to="/Estimate">Get Your Free Quote</Link></button>
+            </div>
         </TintStyles>
     )
 }
@@ -77,7 +79,7 @@ const TintStyles = styled.div `
         background-image: linear-gradient(0deg, rgb(203, 6, 6) 10%, transparent 90%);     
         /* padding: 1rem 2.5rem;  */
    }
-   @media (max-width: 1007px) {
+   @media (max-width: 1157px) {
       .wrapper {
           margin-bottom: 0.5rem;
       }
@@ -94,9 +96,17 @@ const TintStyles = styled.div `
         font-size: .8rem;
        }
    }
+   @media (max-width: 815px) {
+       .btn-box {
+           margin-top: 3rem;
+       }
+   }
    @media (max-width: 640px) {
        .gatsby-image-wrapper {
         display: none;
+       }
+       .btn-box {
+           margin: 0;
        }
    }
 `

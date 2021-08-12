@@ -598,14 +598,3 @@ pre tt:after {
     font-size: 100%;
   }
 }
-.divider {
-  border-top: 10px solid rgb(255, 103, 0);
-  margin-top: .8rem;
-}
-.phone {
-  border: solid rgb(255, 103, 0) 2px;
-  padding: .3rem .5rem;
-  color: black;
-  font-size: .8rem;
-  line-height: 1.3;
-}
