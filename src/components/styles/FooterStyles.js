@@ -41,7 +41,7 @@ const FooterStyles = styled.ul`
     .info {
         display: flex;
         justify-content: space-evenly;
-        
+        align-items: center;
         @media (max-width: 640px) {
             flex-direction: column;
         }

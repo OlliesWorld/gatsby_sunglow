@@ -29,9 +29,9 @@ export default function Footer () {
                     <div className="info">
                         <Link to='/'><StaticImage src="../images/SunGlo-logo.png" alt="Sunglo Window Film Durango Logo" placeholder="blurred" width={200} /></Link>
                         <a className="callLink" href="tel:3032795884">CALL OR TEXT: <br/>(970) 335-9600</a>
-                        <div>
+                        
                             <Link className="cta-btn footer" to='/Estimate'>Free Estimate</Link>
-                        </div>
+                        
                         
                     </div>
                     © {new Date().getFullYear()} Sunglo Window Film, Built by <a href="https://roni.rocks/"  target="_blank" rel="noreferrer" ><span className="roni" >Roni</span></a>
