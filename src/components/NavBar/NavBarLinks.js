@@ -32,48 +32,8 @@ const NavItem = Styled(Link)`
       flex-direction: column;
       margin: .5rem;
     }
-    .phone {
-    border: solid rgb(255, 103, 0) 2px;
-    padding: .3rem .5rem;
-    color: black;
-    font-size: .8rem;
-    line-height: 1.3;
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    @media (max-width: 1245px) {
-        font-size: .5rem;
-        padding: .2rem .3rem;
-    }
-  }
-  .cta-btn {
-    position: relative;
-    display: inline-block;
-    padding: 0.875rem;
-    margin: 1rem ;
-    background-color: var(--clr-orange);
-    background-image: var(--clr-ogradient);
-    border-top: 1px solid var(--clr-orange);
-    border-right: 1px solid var(--clr-orange);
-    border-bottom: 1px solid var(--clr-orange);
-    border-left: 1px solid var(--clr-orange);
-    border-radius: 0px;
-    padding: 0.775em 0.875em;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
-    color: white;
-    overflow: hidden;
-    
-
-@media (max-width: 1245px) {
-        margin: .5rem 0;
-        font-size: .5rem;
-        
-    }
-}
+ 
+  
 
    `
 

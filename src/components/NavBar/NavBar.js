@@ -11,6 +11,7 @@ const Navigation = Styled.nav`
   justify-content: space-evenly;
   
   @media (max-width: 1007px) {
+    
     position: sticky;
     height: 8vh;
     top: 0;
@@ -26,7 +27,7 @@ const Toggle = Styled.div`
   height: 100%;
   cursor: pointer;
   padding: 0 5vw;
- 
+  
 
   @media (max-width: 1007px) {
     display: flex;
@@ -73,7 +74,7 @@ const Navbox = Styled.div`
 `
 
 const Hamburger = Styled.div`
-  background-color: #111;
+  background-color: var( --clr-orange);
   width: 1.875rem;
   height: .1875rem;
   transition: all .3s linear;
@@ -86,7 +87,7 @@ const Hamburger = Styled.div`
   ::after {
     width: 1.875rem;
     height: .1875rem;
-    background-color: #111;
+    background-color: var( --clr-orange);
     content: "";
     position: absolute;
     transition: all 0.3s linear;
@@ -102,6 +103,7 @@ const Hamburger = Styled.div`
     opacity: ${props => (props.open ? "0" : "1")};
     transform: ${props => (props.open ? "rotate(90deg) " : "rotate(0deg)")};
     top: .625rem;
+    
   }
   a {
     margin-top: 1rem;

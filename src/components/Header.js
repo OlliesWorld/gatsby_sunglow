@@ -19,6 +19,12 @@ const HeaderStyles = styled.header`
   z-index: 1;
   display: flex;
   justify-content: space-evenly;
+  @media (max-width: 1007px) {
+    background-color: white;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
  
 h1{ 
   text-align: center;
