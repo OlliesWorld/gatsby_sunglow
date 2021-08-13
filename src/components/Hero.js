@@ -82,7 +82,7 @@ const HeroStyles = styled.div `
         display: none;
        }
        .content-box {         
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.5);
         margin: 0 auto;
         padding: 1rem 2rem;
         width: 100%;
