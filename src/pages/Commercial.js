@@ -76,7 +76,13 @@ const CommercialPage = () => (
                 <StaticImage src="../images/commercial/Commercial_5.jpeg" alt="Installing Sunglo's Window Film using ladders in a office" placeholder="blurred" width={375} height={300} layout="fixed"/>
                 <StaticImage src="../images/commercial/Commercial_6.jpeg" alt="Office with a beautiful view now with Sunglo Window Film installed" placeholder="blurred" width={375} height={300} layout="fixed" />
             </div>
-            
+            <div className="video-box">
+                <h2 className="intro-video">Check Out The Security Window Film Demonstrations</h2>
+                <div className="videos">
+                    <iframe  src="https://www.youtube.com/embed/f6oNmIDBmEo?rel=0" title="A Commercial Door with no window film installed" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe  src="https://www.youtube.com/embed/HqxaecyiDbk?rel=0" title="A Commercial Door with Sunglo Window Film installed" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                </div>
+            </div>
            
             </CommercialStyles>  
         </BackgroundStyles>
@@ -145,6 +151,7 @@ const CommercialStyles = styled.div`
     margin-right:.25em;
 }
 
+
 .img-box {
     display:grid;
     grid-template-columns: repeat(3, 1fr);
@@ -166,12 +173,37 @@ const CommercialStyles = styled.div`
       
        grid-template-columns: 1fr;
         img{
-           
-            width: 96%;
+           margin: 0 auto;
+            width: 86%;
         }
     }
 }
-
+.video-box {
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+}
+iframe {
+    margin-right: 3rem;
+    width: 100%;
+    height: 10rem;
+}
+.videos {
+    margin-top: 2rem;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    @media(max-width: 1007px){
+        height: 40vh;
+        width: 90%;
+        margin: 0 auto;
+    }
+    @media (max-width: 640px) {
+        grid-template-columns: 1fr;
+        height: 100%;
+       
+    }
+}
 `
 
 const CCTAStyles = styled.div`
