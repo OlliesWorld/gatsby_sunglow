@@ -170,7 +170,7 @@ const ResidentialStyles = styled.div`
     margin-bottom: 2rem;
     
     .gatsby-image-wrapper {
-        box-shadow: 5px 5px 5px 5px grey;
+        box-shadow: 5px 5px 5px 5px rgb(255, 103, 0);
         @media (max-width: 400px) {
             box-shadow: none;   
         }

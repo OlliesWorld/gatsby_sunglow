@@ -158,7 +158,7 @@ const CommercialStyles = styled.div`
     grid-gap: 1.5rem;
     
     .gatsby-image-wrapper {
-        box-shadow: 5px 5px 5px 1px  rgb(255, 103, 0);
+        box-shadow: 5px 5px 5px 1px rgb(255, 103, 0);
         
         @media (max-width: 640px) {
             box-shadow: none;  
