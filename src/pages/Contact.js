@@ -36,7 +36,7 @@ const ContactPage = () => {
         
       </ContactStyles>
       <AreaStyles>
-        {/* <h2>Contact Us</h2> */}
+        
           <p>Commercial and residential window tinting in Durango and all surrounding areas.</p>
       </AreaStyles>
   </Layout>

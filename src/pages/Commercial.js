@@ -193,14 +193,15 @@ iframe {
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.5rem;
+    width: 50%;
+    margin: 0 auto;
     @media(max-width: 1007px){
-        height: 40vh;
-        width: 90%;
-        margin: 0 auto;
+        
+        
     }
     @media (max-width: 640px) {
         grid-template-columns: 1fr;
-        height: 100%;
+        width: 80%;
        
     }
 }
@@ -212,6 +213,7 @@ const CCTAStyles = styled.div`
     background-size: cover;
     background-repeat: no repeat;
     max-width: 1140px;
+    margin: 0 auto;
     @media (max-width: 400px) {
         /* display: none; */
         background-image: none;

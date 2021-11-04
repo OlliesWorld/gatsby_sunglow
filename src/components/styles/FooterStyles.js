@@ -33,7 +33,7 @@ const FooterStyles = styled.ul`
     }
 
     .social-links {
-        padding-top: 1rem;
+        /* padding-top: 1rem; */
     }
     .white {
       color: white;

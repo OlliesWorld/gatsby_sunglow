@@ -89,8 +89,9 @@ const RCTAStyles = styled.div`
     background-position: center;
     background-size: cover;
     background-repeat: no repeat;
-    width: 90%;
-    /* max-width: 1140px; */
+    max-width: 1140px;
+    margin: 0 auto;
+   
     @media (max-width: 1245px) {
         margin-left:1rem;
         width: 95%;
@@ -207,8 +208,8 @@ const ResidentialStyles = styled.div`
 }
 .video-box iframe {
     margin-left: 5rem;
-    width: 80%;
-    height: 75vh;
+    width: 50%;
+    height: 35vh;
     @media(max-width: 1007px){
         height: 40vh;
         width: 90%;

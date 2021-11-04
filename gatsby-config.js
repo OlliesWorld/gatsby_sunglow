@@ -34,7 +34,6 @@ module.exports = {
       },
     },
    
-    `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-netlify`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
