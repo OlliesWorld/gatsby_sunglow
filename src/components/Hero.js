@@ -20,7 +20,7 @@ const Hero = () => {
                 <p>Schedule your FREE home window tinting consultation NOW to Save $50. We are the
                     most professional commercial and home window tint service in The Four Corners servicing
                     Durango, Farmington, Cortez, Pagosa Springs and surrounding areas!</p>
-                <Link to="/" className="cta-btn">Schedule a free estimate</Link>
+                <Link to="/Estimate" className="cta-btn">Schedule a free estimate</Link>
             </div>
         </div>
         </HeroStyles>
