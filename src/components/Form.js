@@ -44,7 +44,7 @@ const ContactForm = (props) => {
 
   return (
     <FormStyles>
-    <a className="cta-btn" href="tel:9703359600">CALL OR TEXT: (970) 335-9600</a>
+    <a className="cta-btn" href="tel:9707446699">CALL OR TEXT: (970)744-6699</a>
     <form data-netlify="true" action="/" name="contactUs" method="post" onSubmit={handleSubmit}>
       <input type="hidden" name="form-name" value="contact-form" />
      

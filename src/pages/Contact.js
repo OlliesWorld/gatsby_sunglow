@@ -10,7 +10,7 @@ const ContactPage = () => {
 
   return (
     <Layout>
-      <Seo title="Window Tinting in Durango | Locally Owned &amp; Operated | (970) 335-9600"/>
+      <Seo title="Window Tinting in Durango | Locally Owned &amp; Operated | (970) 744-6699"/>
       <ContactStyles>
       
         <ContactForm />

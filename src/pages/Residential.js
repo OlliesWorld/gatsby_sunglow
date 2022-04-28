@@ -12,7 +12,7 @@ import { FaArrowCircleRight, FaCircle } from 'react-icons/fa';
 
 const ResidentialPage = () => (
     <Layout > 
-        <Seo title="Residential Window Tinting for Durango & Surrounding Areas | (970) 335-9600"/>  
+        <Seo title="Residential Window Tinting for Durango & Surrounding Areas | (970) 744-6699"/>  
             <RCTAStyles>
             <CTAStyles>
                 <div className="cta-content">

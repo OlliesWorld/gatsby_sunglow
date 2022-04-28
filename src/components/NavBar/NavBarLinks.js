@@ -46,7 +46,7 @@ export default function NavBarLinks () {
                         <NavItem to='/About'>About</NavItem>
                         <NavItem to='/Contact'>Contact</NavItem>
                         <CTAStyles>
-                        <a className="phone" href="tel:3032795884"  >CALL OR TEXT: <br/>(970) 335-9600</a>
+                        <a className="phone" href="tel:9707446699"  >CALL OR TEXT: <br/>(970) 744-6699</a>
                         
                         <Link className="cta-btn" to='/Estimate'>Free Estimate</Link>
                         </CTAStyles>

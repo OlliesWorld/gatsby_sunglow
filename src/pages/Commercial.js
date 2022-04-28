@@ -13,7 +13,7 @@ import Sidebar from '../components/Sidebar'
 
 const CommercialPage = () => (
     <Layout >  
-        <Seo title="Commercial Window Tint in Durango & Surrounding Areas | (970) 335-9600"/>
+        <Seo title="Commercial Window Tint in Durango & Surrounding Areas | (970) 744-6699"/>
           
              <CCTAStyles>
                 <CTAStyles>

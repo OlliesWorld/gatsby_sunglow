@@ -3,7 +3,7 @@ require("dotenv").config({
 })
 module.exports = {
   siteMetadata: {
-    title: `Window Tinting in Durango | Locally Owned & Operated | (970) 335-9600`,
+    title: `Window Tinting in Durango | Locally Owned & Operated | (970) 744-6699`,
     description: `SunGlo Window Films is Durango's best commercial & home window tinting service.`,
     author: `Roni`,
   },

@@ -2,5 +2,10 @@
     "cSpell.words": [
         "flexbox",
         "imagecontent"
-    ]
+    ],
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#482227",
+        "titleBar.activeBackground": "#653037",
+        "titleBar.activeForeground": "#FCF9F9"
+    }
 }

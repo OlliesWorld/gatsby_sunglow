@@ -28,7 +28,7 @@ export default function Footer () {
                     
                     <div className="info">
                         <Link to='/'><StaticImage src="../images/SunGlo-logo.png" alt="Sunglo Window Film Durango Logo" placeholder="blurred" width={200} /></Link>
-                        <a className="callLink" href="tel:3032795884">CALL OR TEXT: <br/>(970) 335-9600</a>
+                        <a className="callLink" href="tel:9707446699">CALL OR TEXT: <br/>(970) 744-6699</a>
                         
                             <Link className="cta-btn footer" to='/Estimate'>Free Estimate</Link>
                         
