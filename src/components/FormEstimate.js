@@ -45,7 +45,7 @@ const EstimateForm = (props) => {
 
   return (
  
-    <form data-netlify="true" action="/" name="contactUs" method="post" onSubmit={handleSubmit}>
+    <form data-netlify="true" action="/" name="estimate" method="post" onSubmit={handleSubmit}>
       <input type="hidden" name="form-name" value="contact-form" />
      
         <input
