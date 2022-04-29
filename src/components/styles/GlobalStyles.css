@@ -57,3 +57,7 @@ a {
           padding: .2rem .3rem;
       }
     }
+
+    .white-text {
+      color: white;
+    }

@@ -62,8 +62,8 @@ const EstimateForm = (props) => {
           
               <input className='Form--Input' type='phone' placeholder='Phone' name='phone'  onChange={handleChange}/>
               <input className='Form--Input'  type='date' placeholder='Requested Estimate Date' name='date'  />
-              <p>How Can We Assist You?</p>
-              <textarea className='Form--Textarea' placeholder='Message' name='message' rows='8'  onChange={handleChange} required />
+              <p className='white-text'>How Can We Assist You?</p>
+              <textarea className='Form--Textarea' placeholder='Message' name='message' rows='8' minlength="8"  onChange={handleChange} required />
          
             <div>
               <button className='Button Form--SubmitButton' type='submit' >Contact Us</button>
